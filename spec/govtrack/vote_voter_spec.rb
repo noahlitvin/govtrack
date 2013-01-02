@@ -23,12 +23,12 @@ describe GovTrack::VoteVoter do
   end
 
   it "should find a vote voter" do
-    vote_voter = GovTrack::VoteVoter.find_by_id(8248471)
-    vote_voter.id.should eq "8248471"
+    vote_voter = GovTrack::VoteVoter.find_by_id(28927519)
+    vote_voter.id.should eq "28927519"
   end
 
   it "should retreive person as a Person and cache it" do
-    vote_voter = GovTrack::VoteVoter.find_by_id(8248471)
+    vote_voter = GovTrack::VoteVoter.find_by_id(28927519)
     vote_voter.person.should be_a GovTrack::Person
     
     FakeWeb.allow_net_connect = false
@@ -37,7 +37,7 @@ describe GovTrack::VoteVoter do
   end
   
   it "should retreive vote as a Vote and cache it" do
-    vote_voter = GovTrack::VoteVoter.find_by_id(8248471)
+    vote_voter = GovTrack::VoteVoter.find_by_id(28927519)
     vote_voter.vote.should be_a GovTrack::Vote
 
     FakeWeb.allow_net_connect = false
@@ -46,7 +46,7 @@ describe GovTrack::VoteVoter do
   end
 
   it "should retreive created as a DateTime object" do
-    vote_voter = GovTrack::VoteVoter.find_by_id(8248471)
+    vote_voter = GovTrack::VoteVoter.find_by_id(28927519)
     vote_voter.created.should be_a DateTime
   end
 
