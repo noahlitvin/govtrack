@@ -10,8 +10,8 @@ describe GovTrack::Bill do
 
   it "should iterate through an array of bills based on parameters when supplied with a block" do
     count = 0
-    GovTrack::Bill.find(congress:95, bill_type: 'house_concurrent_resolution', limit: 70) { |bill| count += 1 }
-    count.should eq GovTrack::Bill.find(congress:95, bill_type: 'house_concurrent_resolution').total
+    GovTrack::Bill.find(congress:112, bill_type: 'house_resolution', limit: 70) { |bill| count += 1 }
+    count.should eq GovTrack::Bill.find(congress:112, bill_type: 'house_resolution').total
   end
 
   it "should find an array of bills based on parameters with a dynamic finder" do
@@ -58,6 +58,10 @@ describe GovTrack::Bill do
   it "should retreive current_status_date as a Date object" do
     bill = GovTrack::Bill.find_by_id(2343)
     bill.current_status_date.should be_a Date
+  end
+
+  it "should retreive a list of votes for a bill" do
+
   end
     
 end
