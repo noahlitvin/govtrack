@@ -62,7 +62,7 @@ describe GovTrack::Bill do
 
   it "should be able to find a list of votes for a bill" do
     vote =  GovTrack::Vote.find_by_id(1)
-    GovTrack::Vote.find(related_bill: vote.related_bill['id']).first.id.should eql(vote.id)
+    GovTrack::Vote.find(related_bill: vote.related_bill.id).map(&:id).should include(vote.id)
   end
     
 end

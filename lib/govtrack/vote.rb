@@ -18,9 +18,9 @@ module GovTrack
       super
     end
 
-    #def related_bill
-    #  @related_bill.class == GovTrack::Bill ? @related_bill : @related_bill = GovTrack::Bill.find_by_id(@related_bill['id'])
-    #end
+    def related_bill
+      @related_bill.class == GovTrack::Bill ? @related_bill : @related_bill = GovTrack::Bill.find_by_id(@related_bill['id'])
+    end
   
   end
 end
