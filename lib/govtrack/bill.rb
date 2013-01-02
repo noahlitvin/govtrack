@@ -5,14 +5,15 @@ module GovTrack
       super
       @introduced_date = Date.parse(@introduced_date) if @introduced_date
       @current_status_date = Date.parse(@current_status_date) if @current_status_date
+      # maybe get cosponsors working here . . .
     end
 
-    def self.find(args)
-      #args[:bill_type] = args[:bill_type].to_bill_type_number if args[:bill_type]
-      #args[:current_status] = args[:current_status].to_current_status_number if args[:current_status]
-      # these are no longer integers on the api
-      super
-    end
+    #def self.find(args)
+    #  #args[:bill_type] = args[:bill_type].to_bill_type_number if args[:bill_type]
+    #  #args[:current_status] = args[:current_status].to_current_status_number if args[:current_status]
+    #  # these are no longer integers on the api
+    #  super
+    #end
 
     def sponsor
       @sponsor.class == GovTrack::Person ? @sponsor : @sponsor = GovTrack::Person.find_by_id(@sponsor['id'])
