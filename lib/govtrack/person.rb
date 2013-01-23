@@ -10,6 +10,7 @@ module GovTrack
       if @current_role
         @current_role.class == GovTrack::Role ? @current_role : @current_role = GovTrack::Role.find_by_id(@current_role['id'])
       else
+        puts "no current role for #{@name} !!!!!! error !!!!!"
         nil
       end
     end
