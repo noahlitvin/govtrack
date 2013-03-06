@@ -34,7 +34,7 @@ module GovTrack
     end
 
     def self.find_by_id(id)
-      puts "/#{self.demodulized_name}/#{id}"
+      puts "#{base_uri}/#{self.demodulized_name}/#{id}"
       new(get("/#{self.demodulized_name}/#{id}"))
     end
 
