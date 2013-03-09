@@ -4,9 +4,9 @@ require File.expand_path('../lib/govtrack/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.name        = "govtrack"
   gem.version     = GovTrack::Gem::VERSION
-  gem.authors     = ["Noah Litvin"]
-  gem.email       = ["noah.litvin@gmail.com"]
-  gem.homepage    = "https://github.com/noahlitvin/govtrack"
+  gem.authors     = ["Tim Booher", "Noah Litvin"]
+  gem.email       = ["tim@theboohers.org"]
+  gem.homepage    = "https://github.com/tbbooher/govtrack"
   gem.summary     = %q{A Ruby wrapper for the GovTrack API.}
   gem.description = %q{A Ruby wrapper for the GovTrack API.}
 

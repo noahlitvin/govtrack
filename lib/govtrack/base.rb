@@ -1,8 +1,9 @@
 module GovTrack
   class Base
     include HTTParty
+    format :json
 
-    base_uri 'http://www.govtrack.us/api/v1'
+    base_uri 'http://www.govtrack.us/api/v2'
     
     def initialize(attributes=nil)
       attributes ||= {}
@@ -14,12 +15,15 @@ module GovTrack
 
     def self.find(args)
       args[:limit] ||= 500 if block_given? #default to queries of 500 when a block is given
-      puts "/#{self.demodulized_name}/?#{URI.escape(URI.encode_www_form(args))}"
-      response = get("/#{self.demodulized_name}/?#{URI.escape(URI.encode_www_form(args))}")
+      request = "/#{self.demodulized_name}/?#{URI.escape(URI.encode_www_form(args))}"
+      begin
+        response = get(request)
+      rescue => e
+        logger.warn "Unable to parse #{request}: #{e}"
+      end
       paginated_list = GovTrack::PaginatedList.new(self,response["meta"],response["objects"])
       
       if block_given?
-        page = paginated_list.offset
         for page in paginated_list.offset..(paginated_list.total/paginated_list.limit)
           args[:offset] = page
           if page == (paginated_list.total/paginated_list.limit).to_i #don't supply the end of the last page
