@@ -1,6 +1,7 @@
 module GovTrack
   class Base
     include HTTParty
+    CONGRESS = 113 # COULD GET FROM API . . .
     format :json
 
     base_uri 'http://www.govtrack.us/api/v2'

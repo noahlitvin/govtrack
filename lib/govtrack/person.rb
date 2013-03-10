@@ -7,20 +7,27 @@ module GovTrack
     end
     
     def current_role
+      # what role do they have in the current congress
       if @current_role
         @current_role.class == GovTrack::Role ? @current_role : @current_role = GovTrack::Role.find_by_id(@current_role['id'])
       else
-        puts "no current role for #{@name} !!!!!! error !!!!!"
-        nil
+        # we need to load/find their current role
+        @current_role = self.roles.select{|r| r.congress_numbers.include?(CONGRESS)}.sort_by{|o| o.enddate}.reverse.first
+        @current_role
       end
+    end
+
+    def last_role
+
     end
     
     def roles
+      # this needs to be tested . . . it is probably a hash
       if @roles[0].class == GovTrack::Role
         @roles
       else
-        @roles.map! { |role_uri|
-          GovTrack::Role.find_by_uri(role_uri)
+        @roles.map! { |role|
+          GovTrack::Role.find_by_id(role['id'])
         }
       end
     end

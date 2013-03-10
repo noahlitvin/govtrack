@@ -15,11 +15,19 @@ module GovTrack
     end
     
     def person
-      @person.class == GovTrack::Person ? @person : @person = GovTrack::Person.find_by_uri(@person)
+      if @person.is_a?(Hash)
+        @person = GovTrack::Person.find_by_id(@person['id'])
+      else
+        @person.class == GovTrack::Person ? @person : @person = GovTrack::Person.find_by_uri(@person)
+      end
     end
     
     def vote
-      @vote.class == GovTrack::Vote ? @vote : @vote = GovTrack::Vote.find_by_uri(@vote)
+      if @vote.is_a?(Hash)
+          @vote = GovTrack::Vote.find_by_id(@vote['id'])
+        else
+          @vote.class == GovTrack::Vote ? @vote : @vote = GovTrack::Vote.find_by_uri(@vote)
+      end
     end
 
   end
