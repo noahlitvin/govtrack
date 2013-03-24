@@ -75,3 +75,5 @@ GovTrack::VoteVoter.find(vote: recent_hr3_vote) { |vote_voter|
 ## Copyright
 
 Copyright (c) 2012 Noah Litvin. See [LICENSE](https://github.com/noahlitvin/govtrack/blob/master/LICENSE.md) for details.
+
+Modifications by Tim Booher, 2013
