@@ -53,5 +53,42 @@ describe GovTrack::Person do
     person = GovTrack::Person.find_by_id(400326)
     person.birthday.should be_a Date
   end
+
+  it "should be able to get current roles from all people" do
+    GovTrack::Person.find(limit: 10).each do |person|
+      puts "roll: |#{person.current_role}|"
+      lambda { person.current_role }.should_not raise_error
+    end
+  end
+
+  # person roles testing
+  it "non-current rep should return nil for current role" do
+    # "Rep.  Watts [R-OK4, 1995-2002]"
+    GovTrack::Person.find_by_id(400541).current_role.should be_nil
+  end
+
+  it "past president should return nil" do
+    # President Calvin Coolidge [R, 1923-1929]
+    GovTrack::Person.find_by_id(402859).current_role.should be_nil
+  end
+
+  it "current president should return " do
+    # 400629   <-- not correct . . .
+    # "President Barack Obama [D]"
+    GovTrack::Person.find_by_id(400629).current_role.description.should eql('President')
+  end
+
+  it "past senator should return nil" do
+    # 300157
+    # Thurmond, Strom (Sen.) [R-SC, 1961-2002]
+    GovTrack::Person.find_by_id(300157).current_role.should be_nil
+  end
+
+  it "current senator should return senator" do
+    # Portman, Robert “Rob” (Sen.) [R-OH],
+    # 400325
+    GovTrack::Person.find_by_id(400325).current_role.description.should eql('Senator from Ohio')
+  end
+
   
 end

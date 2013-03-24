@@ -44,7 +44,7 @@ module GovTrack
     end
 
     def self.find_by_uri(uri)
-      puts "http://www.govtrack.us#{uri}"
+      #puts "http://www.govtrack.us#{uri}"
       new(get("http://www.govtrack.us#{uri}"))
     end
 

@@ -16,7 +16,10 @@ module GovTrack
     end
 
     def sponsor
-      @sponsor.class == GovTrack::Person ? @sponsor : @sponsor = GovTrack::Person.find_by_id(@sponsor['id'])
+      if @sponsor.class == Hash
+        @sponsor = GovTrack::Person.find_by_id(@sponsor['id'])
+      end
+      @sponsor
     end
     
     def cosponsors
