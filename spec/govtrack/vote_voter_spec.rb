@@ -50,4 +50,9 @@ describe GovTrack::VoteVoter do
     vote_voter.created.should be_a DateTime
   end
 
+  it "should be able to provide a description of the vote" do
+    vv = GovTrack::VoteVoter.find_by_id(29690500)
+    vv.vote_description.should eql("McIntyre, Mike (Rep.) [D-NC7] voted Yea on H.R. 527: Responsible Helium Administration and Stewardship Act")
+  end
+
 end

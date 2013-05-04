@@ -30,5 +30,9 @@ module GovTrack
       end
     end
 
+    def vote_description
+      "#{person.sortname} voted #{option["value"]} on #{vote.related_bill.title}"
+    end
+
   end
 end

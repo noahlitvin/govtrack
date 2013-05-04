@@ -40,18 +40,15 @@ GovTrack::Bill.find(current_status: 'introduced', congress: 112) { |bill| bill.t
 **See how Ron Paul and Dennis Kucinich voted on 'H.R. 3590: Patient Protection and Affordable Care Act':**
 
 ```ruby
-obamacare = GovTrack::Bill.find_by_congress_and_bill_type_and_number(111,:house_bill,3590)
-recent_obamacare_vote = GovTrack::Vote.find(related_bill: obamacare, order_by: "-created").first
+Find "H.R. 527: Responsible Helium Administration and Stewardship Act"
+bill = GovTrack::Bill.find_by_id(284882)
+recent_vote = GovTrack::Vote.find(related_bill: bill.id, order_by: "-created").first
+mike = GovTrack::Person.find_by_id(400266)
 
-ron = GovTrack::Person.find_by_nickname_and_lastname('Ron','Paul')
-ron_vote = GovTrack::VoteVoter.find(vote: recent_obamacare_vote, person: ron)
-"#{ron.name_no_details} voted '#{ron_vote.option.to_display_text}' on '#{obamacare.title}'."
-=> "Ronald Paul voted 'No' on 'H.R. 3590 (111th): Patient Protection and Afforble Care Act'."
+mike_vote = GovTrack::VoteVoter.find(vote: recent_vote, person: mike)
+> mike_vote.vote_description
+ => "McIntyre, Mike (Rep.) [D-NC7] voted Yea on H.R. 527: Responsible Helium Administration and Stewardship Act"
 
-dennis = GovTrack::Person.find_by_firstname_and_lastname('Dennis','Kucinich')
-dennis_vote = GovTrack::VoteVoter.find(vote: recent_obamacare_vote, person: dennis)
-"#{dennis.name_no_details} voted '#{dennis_vote.option.to_display_text}' on '#{obamacare.title}'."
-=> "Dennis Kucinich voted 'Aye' on 'H.R. 3590 (111th): Patient Protection and Affordble Care Act'."
 ```
 
 **List the female members of congress who abstained from voting on 'H.R. 3: No Taxpayer Funding for Abortion Act':**

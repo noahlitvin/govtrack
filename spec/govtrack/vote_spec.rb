@@ -33,4 +33,12 @@ describe GovTrack::Vote do
     vote.created.should be_a DateTime
   end
 
+  it "should be able to find a vote on a specific bill" do
+    bill = GovTrack::Bill.find_by_id(75622)
+    # now we need to find any votes (rolls) on this specific bill
+    #related_vote = GovTrack::Vote.find(related_bill: bill.id)
+    vote = GovTrack::Vote.find(related_bill: bill.id).first
+    vote.related_bill.should eq(bill)
+  end
+
 end

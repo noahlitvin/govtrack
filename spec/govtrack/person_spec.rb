@@ -90,5 +90,9 @@ describe GovTrack::Person do
     GovTrack::Person.find_by_id(400325).current_role.description.should eql('Senator from Ohio')
   end
 
+  it "should be able to find a person from name and district" do
+    pending "until we get time to implement"
+  end
+
   
 end
