@@ -37,7 +37,7 @@ GovTrack::Bill.find(current_status: 'introduced', congress: 112) { |bill| bill.t
 
 ## Examples
 
-**See how Ron Paul and Dennis Kucinich voted on 'H.R. 3590: Patient Protection and Affordable Care Act':**
+**See how Mike McIntyre voted on 'HR 527':**
 
 ```ruby
 Find "H.R. 527: Responsible Helium Administration and Stewardship Act"

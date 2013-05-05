@@ -1,6 +1,9 @@
 module GovTrack
   class Person < Base
 
+    # only filterable:
+    # lastname, gender
+
     def initialize(attributes={})
       super
       @birthday = Date.parse(@birthday) if @birthday
