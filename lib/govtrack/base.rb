@@ -20,7 +20,7 @@ module GovTrack
       begin
         response = get(request)
       rescue => e
-        logger.warn "Unable to parse #{request}: #{e}"
+        raise "Unable to parse #{request}: #{e}"
       end
       paginated_list = GovTrack::PaginatedList.new(self,response["meta"],response["objects"])
       
