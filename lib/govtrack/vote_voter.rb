@@ -15,11 +15,11 @@ module GovTrack
     end
     
     def person
-      @person.class == GovTrack::Person ? @person : @person = GovTrack::Person.find_by_uri(@person)
+      @person.class == GovTrack::Person ? @person : @person = GovTrack::Person.new(@person)
     end
     
     def vote
-      @vote.class == GovTrack::Vote ? @vote : @vote = GovTrack::Vote.find_by_uri(@vote)
+      @vote.class == GovTrack::Vote ? @vote : @vote = GovTrack::Vote.new(@vote)
     end
 
   end

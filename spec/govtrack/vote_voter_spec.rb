@@ -15,8 +15,8 @@ describe GovTrack::VoteVoter do
   end
   
   it "should find a vote voter with votes and people objects" do
-    manny = GovTrack::Person.find_by_firstname_and_lastname("Emanuel","Cleaver").first
-    vote = GovTrack::Vote.find_by_number_and_congress(183,112).first
+    manny = GovTrack::Person.find_by_lastname("Cleaver").first
+    vote = GovTrack::Vote.find_by_number_and_congress_and_chamber_and_session(183,112,'house',2012).first
     vote_voters = GovTrack::VoteVoter.find_by_person_and_vote(manny, vote)
     vote_voters.should be_an Array
     vote_voters[0].should be_a GovTrack::VoteVoter
