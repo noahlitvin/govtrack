@@ -16,7 +16,7 @@ describe GovTrack::Role do
   
   it "should find a role by id" do
     role = GovTrack::Role.find_by_id(387)
-    role.id.should eq "387"
+    role.id.should eq 387
   end
   
   it "should retreive startdate as a Date object" do

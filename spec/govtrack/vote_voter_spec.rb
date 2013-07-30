@@ -24,7 +24,7 @@ describe GovTrack::VoteVoter do
 
   it "should find a vote voter" do
     vote_voter = GovTrack::VoteVoter.find_by_id(8248471)
-    vote_voter.id.should eq "8248471"
+    vote_voter.id.should eq 8248471
   end
 
   it "should retreive person as a Person and cache it" do

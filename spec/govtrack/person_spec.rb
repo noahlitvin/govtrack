@@ -16,14 +16,14 @@ describe GovTrack::Person do
   
   it "should find a person by id" do
     person = GovTrack::Person.find_by_id(400326)
-    person.id.should eq "400326"
+    person.id.should eq 400326
     person.firstname.should eq "David"
     person.lastname.should eq "Price"
   end
 
   it "should find a person by uri" do
-    person = GovTrack::Person.find_by_uri('/api/v1/person/300038/')
-    person.id.should eq "300038"
+    person = GovTrack::Person.find_by_uri('/api/v2/person/300038/')
+    person.id.should eq 300038
   end
 
   it "should retreive current_role as a Role and cache it" do

@@ -22,7 +22,7 @@ describe GovTrack::Bill do
 
   it "should find a bill by id" do
     bill = GovTrack::Bill.find_by_id(74369)
-    bill.id.should eq "74369"
+    bill.id.should eq 74369
   end
 
   it "should retreive sponsor as a Person and cache it" do

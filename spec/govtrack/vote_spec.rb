@@ -16,7 +16,7 @@ describe GovTrack::Vote do
 
   it "should find a vote" do
     vote = GovTrack::Vote.find_by_id(1)
-    vote.id.should eq "1"
+    vote.id.should eq 1
   end
 
   it "should retreive related_bill as a Bill and cache it" do
