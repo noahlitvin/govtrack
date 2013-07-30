@@ -21,8 +21,8 @@ module GovTrack
       if @cosponsors[0].class == GovTrack::Person 
         @cosponsors
       else
-        @cosponsors.map! { |cosponsor_uri|
-          GovTrack::Person.find_by_uri(cosponsor_uri)
+        @cosponsors.map! { |cosponsor_obj|
+          GovTrack::Person.new(cosponsor_obj)
         }
       end
     end
