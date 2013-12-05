@@ -2,7 +2,7 @@ module GovTrack
   class Base
     include HTTParty
 
-    base_uri 'http://www.govtrack.us/api/v1'
+    base_uri 'http://www.govtrack.us/api/v2'
     
     def initialize(attributes=nil)
       attributes ||= {}
