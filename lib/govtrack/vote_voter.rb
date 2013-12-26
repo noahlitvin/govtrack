@@ -22,5 +22,10 @@ module GovTrack
       @vote.class == GovTrack::Vote ? @vote : @vote = GovTrack::Vote.new(@vote)
     end
 
+    def vote_direction
+      # the direction voted in: "Yes", "No", etc.
+      @option['value']
+    end
+
   end
 end

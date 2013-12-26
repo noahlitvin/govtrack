@@ -47,12 +47,12 @@ recent_obamacare_vote = GovTrack::Vote.find(related_bill: obamacare.id, order_by
 
 ron = GovTrack::Person.find_by_lastname('Paul').last
 ron_vote = GovTrack::VoteVoter.find(vote: recent_obamacare_vote, person: ron)
-"#{ron.nickname} #{ron.lastname} voted '#{ron_vote.option.to_display_text}' on '#{obamacare.title}'."
+"#{ron.nickname} #{ron.lastname} voted '#{ron_vote.vote_direction}' on '#{obamacare.title}'."
 => "Ronald Paul voted 'No' on 'H.R. 3590 (111th): Patient Protection and Afforble Care Act'."
 
 dennis = GovTrack::Person.find_by_lastname('Kucinich').first
 dennis_vote = GovTrack::VoteVoter.find(vote: recent_obamacare_vote, person: dennis)
-"#{dennis.firstname} #{dennis.lastname} voted '#{dennis_vote.option.to_display_text}' on '#{obamacare.title}'."
+"#{dennis.firstname} #{dennis.lastname} voted '#{dennis_vote.vote_direction}' on '#{obamacare.title}'."
 => "Dennis Kucinich voted 'Aye' on 'H.R. 3590 (111th): Patient Protection and Affordble Care Act'."
 ```
 

@@ -4,8 +4,7 @@ module GovTrack
 
     base_uri 'http://www.govtrack.us/api/v2'
     
-    def initialize(attributes=nil)
-      attributes ||= {}
+    def initialize(attributes={})
       attributes.each do |(attr, val)|
         attr = attr.gsub('-', '_') # dashes not allowed in instance variable names
         instance_variable_set("@#{attr}", val)
@@ -20,11 +19,14 @@ module GovTrack
       paginated_list = GovTrack::PaginatedList.new(self,response["meta"],response["objects"])
       
       if block_given?
-        page = paginated_list.offset
-        for page in paginated_list.offset..(paginated_list.total/paginated_list.limit)
+        offset = paginated_list.offset
+        limit  = paginated_list.limit
+        total  = paginated_list.total
+
+        for page in offset..(total/limit)
           args[:offset] = page
-          if page == (paginated_list.total/paginated_list.limit).to_i #don't supply the end of the last page
-            self.find(args).first(paginated_list.total%paginated_list.limit).each { |item| yield item }
+          if page == (total/limit).to_i #don't supply the end of the last page
+            self.find(args).first(total % limit).each { |item| yield item }
           else
             self.find(args).each { |item| yield item }
           end
