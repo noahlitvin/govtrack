@@ -12,6 +12,14 @@ module GovTrack
       end
     end
 
+    def ==(other)
+      other.equal?(self) || (other.instance_of?(self.class) && other.id == id)
+    end
+
+    def eql?(other)
+      self == other
+    end
+
     def self.find(args)
       args[:limit] ||= 500 if block_given? #default to queries of 500 when a block is given
       
@@ -43,13 +51,27 @@ module GovTrack
     def self.find_by_uri(uri)
       new(get("http://www.govtrack.us#{uri}"))
     end
+  
+    private
 
-    def ==(other)
-      other.equal?(self) || (other.instance_of?(self.class) && other.id == id)
+    def instantiate_attrs(var, klass)
+      # turn attributes into GovTrack objects if still in JSON format
+      val = instance_variable_get(var)
+      if val.is_a?(klass)
+        return val
+      elsif val.is_a?(Hash)
+       instance_variable_set(var, klass.find_by_id(val['id']))
+      elsif val.is_a?(Fixnum)
+        instance_variable_set(var, klass.find_by_id(val))
+      elsif val.is_a?(Array)
+        return val if val[0].is_a?(klass)
+        instance_variable_set(var, val.map { |attrs| klass.new(attrs) })
+      end
+      instance_variable_get(var)
     end
-
-    def eql?(other)
-      self == other
+  
+    def self.demodulized_name
+      name.split('::').last.downcase
     end
 
     def self.method_missing(method_id, *arguments)
@@ -65,28 +87,6 @@ module GovTrack
         super
       end
     end
-
-    def instantiate_attrs(var, klass)
-      # turn attributes into GovTrack objects if still in JSON format
-      val = instance_variable_get(var)
-      if val.is_a?(klass)
-        return val
-      elsif val.is_a?(Hash)
-        instance_variable_set(var, klass.find_by_id(val['id']))
-      elsif val.is_a?(Fixnum)
-        instance_variable_set(var, klass.find_by_id(val))
-      elsif val.is_a?(Array)
-        return val if val[0].is_a?(klass)
-        instance_variable_set(var, val.map { |attrs| klass.new(attrs) })
-      end
-      instance_variable_get(var)
-    end
-  
-  protected
-  
-  def self.demodulized_name
-    name.split('::').last.downcase
-  end
 
   end
 end
