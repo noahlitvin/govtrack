@@ -65,6 +65,22 @@ module GovTrack
         super
       end
     end
+
+    def instantiate_attrs(var, klass)
+      # turn attributes into GovTrack objects if still in JSON format
+      val = instance_variable_get(var)
+      if val.is_a?(klass)
+        return val
+      elsif val.is_a?(Hash)
+        instance_variable_set(var, klass.find_by_id(val['id']))
+      elsif val.is_a?(Fixnum)
+        instance_variable_set(var, klass.find_by_id(val))
+      elsif val.is_a?(Array)
+        return val if val[0].is_a?(klass)
+        instance_variable_set(var, val.map { |attrs| klass.new(attrs) })
+      end
+      instance_variable_get(var)
+    end
   
   protected
   

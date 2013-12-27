@@ -7,7 +7,7 @@ module GovTrack
     end
 
     def related_bill
-      @related_bill.class == GovTrack::Bill ? @related_bill : @related_bill = GovTrack::Bill.find_by_id(@related_bill['id'])
+      instantiate_attrs(:@related_bill, GovTrack::Bill)
     end
   
   end

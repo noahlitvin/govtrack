@@ -8,17 +8,11 @@ module GovTrack
     end
 
     def sponsor
-      @sponsor.class == GovTrack::Person ? @sponsor : @sponsor = GovTrack::Person.find_by_id(@sponsor['id'])
+      instantiate_attrs(:@sponsor, GovTrack::Person)
     end
     
     def cosponsors
-      if @cosponsors[0].class == GovTrack::Person 
-        @cosponsors
-      else
-        @cosponsors.map! { |cosponsor_obj|
-          GovTrack::Person.new(cosponsor_obj)
-        }
-      end
+      instantiate_attrs(:@cosponsors, GovTrack::Person)
     end
   
   end

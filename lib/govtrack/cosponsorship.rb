@@ -7,15 +7,15 @@ module GovTrack
     end
 
     def person
-      @person.is_a?(GovTrack::Person) ? @person : @person = GovTrack::Person.find_by_id(@person)
+      instantiate_attrs(:@person, GovTrack::Person)
     end
 
     def bill
-      @bill.is_a?(GovTrack::Bill) ? @bill : @bill = GovTrack::Bill.find_by_id(@bill)
+      instantiate_attrs(:@bill, GovTrack::Bill)
     end
 
     def role
-      @role.is_a?(GovTrack::Role) ? @role : @role = GovTrack::Role.find_by_id(@role)
+      instantiate_attrs(:@role, GovTrack::Role)
     end
 
   end

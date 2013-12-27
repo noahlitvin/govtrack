@@ -62,7 +62,7 @@ dennis_vote = GovTrack::VoteVoter.find(vote: recent_obamacare_vote, person: denn
 hr3 = GovTrack::Bill.find_by_congress_and_bill_type_and_number(112,:house_bill,3)
 recent_hr3_vote = GovTrack::Vote.find(related_bill: hr3.id, order_by: "-created").first
 GovTrack::VoteVoter.find(vote: recent_hr3_vote) { |vote_voter|
-  puts vote_voter.person.name if vote_voter.option['value'] == 'Not Voting' && vote_voter.person.gender == 'female'
+  puts vote_voter.person.name if vote_voter.vote_direction == 'Not Voting' && vote_voter.person.gender == 'female'
 }
 => "Rep. Gabrielle Giffords [D-AZ8, 2007-2012]"
 => "Rep. Jo Ann Emerson [R-MO8]"

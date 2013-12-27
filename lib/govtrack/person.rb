@@ -7,13 +7,7 @@ module GovTrack
     end
     
     def roles
-      if @roles[0].class == GovTrack::Role
-        @roles
-      else
-        @roles.map! { |role_obj|
-          GovTrack::Role.new(role_obj)
-        }
-      end
+      instantiate_attrs(:@roles, GovTrack::Role)
     end
     
   end

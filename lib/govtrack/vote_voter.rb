@@ -9,7 +9,7 @@ module GovTrack
     def self.find(args)
       #allows searching with Person and Vote objects
       args.each { |k,v|
-        args[k] = v.id  if v.class == GovTrack::Person || v.class == GovTrack::Vote || v.class == GovTrack::PaginatedList
+        args[k] = v.id  if [GovTrack::Person, GovTrack::Vote, GovTrack::PaginatedList].include?(v.class)
       }
       super
     end
@@ -19,11 +19,11 @@ module GovTrack
     end
     
     def person
-      @person.class == GovTrack::Person ? @person : @person = GovTrack::Person.new(@person)
+      instantiate_attrs(:@person, GovTrack::Person)
     end
     
     def vote
-      @vote.class == GovTrack::Vote ? @vote : @vote = GovTrack::Vote.new(@vote)
+      instantiate_attrs(:@vote, GovTrack::Vote)
     end
 
     def vote_direction

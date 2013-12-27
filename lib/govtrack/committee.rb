@@ -7,7 +7,7 @@ module GovTrack
 
     def committee
       return nil if !@committee
-      @committee.is_a?(GovTrack::Committee) ? @committee : @committee = GovTrack::Committee.new(@committee)
+      instantiate_attrs(:@committee, GovTrack::Committee)
     end
   end
 end
