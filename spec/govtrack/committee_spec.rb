@@ -15,4 +15,21 @@ describe GovTrack::Committee do
       comm.subcommittee?.should eq false
     end
   end
+
+  describe '#committee' do
+    context 'when committee is a subcommittee' do
+
+      before { comm.stub(:committee) { GovTrack::Committee.new } }
+
+      it 'returns the parent committee' do
+        comm.committee.class.should eq GovTrack::Committee
+      end
+    end
+
+    context 'when committee is not a subcommittee' do
+      it 'returns nil' do
+        comm.committee.should eq nil
+      end
+    end
+  end
 end

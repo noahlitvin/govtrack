@@ -69,7 +69,7 @@ module GovTrack
   protected
   
   def self.demodulized_name
-    self.name.split('::').last.downcase == "votevoter" ? "vote_voter" : self.name.split('::').last.downcase 
+    name.split('::').last.downcase
   end
 
   end

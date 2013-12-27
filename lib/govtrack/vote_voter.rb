@@ -13,6 +13,10 @@ module GovTrack
       }
       super
     end
+
+    def self.demodulized_name
+     "vote_voter"
+    end
     
     def person
       @person.class == GovTrack::Person ? @person : @person = GovTrack::Person.new(@person)
