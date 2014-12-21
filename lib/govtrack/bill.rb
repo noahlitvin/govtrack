@@ -8,6 +8,7 @@ module GovTrack
     end
 
     def self.find(args)
+      # might not be necessary
       args[:bill_type] = args[:bill_type].to_bill_type_number if args[:bill_type]
       #args[:current_status] = args[:current_status].to_current_status_number if args[:current_status]
       # these are no longer integers on the api
