@@ -2,7 +2,8 @@ require 'helper'
 
 describe GovTrack::CommitteeMember do
   
-  let(:cm) { GovTrack::CommitteeMember.find_by_id(128287) }
+  # need to use vcr for this -- because these frequently change
+  let(:cm) { GovTrack::CommitteeMember.find_by_id(170284) }
 
   describe '#find_by_id' do
     it 'returns relationship between a person and committee' do

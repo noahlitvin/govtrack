@@ -6,6 +6,8 @@ GEM
     httparty (0.10.2)
       multi_json (~> 1.0)
       multi_xml (>= 0.5.2)
+    interactive_rspec (0.0.2)
+      rspec
     multi_json (1.6.1)
     multi_xml (0.5.3)
     rspec (2.13.0)
@@ -21,6 +23,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  fakeweb (~> 1.3)
-  httparty (>= 0.10.2)
+  fakeweb
+  httparty
+  interactive_rspec
   rspec
