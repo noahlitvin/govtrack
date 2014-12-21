@@ -1,0 +1,1118 @@
+{
+ "meta": {
+  "limit": 100, 
+  "offset": 0, 
+  "total_count": 14
+ }, 
+ "objects": [
+  {
+   "bill_resolution_type": "resolution", 
+   "bill_type": "senate_joint_resolution", 
+   "bill_type_label": "S.J.Res.", 
+   "congress": 112, 
+   "current_status": "introduced", 
+   "current_status_date": "2011-09-06", 
+   "current_status_description": "This resolution was introduced on September 6, 2011, in a previous session of Congress, but was not enacted.", 
+   "current_status_label": "Introduced", 
+   "display_number": "S.J.Res. 25", 
+   "docs_house_gov_postdate": null, 
+   "id": 73578, 
+   "introduced_date": "2011-09-06", 
+   "is_alive": false, 
+   "is_current": false, 
+   "link": "http://www.govtrack.us/congress/bills/112/sjres25", 
+   "major_actions": [
+    [
+     "datetime.datetime(2011, 9, 6, 0, 0)", 
+     1, 
+     "Read twice. Placed on Senate Legislative Calendar under General Orders. Calendar No. 153 pursuant to Public Law 112-25, sec. 301(a)(2)."
+    ]
+   ], 
+   "noun": "resolution", 
+   "number": 25, 
+   "senate_floor_schedule_postdate": null, 
+   "sponsor": {
+    "bioguideid": "M000355", 
+    "birthday": "1942-02-20", 
+    "cspanid": 2351, 
+    "firstname": "Mitch", 
+    "gender": "male", 
+    "gender_label": "Male", 
+    "id": 300072, 
+    "lastname": "McConnell", 
+    "middlename": "", 
+    "name": "Sen. Mitch McConnell [R-KY]", 
+    "namemod": "", 
+    "nickname": "", 
+    "osid": "N00003389", 
+    "pvsid": "53298", 
+    "sortname": "McConnell, Mitch (Sen.) [R-KY]", 
+    "twitterid": "McConnellPress", 
+    "youtubeid": null
+   }, 
+   "sponsor_role": {
+    "congress_numbers": [
+     111, 
+     112, 
+     113
+    ], 
+    "current": true, 
+    "description": "Senator from Kentucky", 
+    "district": null, 
+    "enddate": "2015-01-03", 
+    "id": 4195, 
+    "party": "Republican", 
+    "person": 300072, 
+    "role_type": "senator", 
+    "role_type_label": "Senator", 
+    "senator_class": "class2", 
+    "senator_class_label": "Class 2", 
+    "startdate": "2009-01-06", 
+    "state": "KY", 
+    "title": "Sen.", 
+    "title_long": "Senator", 
+    "website": "http://www.mcconnell.senate.gov"
+   }, 
+   "thomas_link": "http://thomas.loc.gov/cgi-bin/bdquery/z?d112:sjres25:", 
+   "title": "S.J.Res. 25 (112th): A joint resolution relating to the disapproval of the President’s exercise of authority to increase the debt limit, as submitted under section 3101A of title 31, United States Code, on August 2, 2011.", 
+   "title_without_number": "A joint resolution relating to the disapproval of the President’s exercise of authority to increase the debt limit, as submitted under section 3101A of title 31, United States Code, on August 2, 2011.", 
+   "titles": [
+    [
+     "official", 
+     "introduced", 
+     "A joint resolution relating to the disapproval of the President's exercise of authority to increase the debt limit, as submitted under section 3101A of title 31, United States Code, on August 2, 2011."
+    ]
+   ]
+  }, 
+  {
+   "bill_resolution_type": "bill", 
+   "bill_type": "senate_bill", 
+   "bill_type_label": "S.", 
+   "congress": 112, 
+   "current_status": "introduced", 
+   "current_status_date": "2012-07-10", 
+   "current_status_description": "This bill was introduced on July 10, 2012, in a previous session of Congress, but was not enacted.", 
+   "current_status_label": "Introduced", 
+   "display_number": "S. 3367", 
+   "docs_house_gov_postdate": null, 
+   "id": 254739, 
+   "introduced_date": "2012-07-10", 
+   "is_alive": false, 
+   "is_current": false, 
+   "link": "http://www.govtrack.us/congress/bills/112/s3367", 
+   "major_actions": [
+    [
+     "datetime.datetime(2012, 7, 10, 0, 0)", 
+     1, 
+     "Sponsor introductory remarks on measure. (CR S4825)"
+    ]
+   ], 
+   "noun": "bill", 
+   "number": 3367, 
+   "senate_floor_schedule_postdate": null, 
+   "sponsor": {
+    "bioguideid": "B001135", 
+    "birthday": "1955-11-30", 
+    "cspanid": 31054, 
+    "firstname": "Richard", 
+    "gender": "male", 
+    "gender_label": "Male", 
+    "id": 400054, 
+    "lastname": "Burr", 
+    "middlename": "M.", 
+    "name": "Sen. Richard Burr [R-NC]", 
+    "namemod": "", 
+    "nickname": "", 
+    "osid": "N00002221", 
+    "pvsid": "21787", 
+    "sortname": "Burr, Richard (Sen.) [R-NC]", 
+    "twitterid": "senatorburr", 
+    "youtubeid": "SenatorRichardBurr"
+   }, 
+   "sponsor_role": {
+    "congress_numbers": [
+     112, 
+     113, 
+     114
+    ], 
+    "current": true, 
+    "description": "Senator from North Carolina", 
+    "district": null, 
+    "enddate": "2017-01-03", 
+    "id": 409, 
+    "party": "Republican", 
+    "person": 400054, 
+    "role_type": "senator", 
+    "role_type_label": "Senator", 
+    "senator_class": "class3", 
+    "senator_class_label": "Class 3", 
+    "startdate": "2011-01-05", 
+    "state": "NC", 
+    "title": "Sen.", 
+    "title_long": "Senator", 
+    "website": "http://www.burr.senate.gov"
+   }, 
+   "thomas_link": "http://thomas.loc.gov/cgi-bin/bdquery/z?d112:s3367:", 
+   "title": "S. 3367 (112th): Deterring Public Disclosure of Covert Actions Act of 2012", 
+   "title_without_number": "Deterring Public Disclosure of Covert Actions Act of 2012", 
+   "titles": [
+    [
+     "short", 
+     "introduced", 
+     "Deterring Public Disclosure of Covert Actions Act of 2012"
+    ], 
+    [
+     "official", 
+     "introduced", 
+     "A bill to deter the disclosure to the public of evidence or information on United States covert actions by prohibiting security clearances to individuals who make such disclosures."
+    ]
+   ]
+  }, 
+  {
+   "bill_resolution_type": "resolution", 
+   "bill_type": "senate_resolution", 
+   "bill_type_label": "S.Res.", 
+   "congress": 112, 
+   "current_status": "introduced", 
+   "current_status_date": "2011-01-05", 
+   "current_status_description": "This resolution was introduced on January 5, 2011, in a previous session of Congress, but was not enacted.", 
+   "current_status_label": "Introduced", 
+   "display_number": "S.Res. 8", 
+   "docs_house_gov_postdate": null, 
+   "id": 74109, 
+   "introduced_date": "2011-01-05", 
+   "is_alive": false, 
+   "is_current": false, 
+   "link": "http://www.govtrack.us/congress/bills/112/sres8", 
+   "major_actions": [
+    [
+     "datetime.datetime(2011, 1, 5, 0, 0)", 
+     1, 
+     "Sponsor introductory remarks on measure. (CR S19-25, S29, S31, S32-33)"
+    ]
+   ], 
+   "noun": "resolution", 
+   "number": 8, 
+   "senate_floor_schedule_postdate": null, 
+   "sponsor": {
+    "bioguideid": "H000206", 
+    "birthday": "1939-11-19", 
+    "cspanid": 2005, 
+    "firstname": "Thomas", 
+    "gender": "male", 
+    "gender_label": "Male", 
+    "id": 300051, 
+    "lastname": "Harkin", 
+    "middlename": "", 
+    "name": "Sen. Thomas “Tom” Harkin [D-IA]", 
+    "namemod": "", 
+    "nickname": "Tom", 
+    "osid": "N00004207", 
+    "pvsid": "53294", 
+    "sortname": "Harkin, Thomas “Tom” (Sen.) [D-IA]", 
+    "twitterid": "SenatorHarkin", 
+    "youtubeid": "SenatorTomHarkin"
+   }, 
+   "sponsor_role": {
+    "congress_numbers": [
+     111, 
+     112, 
+     113
+    ], 
+    "current": true, 
+    "description": "Senator from Iowa", 
+    "district": null, 
+    "enddate": "2015-01-03", 
+    "id": 4057, 
+    "party": "Democrat", 
+    "person": 300051, 
+    "role_type": "senator", 
+    "role_type_label": "Senator", 
+    "senator_class": "class2", 
+    "senator_class_label": "Class 2", 
+    "startdate": "2009-01-06", 
+    "state": "IA", 
+    "title": "Sen.", 
+    "title_long": "Senator", 
+    "website": "http://www.harkin.senate.gov"
+   }, 
+   "thomas_link": "http://thomas.loc.gov/cgi-bin/bdquery/z?d112:sres8:", 
+   "title": "S.Res. 8 (112th): A resolution amending the Standing Rules of the Senate to provide for cloture to be invoked with less than a three-fifths majority after additional debate.", 
+   "title_without_number": "A resolution amending the Standing Rules of the Senate to provide for cloture to be invoked with less than a three-fifths majority after additional debate.", 
+   "titles": [
+    [
+     "official", 
+     "introduced", 
+     "A resolution amending the Standing Rules of the Senate to provide for cloture to be invoked with less than a three-fifths majority after additional debate."
+    ]
+   ]
+  }, 
+  {
+   "bill_resolution_type": "resolution", 
+   "bill_type": "house_resolution", 
+   "bill_type_label": "H.Res.", 
+   "congress": 112, 
+   "current_status": "introduced", 
+   "current_status_date": "2011-12-20", 
+   "current_status_description": "This resolution was introduced on December 20, 2011, in a previous session of Congress, but was not enacted.", 
+   "current_status_label": "Introduced", 
+   "display_number": "H.Res. 504", 
+   "docs_house_gov_postdate": null, 
+   "id": 71704, 
+   "introduced_date": "2011-12-20", 
+   "is_alive": false, 
+   "is_current": false, 
+   "link": "http://www.govtrack.us/congress/bills/112/hres504", 
+   "major_actions": [
+    [
+     "datetime.datetime(2011, 12, 20, 15, 29)", 
+     1, 
+     "Considered as privileged matter."
+    ]
+   ], 
+   "noun": "resolution", 
+   "number": 504, 
+   "senate_floor_schedule_postdate": null, 
+   "sponsor": {
+    "bioguideid": "E000290", 
+    "birthday": "1958-06-28", 
+    "cspanid": 38535, 
+    "firstname": "Donna", 
+    "gender": "female", 
+    "gender_label": "Female", 
+    "id": 412263, 
+    "lastname": "Edwards", 
+    "middlename": "F.", 
+    "name": "Rep. Donna Edwards [D-MD4]", 
+    "namemod": "", 
+    "nickname": "", 
+    "osid": "N00028249", 
+    "pvsid": "65085", 
+    "sortname": "Edwards, Donna (Rep.) [D-MD4]", 
+    "twitterid": "repdonnaedwards", 
+    "youtubeid": "RepDonnaFEdwards"
+   }, 
+   "sponsor_role": {
+    "congress_numbers": [
+     112
+    ], 
+    "current": false, 
+    "description": "Representative for Maryland's 4th congressional district", 
+    "district": 4, 
+    "enddate": "2013-01-03", 
+    "id": 41812, 
+    "party": "Democrat", 
+    "person": 412263, 
+    "role_type": "representative", 
+    "role_type_label": "Representative", 
+    "senator_class": null, 
+    "startdate": "2011-01-05", 
+    "state": "MD", 
+    "title": "Rep.", 
+    "title_long": "Representative", 
+    "website": "http://donnaedwards.house.gov/"
+   }, 
+   "thomas_link": "http://thomas.loc.gov/cgi-bin/bdquery/z?d112:hres504:", 
+   "title": "H.Res. 504 (112th): Raising a question of the privileges of the House.", 
+   "title_without_number": "Raising a question of the privileges of the House.", 
+   "titles": [
+    [
+     "official", 
+     "introduced", 
+     "Raising a question of the privileges of the House."
+    ]
+   ]
+  }, 
+  {
+   "bill_resolution_type": "resolution", 
+   "bill_type": "senate_resolution", 
+   "bill_type_label": "S.Res.", 
+   "congress": 112, 
+   "current_status": "introduced", 
+   "current_status_date": "2011-01-05", 
+   "current_status_description": "This resolution was introduced on January 5, 2011, in a previous session of Congress, but was not enacted.", 
+   "current_status_label": "Introduced", 
+   "display_number": "S.Res. 11", 
+   "docs_house_gov_postdate": null, 
+   "id": 74484, 
+   "introduced_date": "2011-01-05", 
+   "is_alive": false, 
+   "is_current": false, 
+   "link": "http://www.govtrack.us/congress/bills/112/sres11", 
+   "major_actions": [
+    [
+     "datetime.datetime(2011, 1, 5, 0, 0)", 
+     1, 
+     "Submitted in the Senate. Placed on Senate Legislative Calendar under Over, Under the Rule."
+    ]
+   ], 
+   "noun": "resolution", 
+   "number": 11, 
+   "senate_floor_schedule_postdate": null, 
+   "sponsor": {
+    "bioguideid": "W000779", 
+    "birthday": "1949-05-03", 
+    "cspanid": 1962, 
+    "firstname": "Ron", 
+    "gender": "male", 
+    "gender_label": "Male", 
+    "id": 300100, 
+    "lastname": "Wyden", 
+    "middlename": "", 
+    "name": "Sen. Ron Wyden [D-OR]", 
+    "namemod": "", 
+    "nickname": "", 
+    "osid": "N00007724", 
+    "pvsid": "27036", 
+    "sortname": "Wyden, Ron (Sen.) [D-OR]", 
+    "twitterid": "RonWyden", 
+    "youtubeid": "senronwyden"
+   }, 
+   "sponsor_role": {
+    "congress_numbers": [
+     112, 
+     113, 
+     114
+    ], 
+    "current": true, 
+    "description": "Senator from Oregon", 
+    "district": null, 
+    "enddate": "2017-01-03", 
+    "id": 4357, 
+    "party": "Democrat", 
+    "person": 300100, 
+    "role_type": "senator", 
+    "role_type_label": "Senator", 
+    "senator_class": "class3", 
+    "senator_class_label": "Class 3", 
+    "startdate": "2011-01-05", 
+    "state": "OR", 
+    "title": "Sen.", 
+    "title_long": "Senator", 
+    "website": "http://www.wyden.senate.gov"
+   }, 
+   "thomas_link": "http://thomas.loc.gov/cgi-bin/bdquery/z?d112:sres11:", 
+   "title": "S.Res. 11 (112th): A resolution to establish as a standing order of the Senate that a Senator publicly disclose a notice of intent to objecting to any measure or matter.", 
+   "title_without_number": "A resolution to establish as a standing order of the Senate that a Senator publicly disclose a notice of intent to objecting to any measure or matter.", 
+   "titles": [
+    [
+     "official", 
+     "introduced", 
+     "A resolution to establish as a standing order of the Senate that a Senator publicly disclose a notice of intent to objecting to any measure or matter."
+    ]
+   ]
+  }, 
+  {
+   "bill_resolution_type": "resolution", 
+   "bill_type": "senate_resolution", 
+   "bill_type_label": "S.Res.", 
+   "congress": 112, 
+   "current_status": "introduced", 
+   "current_status_date": "2011-01-05", 
+   "current_status_description": "This resolution was introduced on January 5, 2011, in a previous session of Congress, but was not enacted.", 
+   "current_status_label": "Introduced", 
+   "display_number": "S.Res. 10", 
+   "docs_house_gov_postdate": null, 
+   "id": 69982, 
+   "introduced_date": "2011-01-05", 
+   "is_alive": false, 
+   "is_current": false, 
+   "link": "http://www.govtrack.us/congress/bills/112/sres10", 
+   "major_actions": [
+    [
+     "datetime.datetime(2011, 1, 5, 0, 0)", 
+     1, 
+     "Submitted in the Senate. Placed on Senate Legislative Calendar under Over, Under the Rule."
+    ]
+   ], 
+   "noun": "resolution", 
+   "number": 10, 
+   "senate_floor_schedule_postdate": null, 
+   "sponsor": {
+    "bioguideid": "U000039", 
+    "birthday": "1948-05-18", 
+    "cspanid": 39226, 
+    "firstname": "Tom", 
+    "gender": "male", 
+    "gender_label": "Male", 
+    "id": 400413, 
+    "lastname": "Udall", 
+    "middlename": "S.", 
+    "name": "Sen. Tom Udall [D-NM]", 
+    "namemod": "", 
+    "nickname": "", 
+    "osid": "N00006561", 
+    "pvsid": "22658", 
+    "sortname": "Udall, Tom (Sen.) [D-NM]", 
+    "twitterid": "SenatorTomUdall", 
+    "youtubeid": "senatortomudall"
+   }, 
+   "sponsor_role": {
+    "congress_numbers": [
+     111, 
+     112, 
+     113
+    ], 
+    "current": true, 
+    "description": "Senator from New Mexico", 
+    "district": null, 
+    "enddate": "2015-01-03", 
+    "id": 3514, 
+    "party": "Democrat", 
+    "person": 400413, 
+    "role_type": "senator", 
+    "role_type_label": "Senator", 
+    "senator_class": "class2", 
+    "senator_class_label": "Class 2", 
+    "startdate": "2009-01-06", 
+    "state": "NM", 
+    "title": "Sen.", 
+    "title_long": "Senator", 
+    "website": "http://www.tomudall.senate.gov"
+   }, 
+   "thomas_link": "http://thomas.loc.gov/cgi-bin/bdquery/z?d112:sres10:", 
+   "title": "S.Res. 10 (112th): A resolution to improve the debate and consideration of legislative matters and nominations in the Senate.", 
+   "title_without_number": "A resolution to improve the debate and consideration of legislative matters and nominations in the Senate.", 
+   "titles": [
+    [
+     "official", 
+     "introduced", 
+     "A resolution to improve the debate and consideration of legislative matters and nominations in the Senate."
+    ]
+   ]
+  }, 
+  {
+   "bill_resolution_type": "resolution", 
+   "bill_type": "senate_joint_resolution", 
+   "bill_type_label": "S.J.Res.", 
+   "congress": 112, 
+   "current_status": "introduced", 
+   "current_status_date": "2012-01-23", 
+   "current_status_description": "This resolution was introduced on January 23, 2012, in a previous session of Congress, but was not enacted.", 
+   "current_status_label": "Introduced", 
+   "display_number": "S.J.Res. 34", 
+   "docs_house_gov_postdate": null, 
+   "id": 70417, 
+   "introduced_date": "2012-01-23", 
+   "is_alive": false, 
+   "is_current": false, 
+   "link": "http://www.govtrack.us/congress/bills/112/sjres34", 
+   "major_actions": [
+    [
+     "datetime.datetime(2012, 1, 23, 0, 0)", 
+     1, 
+     "Introduced in the Senate. Read twice. Placed on Senate Legislative Calendar under General Orders. Calendar No. 295 pursuant to P.L. 112-25, sec. 301(a)(2)."
+    ]
+   ], 
+   "noun": "resolution", 
+   "number": 34, 
+   "senate_floor_schedule_postdate": null, 
+   "sponsor": {
+    "bioguideid": "M000355", 
+    "birthday": "1942-02-20", 
+    "cspanid": 2351, 
+    "firstname": "Mitch", 
+    "gender": "male", 
+    "gender_label": "Male", 
+    "id": 300072, 
+    "lastname": "McConnell", 
+    "middlename": "", 
+    "name": "Sen. Mitch McConnell [R-KY]", 
+    "namemod": "", 
+    "nickname": "", 
+    "osid": "N00003389", 
+    "pvsid": "53298", 
+    "sortname": "McConnell, Mitch (Sen.) [R-KY]", 
+    "twitterid": "McConnellPress", 
+    "youtubeid": null
+   }, 
+   "sponsor_role": {
+    "congress_numbers": [
+     111, 
+     112, 
+     113
+    ], 
+    "current": true, 
+    "description": "Senator from Kentucky", 
+    "district": null, 
+    "enddate": "2015-01-03", 
+    "id": 4195, 
+    "party": "Republican", 
+    "person": 300072, 
+    "role_type": "senator", 
+    "role_type_label": "Senator", 
+    "senator_class": "class2", 
+    "senator_class_label": "Class 2", 
+    "startdate": "2009-01-06", 
+    "state": "KY", 
+    "title": "Sen.", 
+    "title_long": "Senator", 
+    "website": "http://www.mcconnell.senate.gov"
+   }, 
+   "thomas_link": "http://thomas.loc.gov/cgi-bin/bdquery/z?d112:sjres34:", 
+   "title": "S.J.Res. 34 (112th): A joint resolution relating to the disapproval of the President’s exercise of authority to increase the debt limit, as submitted under section 3101A of title 31, United States Code, on January 12, 2012", 
+   "title_without_number": "A joint resolution relating to the disapproval of the President’s exercise of authority to increase the debt limit, as submitted under section 3101A of title 31, United States Code, on January 12, 2012", 
+   "titles": [
+    [
+     "official", 
+     "introduced", 
+     "A joint resolution relating to the disapproval of the President's exercise of authority to increase the debt limit, as submitted under section 3101A of title 31, United States Code, on January 12, 2012"
+    ]
+   ]
+  }, 
+  {
+   "bill_resolution_type": "resolution", 
+   "bill_type": "senate_resolution", 
+   "bill_type_label": "S.Res.", 
+   "congress": 112, 
+   "current_status": "introduced", 
+   "current_status_date": "2012-07-26", 
+   "current_status_description": "This resolution was introduced on July 26, 2012, in a previous session of Congress, but was not enacted.", 
+   "current_status_label": "Introduced", 
+   "display_number": "S.Res. 532", 
+   "docs_house_gov_postdate": null, 
+   "id": 254970, 
+   "introduced_date": "2012-07-26", 
+   "is_alive": false, 
+   "is_current": false, 
+   "link": "http://www.govtrack.us/congress/bills/112/sres532", 
+   "major_actions": [
+    [
+     "datetime.datetime(2012, 7, 26, 0, 0)", 
+     1, 
+     "Submitted in the Senate, considered, and passed without amendment and with a preamble by Voice Vote."
+    ]
+   ], 
+   "noun": "resolution", 
+   "number": 532, 
+   "senate_floor_schedule_postdate": null, 
+   "sponsor": {
+    "bioguideid": "N000032", 
+    "birthday": "1942-09-29", 
+    "cspanid": 1931, 
+    "firstname": "Bill", 
+    "gender": "male", 
+    "gender_label": "Male", 
+    "id": 300078, 
+    "lastname": "Nelson", 
+    "middlename": "", 
+    "name": "Sen. Bill Nelson [D-FL]", 
+    "namemod": "", 
+    "nickname": "", 
+    "osid": "N00009926", 
+    "pvsid": "30880", 
+    "sortname": "Nelson, Bill (Sen.) [D-FL]", 
+    "twitterid": "SenBillNelson", 
+    "youtubeid": "senbillnelson"
+   }, 
+   "sponsor_role": {
+    "congress_numbers": [
+     110, 
+     111, 
+     112
+    ], 
+    "current": false, 
+    "description": "Senator from Florida", 
+    "district": null, 
+    "enddate": "2013-01-03", 
+    "id": 4223, 
+    "party": "Democrat", 
+    "person": 300078, 
+    "role_type": "senator", 
+    "role_type_label": "Senator", 
+    "senator_class": "class1", 
+    "senator_class_label": "Class 1", 
+    "startdate": "2007-01-04", 
+    "state": "FL", 
+    "title": "Sen.", 
+    "title_long": "Senator", 
+    "website": "http://billnelson.senate.gov/"
+   }, 
+   "thomas_link": "http://thomas.loc.gov/cgi-bin/bdquery/z?d112:sres532:", 
+   "title": "S.Res. 532 (112th): A resolution expressing support for the XIX International AIDS Conference and the sense of the Senate that continued commitment by the United States to HIV/AIDS research, prevention, and treatment programs is crucial to protecting glob", 
+   "title_without_number": "A resolution expressing support for the XIX International AIDS Conference and the sense of the Senate that continued commitment by the United States to HIV/AIDS research, prevention, and treatment programs is crucial to protecting global health.", 
+   "titles": [
+    [
+     "official", 
+     "introduced", 
+     "A resolution expressing support for the XIX International AIDS Conference and the sense of the Senate that continued commitment by the United States to HIV/AIDS research, prevention, and treatment programs is crucial to protecting global health."
+    ]
+   ]
+  }, 
+  {
+   "bill_resolution_type": "bill", 
+   "bill_type": "senate_bill", 
+   "bill_type_label": "S.", 
+   "congress": 112, 
+   "current_status": "introduced", 
+   "current_status_date": "2011-03-10", 
+   "current_status_description": "This bill was introduced on March 10, 2011, in a previous session of Congress, but was not enacted.", 
+   "current_status_label": "Introduced", 
+   "display_number": "S. 548", 
+   "docs_house_gov_postdate": null, 
+   "id": 71937, 
+   "introduced_date": "2011-03-10", 
+   "is_alive": false, 
+   "is_current": false, 
+   "link": "http://www.govtrack.us/congress/bills/112/s548", 
+   "major_actions": [
+    [
+     "datetime.datetime(2011, 3, 10, 0, 0)", 
+     1, 
+     "Read twice and referred to the Select Committee on Intelligence."
+    ]
+   ], 
+   "noun": "bill", 
+   "number": 548, 
+   "senate_floor_schedule_postdate": null, 
+   "sponsor": {
+    "bioguideid": "C000286", 
+    "birthday": "1943-11-10", 
+    "cspanid": 36571, 
+    "firstname": "Saxby", 
+    "gender": "male", 
+    "gender_label": "Male", 
+    "id": 300021, 
+    "lastname": "Chambliss", 
+    "middlename": "", 
+    "name": "Sen. Saxby Chambliss [R-GA]", 
+    "namemod": "", 
+    "nickname": "", 
+    "osid": "N00002685", 
+    "pvsid": "22029", 
+    "sortname": "Chambliss, Saxby (Sen.) [R-GA]", 
+    "twitterid": "SaxbyChambliss", 
+    "youtubeid": "SenatorChambliss"
+   }, 
+   "sponsor_role": {
+    "congress_numbers": [
+     111, 
+     112, 
+     113
+    ], 
+    "current": true, 
+    "description": "Senator from Georgia", 
+    "district": null, 
+    "enddate": "2015-01-03", 
+    "id": 3914, 
+    "party": "Republican", 
+    "person": 300021, 
+    "role_type": "senator", 
+    "role_type_label": "Senator", 
+    "senator_class": "class2", 
+    "senator_class_label": "Class 2", 
+    "startdate": "2009-01-06", 
+    "state": "GA", 
+    "title": "Sen.", 
+    "title_long": "Senator", 
+    "website": "http://www.chambliss.senate.gov"
+   }, 
+   "thomas_link": "http://thomas.loc.gov/cgi-bin/bdquery/z?d112:s548:", 
+   "title": "S. 548 (112th): Effective Interrogation of Unprivileged Enemy Belligerents Act", 
+   "title_without_number": "Effective Interrogation of Unprivileged Enemy Belligerents Act", 
+   "titles": [
+    [
+     "short", 
+     "introduced", 
+     "Effective Interrogation of Unprivileged Enemy Belligerents Act"
+    ], 
+    [
+     "official", 
+     "introduced", 
+     "A bill to provide for the effective interrogation of unprivileged enemy belligerents and for other purposes."
+    ]
+   ]
+  }, 
+  {
+   "bill_resolution_type": "resolution", 
+   "bill_type": "senate_resolution", 
+   "bill_type_label": "S.Res.", 
+   "congress": 112, 
+   "current_status": "introduced", 
+   "current_status_date": "2011-01-25", 
+   "current_status_description": "This resolution was introduced on January 25, 2011, in a previous session of Congress, but was not enacted.", 
+   "current_status_label": "Introduced", 
+   "display_number": "S.Res. 24", 
+   "docs_house_gov_postdate": null, 
+   "id": 72370, 
+   "introduced_date": "2011-01-25", 
+   "is_alive": false, 
+   "is_current": false, 
+   "link": "http://www.govtrack.us/congress/bills/112/sres24", 
+   "major_actions": [
+    [
+     "datetime.datetime(2011, 1, 25, 0, 0)", 
+     1, 
+     "Submitted in the Senate. Placed on Senate Legislative Calendar under Over, Under the Rule."
+    ]
+   ], 
+   "noun": "resolution", 
+   "number": 24, 
+   "senate_floor_schedule_postdate": null, 
+   "sponsor": {
+    "bioguideid": "M001176", 
+    "birthday": "1956-10-24", 
+    "cspanid": 1029842, 
+    "firstname": "Jeff", 
+    "gender": "male", 
+    "gender_label": "Male", 
+    "id": 412325, 
+    "lastname": "Merkley", 
+    "middlename": "", 
+    "name": "Sen. Jeff Merkley [D-OR]", 
+    "namemod": "", 
+    "nickname": "", 
+    "osid": "N00029303", 
+    "pvsid": "23644", 
+    "sortname": "Merkley, Jeff (Sen.) [D-OR]", 
+    "twitterid": "SenJeffMerkley", 
+    "youtubeid": "SenatorJeffMerkley"
+   }, 
+   "sponsor_role": {
+    "congress_numbers": [
+     111, 
+     112, 
+     113
+    ], 
+    "current": true, 
+    "description": "Senator from Oregon", 
+    "district": null, 
+    "enddate": "2015-01-03", 
+    "id": 41907, 
+    "party": "Democrat", 
+    "person": 412325, 
+    "role_type": "senator", 
+    "role_type_label": "Senator", 
+    "senator_class": "class2", 
+    "senator_class_label": "Class 2", 
+    "startdate": "2009-01-06", 
+    "state": "OR", 
+    "title": "Sen.", 
+    "title_long": "Senator", 
+    "website": "http://www.merkley.senate.gov"
+   }, 
+   "thomas_link": "http://thomas.loc.gov/cgi-bin/bdquery/z?d112:sres24:", 
+   "title": "S.Res. 24 (112th): A resolution to propose a standing order to govern extended debate.", 
+   "title_without_number": "A resolution to propose a standing order to govern extended debate.", 
+   "titles": [
+    [
+     "official", 
+     "introduced", 
+     "A resolution to propose a standing order to govern extended debate."
+    ]
+   ]
+  }, 
+  {
+   "bill_resolution_type": "bill", 
+   "bill_type": "senate_bill", 
+   "bill_type_label": "S.", 
+   "congress": 112, 
+   "current_status": "introduced", 
+   "current_status_date": "2011-05-19", 
+   "current_status_description": "This bill was introduced on May 19, 2011, in a previous session of Congress, but was not enacted.", 
+   "current_status_label": "Introduced", 
+   "display_number": "S. 1038", 
+   "docs_house_gov_postdate": null, 
+   "id": 75973, 
+   "introduced_date": "2011-05-19", 
+   "is_alive": false, 
+   "is_current": false, 
+   "link": "http://www.govtrack.us/congress/bills/112/s1038", 
+   "major_actions": [
+    [
+     "datetime.datetime(2011, 5, 19, 0, 0)", 
+     1, 
+     "Introduced in the Senate, read twice."
+    ]
+   ], 
+   "noun": "bill", 
+   "number": 1038, 
+   "senate_floor_schedule_postdate": null, 
+   "sponsor": {
+    "bioguideid": "R000146", 
+    "birthday": "1939-12-02", 
+    "cspanid": 1683, 
+    "firstname": "Harry", 
+    "gender": "male", 
+    "gender_label": "Male", 
+    "id": 300082, 
+    "lastname": "Reid", 
+    "middlename": "M.", 
+    "name": "Sen. Harry Reid [D-NV]", 
+    "namemod": "", 
+    "nickname": "", 
+    "osid": "N00009922", 
+    "pvsid": "53320", 
+    "sortname": "Reid, Harry (Sen.) [D-NV]", 
+    "twitterid": "SenatorReid", 
+    "youtubeid": "SenatorReid"
+   }, 
+   "sponsor_role": {
+    "congress_numbers": [
+     112, 
+     113, 
+     114
+    ], 
+    "current": true, 
+    "description": "Senator from Nevada", 
+    "district": null, 
+    "enddate": "2017-01-03", 
+    "id": 4242, 
+    "party": "Democrat", 
+    "person": 300082, 
+    "role_type": "senator", 
+    "role_type_label": "Senator", 
+    "senator_class": "class3", 
+    "senator_class_label": "Class 3", 
+    "startdate": "2011-01-05", 
+    "state": "NV", 
+    "title": "Sen.", 
+    "title_long": "Senator", 
+    "website": "http://www.reid.senate.gov"
+   }, 
+   "thomas_link": "http://thomas.loc.gov/cgi-bin/bdquery/z?d112:s1038:", 
+   "title": "S. 1038 (112th): PATRIOT Sunsets Extension Act of 2011", 
+   "title_without_number": "PATRIOT Sunsets Extension Act of 2011", 
+   "titles": [
+    [
+     "short", 
+     "introduced", 
+     "PATRIOT Sunsets Extension Act of 2011"
+    ], 
+    [
+     "official", 
+     "introduced", 
+     "A bill to extend the expiring provisions of the USA PATRIOT Improvement and Reauthorization Act of 2005 and the Intelligence Reform and Terrorism Prevention Act of 2004 until June 1, 2015, and for other purposes."
+    ]
+   ]
+  }, 
+  {
+   "bill_resolution_type": "resolution", 
+   "bill_type": "senate_resolution", 
+   "bill_type_label": "S.Res.", 
+   "congress": 112, 
+   "current_status": "introduced", 
+   "current_status_date": "2011-01-25", 
+   "current_status_description": "This resolution was introduced on January 25, 2011, in a previous session of Congress, but was not enacted.", 
+   "current_status_label": "Introduced", 
+   "display_number": "S.Res. 21", 
+   "docs_house_gov_postdate": null, 
+   "id": 75650, 
+   "introduced_date": "2011-01-25", 
+   "is_alive": false, 
+   "is_current": false, 
+   "link": "http://www.govtrack.us/congress/bills/112/sres21", 
+   "major_actions": [
+    [
+     "datetime.datetime(2011, 1, 25, 0, 0)", 
+     1, 
+     "Submitted in the Senate. Placed on Senate Legislative Calendar under Over, Under the Rule."
+    ]
+   ], 
+   "noun": "resolution", 
+   "number": 21, 
+   "senate_floor_schedule_postdate": null, 
+   "sponsor": {
+    "bioguideid": "M001176", 
+    "birthday": "1956-10-24", 
+    "cspanid": 1029842, 
+    "firstname": "Jeff", 
+    "gender": "male", 
+    "gender_label": "Male", 
+    "id": 412325, 
+    "lastname": "Merkley", 
+    "middlename": "", 
+    "name": "Sen. Jeff Merkley [D-OR]", 
+    "namemod": "", 
+    "nickname": "", 
+    "osid": "N00029303", 
+    "pvsid": "23644", 
+    "sortname": "Merkley, Jeff (Sen.) [D-OR]", 
+    "twitterid": "SenJeffMerkley", 
+    "youtubeid": "SenatorJeffMerkley"
+   }, 
+   "sponsor_role": {
+    "congress_numbers": [
+     111, 
+     112, 
+     113
+    ], 
+    "current": true, 
+    "description": "Senator from Oregon", 
+    "district": null, 
+    "enddate": "2015-01-03", 
+    "id": 41907, 
+    "party": "Democrat", 
+    "person": 412325, 
+    "role_type": "senator", 
+    "role_type_label": "Senator", 
+    "senator_class": "class2", 
+    "senator_class_label": "Class 2", 
+    "startdate": "2009-01-06", 
+    "state": "OR", 
+    "title": "Sen.", 
+    "title_long": "Senator", 
+    "website": "http://www.merkley.senate.gov"
+   }, 
+   "thomas_link": "http://thomas.loc.gov/cgi-bin/bdquery/z?d112:sres21:", 
+   "title": "S.Res. 21 (112th): A resolution to amend the Standing Rules of the Senate to provide procedures for extended debate.", 
+   "title_without_number": "A resolution to amend the Standing Rules of the Senate to provide procedures for extended debate.", 
+   "titles": [
+    [
+     "official", 
+     "introduced", 
+     "A resolution to amend the Standing Rules of the Senate to provide procedures for extended debate."
+    ]
+   ]
+  }, 
+  {
+   "bill_resolution_type": "resolution", 
+   "bill_type": "senate_resolution", 
+   "bill_type_label": "S.Res.", 
+   "congress": 112, 
+   "current_status": "introduced", 
+   "current_status_date": "2011-06-21", 
+   "current_status_description": "This resolution was introduced on June 21, 2011, in a previous session of Congress, but was not enacted.", 
+   "current_status_label": "Introduced", 
+   "display_number": "S.Res. 213", 
+   "docs_house_gov_postdate": null, 
+   "id": 75598, 
+   "introduced_date": "2011-06-21", 
+   "is_alive": false, 
+   "is_current": false, 
+   "link": "http://www.govtrack.us/congress/bills/112/sres213", 
+   "major_actions": [
+    [
+     "datetime.datetime(2011, 6, 21, 0, 0)", 
+     1, 
+     "Referred to the Select Committee on Intelligence."
+    ]
+   ], 
+   "noun": "resolution", 
+   "number": 213, 
+   "senate_floor_schedule_postdate": null, 
+   "sponsor": {
+    "bioguideid": "D000595", 
+    "birthday": "1951-09-02", 
+    "cspanid": null, 
+    "firstname": "Jim", 
+    "gender": "male", 
+    "gender_label": "Male", 
+    "id": 400105, 
+    "lastname": "DeMint", 
+    "middlename": "W.", 
+    "name": "Sen. Jim DeMint [R-SC, 2005-2013]", 
+    "namemod": "", 
+    "nickname": "", 
+    "osid": "N00002472", 
+    "pvsid": "25026", 
+    "sortname": "DeMint, Jim (Sen.) [R-SC, 2005-2013]", 
+    "twitterid": null, 
+    "youtubeid": null
+   }, 
+   "sponsor_role": {
+    "congress_numbers": [
+     112
+    ], 
+    "current": false, 
+    "description": "Senator from South Carolina", 
+    "district": null, 
+    "enddate": "2013-01-01", 
+    "id": 809, 
+    "party": "Republican", 
+    "person": 400105, 
+    "role_type": "senator", 
+    "role_type_label": "Senator", 
+    "senator_class": "class3", 
+    "senator_class_label": "Class 3", 
+    "startdate": "2011-01-05", 
+    "state": "SC", 
+    "title": "Sen.", 
+    "title_long": "Senator", 
+    "website": "http://demint.senate.gov"
+   }, 
+   "thomas_link": "http://thomas.loc.gov/cgi-bin/bdquery/z?d112:sres213:", 
+   "title": "S.Res. 213 (112th): A resolution commending and expressing thanks to professionals of the intelligence community.", 
+   "title_without_number": "A resolution commending and expressing thanks to professionals of the intelligence community.", 
+   "titles": [
+    [
+     "official", 
+     "introduced", 
+     "A resolution commending and expressing thanks to professionals of the intelligence community."
+    ]
+   ]
+  }, 
+  {
+   "bill_resolution_type": "resolution", 
+   "bill_type": "house_resolution", 
+   "bill_type_label": "H.Res.", 
+   "congress": 112, 
+   "current_status": "introduced", 
+   "current_status_date": "2012-06-29", 
+   "current_status_description": "This resolution was introduced on June 29, 2012, in a previous session of Congress, but was not enacted.", 
+   "current_status_label": "Introduced", 
+   "display_number": "H.Res. 718", 
+   "docs_house_gov_postdate": null, 
+   "id": 254688, 
+   "introduced_date": "2012-06-29", 
+   "is_alive": false, 
+   "is_current": false, 
+   "link": "http://www.govtrack.us/congress/bills/112/hres718", 
+   "major_actions": [
+    [
+     "datetime.datetime(2012, 6, 29, 10, 8)", 
+     1, 
+     "A QUESTION OF THE PRIVILEGES OF THE HOUSE - Ms. Jackson Lee rose to a question of the privileges of the House and submitted a privileged resolution. Upon examination of the resolution, the Chair determined that the resolution qualified."
+    ]
+   ], 
+   "noun": "resolution", 
+   "number": 718, 
+   "senate_floor_schedule_postdate": null, 
+   "sponsor": {
+    "bioguideid": "J000032", 
+    "birthday": "1950-01-12", 
+    "cspanid": 36819, 
+    "firstname": "Sheila", 
+    "gender": "female", 
+    "gender_label": "Female", 
+    "id": 400199, 
+    "lastname": "Jackson Lee", 
+    "middlename": "", 
+    "name": "Rep. Sheila Jackson Lee [D-TX18]", 
+    "namemod": "", 
+    "nickname": "", 
+    "osid": "N00005818", 
+    "pvsid": "21692", 
+    "sortname": "Jackson Lee, Sheila (Rep.) [D-TX18]", 
+    "twitterid": "JacksonLeeTX18", 
+    "youtubeid": "TX18SJL"
+   }, 
+   "sponsor_role": {
+    "congress_numbers": [
+     112
+    ], 
+    "current": false, 
+    "description": "Representative for Texas's 18th congressional district", 
+    "district": 18, 
+    "enddate": "2013-01-03", 
+    "id": 1939, 
+    "party": "Democrat", 
+    "person": 400199, 
+    "role_type": "representative", 
+    "role_type_label": "Representative", 
+    "senator_class": null, 
+    "startdate": "2011-01-05", 
+    "state": "TX", 
+    "title": "Rep.", 
+    "title_long": "Representative", 
+    "website": "http://www.jacksonlee.house.gov/"
+   }, 
+   "thomas_link": "http://thomas.loc.gov/cgi-bin/bdquery/z?d112:hres718:", 
+   "title": "H.Res. 718 (112th): Raising a question of the privileges of the House.", 
+   "title_without_number": "Raising a question of the privileges of the House.", 
+   "titles": [
+    [
+     "official", 
+     "introduced", 
+     "Raising a question of the privileges of the House."
+   
