@@ -59,5 +59,10 @@ describe GovTrack::VoteVoter do
   #     vv.vote_description.should eql("McIntyre, Mike (Rep.) [D-NC7] voted Yea on H.R. 527: Responsible Helium Administration and Stewardship Act")
   #   end
   # end
+  it "should test webmock" do
+    VCR.use_cassette('synopsis') do
+      response = Net::HTTP.get_response(URI('http://www.iana.org/domains/reserved'))
+    end
+  end
 
 end
