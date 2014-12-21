@@ -3,13 +3,13 @@ require 'helper'
 describe GovTrack::Vote do
 
   it "should find an array of votes based on parameters" do
-    votes = GovTrack::Vote.find(congress:112, session: 2011, chamber: 'house')
+    votes = GovTrack::Vote.find(id: 113728)
     votes.should be_an Array
     votes[0].should be_a GovTrack::Vote
   end
 
   it "should find an array of votes based on parameters with a dynamic finder" do
-    votes = GovTrack::Vote.find_by_congress_and_session_and_chamber(112, 2011, 'house')
+    votes = GovTrack::Vote.find_by_number_and_congress_and_chamber_and_session(183,112,'house',2012)
     votes.should be_an Array
     votes[0].should be_a GovTrack::Vote
   end

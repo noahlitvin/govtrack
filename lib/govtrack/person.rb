@@ -42,14 +42,7 @@ module GovTrack
     end
     
     def roles
-      # this needs to be tested . . . it is probably a hash
-      if @roles[0].class == GovTrack::Role
-        @roles
-      else
-        @roles.map! { |role|
-          GovTrack::Role.find_by_id(role['id'])
-        }
-      end
+      instantiate_attrs(:@roles, GovTrack::Role)
     end
     
   end

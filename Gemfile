@@ -1,5 +1,5 @@
 source "https://rubygems.org"
 
-gem 'httparty', ">= 0.10.2"
+gem 'httparty'
+gem 'fakeweb'
 gem 'rspec'
-gem 'fakeweb', "~> 1.3"
