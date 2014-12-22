@@ -31,10 +31,10 @@ describe GovTrack::Person do
     person.roles.should be_an Array
     person.roles[0].should be_a GovTrack::Role
     
-    FakeWeb.allow_net_connect = false
+    WebMock.disable_net_connect!
     person.roles.should be_an Array
     person.roles[0].should be_a GovTrack::Role
-    FakeWeb.allow_net_connect = true
+    WebMock.allow_net_connect!
   end
 
   it "should retreive birthday as a Date object" do

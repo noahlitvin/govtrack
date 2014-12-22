@@ -31,18 +31,18 @@ describe GovTrack::VoteVoter do
       vote_voter = GovTrack::VoteVoter.find_by_id(29825503)
       vote_voter.person.should be_a GovTrack::Person
       
-      FakeWeb.allow_net_connect = false
+      WebMock.disable_net_connect!
       vote_voter.person.should be_a GovTrack::Person
-      FakeWeb.allow_net_connect = true
+      WebMock.allow_net_connect!
   end
   
   it "should retreive vote as a Vote and cache it", :vcr do
       vote_voter = GovTrack::VoteVoter.find_by_id(29825503)
       vote_voter.vote.should be_a GovTrack::Vote
   
-      FakeWeb.allow_net_connect = false
+      WebMock.disable_net_connect!
       vote_voter.vote.should be_a GovTrack::Vote
-      FakeWeb.allow_net_connect = true
+      WebMock.allow_net_connect!
   end
 
   it "should retreive created as a DateTime object", :vcr do

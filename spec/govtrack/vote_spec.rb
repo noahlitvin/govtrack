@@ -23,9 +23,9 @@ describe GovTrack::Vote do
     vote = GovTrack::Vote.find_by_id(34577)
     vote.related_bill.should be_a GovTrack::Bill
     
-    FakeWeb.allow_net_connect = false
+    WebMock.disable_net_connect!
     vote.related_bill.should be_a GovTrack::Bill
-    FakeWeb.allow_net_connect = true
+    WebMock.allow_net_connect!
   end
 
   it "should retreive created as a DateTime object", :vcr do
