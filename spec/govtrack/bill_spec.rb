@@ -65,7 +65,7 @@ describe GovTrack::Bill do
     end
     
     it "should have a committee of type GovTrack::Committee" do
-      expect(bill.committees.first.class.should).to be_a GovTrack::Committee
+      expect(bill.committees.first).to be_a GovTrack::Committee
     end
     
     it "should be a Senate Committee on the Judiciary" do
