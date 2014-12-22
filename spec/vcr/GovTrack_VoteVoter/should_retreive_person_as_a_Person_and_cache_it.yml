@@ -1,0 +1,244 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.govtrack.us/api/v2/vote_voter/29825503
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:46:05 GMT
+      content-type:
+      - text/html
+      content-length:
+      - '193'
+      connection:
+      - close
+      location:
+      - https://www.govtrack.us/api/v2/vote_voter/29825503
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.4.6
+        (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:46:07 GMT
+- request:
+    method: get
+    uri: https://www.govtrack.us/api/v2/vote_voter/29825503
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:46:06 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      cache-control:
+      - public
+      access-control-allow-origin:
+      - "*"
+      generated-at:
+      - '2014-12-21T20:46:05.706981'
+      x-konklone-force-https:
+      - 'TRUE'
+      strict-transport-security:
+      - max-age=31536000
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: "{\n \"created\": \"2013-07-30T10:15:00\", \n \"id\": 29825503, \n \"option\":
+        {\n  \"id\": 436472, \n  \"key\": \"0\", \n  \"value\": \"Not Voting\", \n
+        \ \"vote\": 113728\n }, \n \"person\": {\n  \"bioguideid\": \"H001069\", \n
+        \ \"birthday\": \"1955-10-30\", \n  \"cspanid\": 95414, \n  \"firstname\":
+        \"Heidi\", \n  \"gender\": \"female\", \n  \"gender_label\": \"Female\", \n
+        \ \"id\": 412554, \n  \"lastname\": \"Heitkamp\", \n  \"link\": \"https://www.govtrack.us/congress/members/heidi_heitkamp/412554\",
+        \n  \"middlename\": \"\", \n  \"name\": \"Sen. Heidi Heitkamp [D-ND]\", \n
+        \ \"namemod\": \"\", \n  \"nickname\": \"\", \n  \"osid\": \"N00033782\",
+        \n  \"pvsid\": \"41716\", \n  \"sortname\": \"Heitkamp, Heidi (Sen.) [D-ND]\",
+        \n  \"twitterid\": \"SenatorHeitkamp\", \n  \"youtubeid\": \"senatorheidiheitkamp\"\n
+        }, \n \"person_role\": {\n  \"caucus\": null, \n  \"congress_numbers\": [\n
+        \  113, \n   114, \n   115\n  ], \n  \"current\": true, \n  \"description\":
+        \"Junior Senator from North Dakota\", \n  \"district\": null, \n  \"enddate\":
+        \"2019-01-03\", \n  \"id\": 43121, \n  \"leadership_title\": null, \n  \"party\":
+        \"Democrat\", \n  \"person\": 412554, \n  \"phone\": \"202-224-2043\", \n
+        \ \"role_type\": \"senator\", \n  \"role_type_label\": \"Senator\", \n  \"senator_class\":
+        \"class1\", \n  \"senator_class_label\": \"Class 1\", \n  \"senator_rank\":
+        \"junior\", \n  \"senator_rank_label\": \"Junior\", \n  \"startdate\": \"2013-01-03\",
+        \n  \"state\": \"ND\", \n  \"title\": \"Sen.\", \n  \"title_long\": \"Senator\",
+        \n  \"website\": \"http://www.heitkamp.senate.gov\"\n }, \n \"vote\": {\n
+        \ \"category\": \"cloture\", \n  \"category_label\": \"Cloture\", \n  \"chamber\":
+        \"senate\", \n  \"chamber_label\": \"Senate\", \n  \"congress\": 113, \n  \"created\":
+        \"2013-07-30T10:15:00\", \n  \"id\": 113728, \n  \"link\": \"https://www.govtrack.us/congress/votes/113-2013/s189\",
+        \n  \"missing_data\": false, \n  \"number\": 189, \n  \"question\": \"On the
+        Cloture Motion PN679: Kent Yoshiho Hirozawa, of New York, to be a Member of
+        the National Labor Relations Board for the term of five years expiring August
+        27, 2016\", \n  \"question_details\": null, \n  \"related_amendment\": null,
+        \n  \"related_bill\": null, \n  \"required\": \"3/5\", \n  \"result\": \"Cloture
+        Motion Agreed to\", \n  \"session\": \"2013\", \n  \"source\": \"senate\",
+        \n  \"source_label\": \"senate.gov\", \n  \"total_minus\": 34, \n  \"total_other\":
+        2, \n  \"total_plus\": 64, \n  \"vote_type\": \"On the Cloture Motion\"\n
+        }, \n \"voter_type\": \"member\", \n \"voter_type_label\": \"Member of Congress\"\n}"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:46:07 GMT
+- request:
+    method: get
+    uri: http://www.govtrack.us/api/v2/person/412554
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:46:06 GMT
+      content-type:
+      - text/html
+      content-length:
+      - '193'
+      connection:
+      - close
+      location:
+      - https://www.govtrack.us/api/v2/person/412554
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.4.6
+        (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:46:07 GMT
+- request:
+    method: get
+    uri: https://www.govtrack.us/api/v2/person/412554
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:46:06 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      cache-control:
+      - public
+      access-control-allow-origin:
+      - "*"
+      generated-at:
+      - '2014-12-21T20:46:06.911163'
+      x-konklone-force-https:
+      - 'TRUE'
+      strict-transport-security:
+      - max-age=31536000
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: "{\n \"bioguideid\": \"H001069\", \n \"birthday\": \"1955-10-30\", \n
+        \"committeeassignments\": [\n  {\n   \"committee\": 2811, \n   \"id\": 171859,
+        \n   \"person\": 412554, \n   \"role\": \"chairman\", \n   \"role_label\":
+        \"Chairman\"\n  }, \n  {\n   \"committee\": 2809, \n   \"id\": 171873, \n
+        \  \"person\": 412554, \n   \"role\": \"member\", \n   \"role_label\": \"Member\"\n
+        \ }, \n  {\n   \"committee\": 2575, \n   \"id\": 172343, \n   \"person\":
+        412554, \n   \"role\": \"member\", \n   \"role_label\": \"Member\"\n  }, \n
+        \ {\n   \"committee\": 2859, \n   \"id\": 172576, \n   \"person\": 412554,
+        \n   \"role\": \"member\", \n   \"role_label\": \"Member\"\n  }, \n  {\n   \"committee\":
+        2602, \n   \"id\": 172976, \n   \"person\": 412554, \n   \"role\": \"member\",
+        \n   \"role_label\": \"Member\"\n  }, \n  {\n   \"committee\": 2868, \n   \"id\":
+        173060, \n   \"person\": 412554, \n   \"role\": \"member\", \n   \"role_label\":
+        \"Member\"\n  }, \n  {\n   \"committee\": 2639, \n   \"id\": 173217, \n   \"person\":
+        412554, \n   \"role\": \"member\", \n   \"role_label\": \"Member\"\n  }, \n
+        \ {\n   \"committee\": 2810, \n   \"id\": 173229, \n   \"person\": 412554,
+        \n   \"role\": \"member\", \n   \"role_label\": \"Member\"\n  }, \n  {\n   \"committee\":
+        2648, \n   \"id\": 173352, \n   \"person\": 412554, \n   \"role\": \"member\",
+        \n   \"role_label\": \"Member\"\n  }, \n  {\n   \"committee\": 2836, \n   \"id\":
+        173430, \n   \"person\": 412554, \n   \"role\": \"member\", \n   \"role_label\":
+        \"Member\"\n  }, \n  {\n   \"committee\": 2837, \n   \"id\": 173463, \n   \"person\":
+        412554, \n   \"role\": \"member\", \n   \"role_label\": \"Member\"\n  }, \n
+        \ {\n   \"committee\": 2646, \n   \"id\": 173634, \n   \"person\": 412554,
+        \n   \"role\": \"member\", \n   \"role_label\": \"Member\"\n  }, \n  {\n   \"committee\":
+        2601, \n   \"id\": 173740, \n   \"person\": 412554, \n   \"role\": \"member\",
+        \n   \"role_label\": \"Member\"\n  }, \n  {\n   \"committee\": 2866, \n   \"id\":
+        173756, \n   \"person\": 412554, \n   \"role\": \"member\", \n   \"role_label\":
+        \"Member\"\n  }\n ], \n \"cspanid\": 95414, \n \"firstname\": \"Heidi\", \n
+        \"gender\": \"female\", \n \"gender_label\": \"Female\", \n \"id\": 412554,
+        \n \"lastname\": \"Heitkamp\", \n \"link\": \"https://www.govtrack.us/congress/members/heidi_heitkamp/412554\",
+        \n \"middlename\": \"\", \n \"name\": \"Sen. Heidi Heitkamp [D-ND]\", \n \"namemod\":
+        \"\", \n \"nickname\": \"\", \n \"osid\": \"N00033782\", \n \"pvsid\": \"41716\",
+        \n \"roles\": [\n  {\n   \"caucus\": null, \n   \"congress_numbers\": [\n
+        \   113, \n    114, \n    115\n   ], \n   \"current\": true, \n   \"description\":
+        \"Junior Senator from North Dakota\", \n   \"district\": null, \n   \"enddate\":
+        \"2019-01-03\", \n   \"id\": 43121, \n   \"leadership_title\": null, \n   \"party\":
+        \"Democrat\", \n   \"person\": 412554, \n   \"phone\": \"202-224-2043\", \n
+        \  \"role_type\": \"senator\", \n   \"role_type_label\": \"Senator\", \n   \"senator_class\":
+        \"class1\", \n   \"senator_class_label\": \"Class 1\", \n   \"senator_rank\":
+        \"junior\", \n   \"senator_rank_label\": \"Junior\", \n   \"startdate\": \"2013-01-03\",
+        \n   \"state\": \"ND\", \n   \"title\": \"Sen.\", \n   \"title_long\": \"Senator\",
+        \n   \"website\": \"http://www.heitkamp.senate.gov\"\n  }\n ], \n \"sortname\":
+        \"Heitkamp, Heidi (Sen.) [D-ND]\", \n \"twitterid\": \"SenatorHeitkamp\",
+        \n \"youtubeid\": \"senatorheidiheitkamp\"\n}"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:46:08 GMT
+recorded_with: VCR 2.9.3
