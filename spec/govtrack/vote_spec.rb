@@ -14,7 +14,7 @@ describe GovTrack::Vote do
     votes[0].should be_a GovTrack::Vote
   end
 
-  it "should find a vote" do
+  it "should find a vote", :vcr do
     vote = GovTrack::Vote.find_by_id(1)
     vote.id.should eq 1
   end
