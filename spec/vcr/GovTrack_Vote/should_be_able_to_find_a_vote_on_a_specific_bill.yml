@@ -1,0 +1,825 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.govtrack.us/api/v2/bill/75622
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:46:00 GMT
+      content-type:
+      - text/html
+      content-length:
+      - '193'
+      connection:
+      - close
+      location:
+      - https://www.govtrack.us/api/v2/bill/75622
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.4.6
+        (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:46:01 GMT
+- request:
+    method: get
+    uri: https://www.govtrack.us/api/v2/bill/75622
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:46:00 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      cache-control:
+      - public
+      access-control-allow-origin:
+      - "*"
+      generated-at:
+      - '2014-12-21T20:45:35.822225'
+      x-konklone-force-https:
+      - 'TRUE'
+      strict-transport-security:
+      - max-age=31536000
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: "{\n \"bill_resolution_type\": \"bill\", \n \"bill_type\": \"house_bill\",
+        \n \"bill_type_label\": \"H.R.\", \n \"committees\": [\n  {\n   \"abbrev\":
+        \"FinServs\", \n   \"code\": \"HSBA\", \n   \"committee\": null, \n   \"committee_type\":
+        \"house\", \n   \"committee_type_label\": \"House\", \n   \"id\": 2709, \n
+        \  \"jurisdiction\": \"The House Financial Services Committee has jurisdiction
+        over issues pertaining to the economy, the banking system, housing, insurance,
+        and securities and exchanges. Additionally, the Committee also has jurisdiction
+        over monetary policy, international finance, international monetary organizations,
+        and efforts to combat terrorist financing.\", \n   \"jurisdiction_link\":
+        \"http://financialservices.house.gov/about/\", \n   \"name\": \"House Committee
+        on Financial Services\", \n   \"obsolete\": false, \n   \"url\": \"http://financialservices.house.gov/\"\n
+        \ }, \n  {\n   \"abbrev\": \"Banking\", \n   \"code\": \"SSBK\", \n   \"committee\":
+        null, \n   \"committee_type\": \"senate\", \n   \"committee_type_label\":
+        \"Senate\", \n   \"id\": 2601, \n   \"jurisdiction\": null, \n   \"jurisdiction_link\":
+        null, \n   \"name\": \"Senate Committee on Banking, Housing, and Urban Affairs\",
+        \n   \"obsolete\": false, \n   \"url\": \"http://banking.senate.gov/\"\n  }\n
+        ], \n \"congress\": 112, \n \"cosponsors\": [\n  {\n   \"bioguideid\": \"B000013\",
+        \n   \"birthday\": \"1947-12-28\", \n   \"cspanid\": 26397, \n   \"firstname\":
+        \"Spencer\", \n   \"gender\": \"male\", \n   \"gender_label\": \"Male\", \n
+        \  \"id\": 400010, \n   \"lastname\": \"Bachus\", \n   \"link\": \"https://www.govtrack.us/congress/members/spencer_bachus/400010\",
+        \n   \"middlename\": \"Thomas\", \n   \"name\": \"Rep. Spencer Bachus [R-AL6]\",
+        \n   \"namemod\": \"III\", \n   \"nickname\": \"\", \n   \"osid\": \"N00008091\",
+        \n   \"pvsid\": \"26715\", \n   \"sortname\": \"Bachus, Spencer (Rep.) [R-AL6]\",
+        \n   \"twitterid\": \"BachusAL06\", \n   \"youtubeid\": \"congressmanbachus\"\n
+        \ }, \n  {\n   \"bioguideid\": \"B001232\", \n   \"birthday\": \"1937-08-15\",
+        \n   \"cspanid\": 57890, \n   \"firstname\": \"Judy\", \n   \"gender\": \"female\",
+        \n   \"gender_label\": \"Female\", \n   \"id\": 400027, \n   \"lastname\":
+        \"Biggert\", \n   \"link\": \"https://www.govtrack.us/congress/members/judy_biggert/400027\",
+        \n   \"middlename\": \"\", \n   \"name\": \"Rep. Judy Biggert [R-IL13, 1999-2012]\",
+        \n   \"namemod\": \"\", \n   \"nickname\": \"\", \n   \"osid\": \"N00004762\",
+        \n   \"pvsid\": \"6298\", \n   \"sortname\": \"Biggert, Judy (Rep.) [R-IL13,
+        1999-2012]\", \n   \"twitterid\": null, \n   \"youtubeid\": null\n  }, \n
+        \ {\n   \"bioguideid\": \"G000548\", \n   \"birthday\": \"1959-07-09\", \n
+        \  \"cspanid\": 1003601, \n   \"firstname\": \"Scott\", \n   \"gender\": \"male\",
+        \n   \"gender_label\": \"Male\", \n   \"id\": 400145, \n   \"lastname\": \"Garrett\",
+        \n   \"link\": \"https://www.govtrack.us/congress/members/scott_garrett/400145\",
+        \n   \"middlename\": \"\", \n   \"name\": \"Rep. Scott Garrett [R-NJ5]\",
+        \n   \"namemod\": \"\", \n   \"nickname\": \"\", \n   \"osid\": \"N00000743\",
+        \n   \"pvsid\": \"4430\", \n   \"sortname\": \"Garrett, Scott (Rep.) [R-NJ5]\",
+        \n   \"twitterid\": \"RepGarrett\", \n   \"youtubeid\": \"repscottgarrett\"\n
+        \ }, \n  {\n   \"bioguideid\": \"C001077\", \n   \"birthday\": \"1955-03-19\",
+        \n   \"cspanid\": 1031340, \n   \"firstname\": \"Mike\", \n   \"gender\":
+        \"male\", \n   \"gender_label\": \"Male\", \n   \"id\": 412271, \n   \"lastname\":
+        \"Coffman\", \n   \"link\": \"https://www.govtrack.us/congress/members/mike_coffman/412271\",
+        \n   \"middlename\": \"\", \n   \"name\": \"Rep. Mike Coffman [R-CO6]\", \n
+        \  \"namemod\": \"\", \n   \"nickname\": \"\", \n   \"osid\": \"N00024753\",
+        \n   \"pvsid\": \"1535\", \n   \"sortname\": \"Coffman, Mike (Rep.) [R-CO6]\",
+        \n   \"twitterid\": \"RepMikeCoffman\", \n   \"youtubeid\": \"CongressmanCoffman\"\n
+        \ }\n ], \n \"current_status\": \"pass_over_house\", \n \"current_status_date\":
+        \"2011-03-16\", \n \"current_status_description\": \"This bill was introduced
+        in a previous session of Congress and was passed by the House on March 16,
+        2011 but was never passed by the Senate.\", \n \"current_status_label\": \"Passed
+        House\", \n \"display_number\": \"H.R. 861\", \n \"docs_house_gov_postdate\":
+        null, \n \"id\": 75622, \n \"introduced_date\": \"2011-03-01\", \n \"is_alive\":
+        false, \n \"is_current\": false, \n \"link\": \"https://www.govtrack.us/congress/bills/112/hr861\",
+        \n \"lock_title\": false, \n \"major_actions\": [\n  [\n   \"datetime.datetime(2011,
+        3, 1, 0, 0)\", \n   2, \n   \"Referred to the House Committee on Financial
+        Services.\", \n   \"<action datetime=\\\"2011-03-01\\\" state=\\\"REFERRED\\\">\\n
+        \     <text>Referred to the House Committee on Financial Services.</text>\\n
+        \   </action>\\n    \"\n  ], \n  [\n   \"datetime.datetime(2011, 3, 9, 0,
+        0)\", \n   3, \n   \"Ordered to be Reported (Amended) by the Yeas and Nays:
+        31 - 24.\", \n   \"<calendar datetime=\\\"2011-03-09\\\" state=\\\"REPORTED\\\">\\n
+        \     <text>Ordered to be Reported (Amended) by the Yeas and Nays: 31 - 24.</text>\\n
+        \   </calendar>\\n    \"\n  ], \n  [\n   \"datetime.datetime(2011, 3, 16,
+        18, 44)\", \n   4, \n   \"On passage Passed by recorded vote: 242 - 182 (Roll
+        no. 188).\", \n   \"<vote how=\\\"roll\\\" type=\\\"vote\\\" roll=\\\"188\\\"
+        datetime=\\\"2011-03-16T18:44:00-04:00\\\" where=\\\"h\\\" result=\\\"pass\\\"
+        state=\\\"PASS_OVER:HOUSE\\\">\\n      <text>On passage Passed by recorded
+        vote: 242 - 182 (Roll no. 188).</text>\\n    </vote>\\n    \"\n  ]\n ], \n
+        \"noun\": \"bill\", \n \"number\": 861, \n \"senate_floor_schedule_postdate\":
+        null, \n \"sliplawnum\": null, \n \"sliplawpubpriv\": null, \n \"source\":
+        \"thomas-congproj\", \n \"source_link\": null, \n \"sponsor\": {\n  \"bioguideid\":
+        \"M001139\", \n  \"birthday\": \"1948-10-16\", \n  \"cspanid\": 57888, \n
+        \ \"firstname\": \"Gary\", \n  \"gender\": \"male\", \n  \"gender_label\":
+        \"Male\", \n  \"id\": 400277, \n  \"lastname\": \"Miller\", \n  \"link\":
+        \"https://www.govtrack.us/congress/members/gary_miller/400277\", \n  \"middlename\":
+        \"G.\", \n  \"name\": \"Rep. Gary Miller [R-CA31]\", \n  \"namemod\": \"\",
+        \n  \"nickname\": \"\", \n  \"osid\": \"N00006954\", \n  \"pvsid\": \"8346\",
+        \n  \"sortname\": \"Miller, Gary (Rep.) [R-CA31]\", \n  \"twitterid\": \"RepGaryMiller\",
+        \n  \"youtubeid\": \"GaryGMiller\"\n }, \n \"sponsor_role\": {\n  \"caucus\":
+        null, \n  \"congress_numbers\": [\n   112\n  ], \n  \"current\": false, \n
+        \ \"description\": \"Representative for California's 42nd congressional district\",
+        \n  \"district\": 42, \n  \"enddate\": \"2013-01-03\", \n  \"id\": 2285, \n
+        \ \"leadership_title\": null, \n  \"party\": \"Republican\", \n  \"person\":
+        400277, \n  \"phone\": \"202-225-3201\", \n  \"role_type\": \"representative\",
+        \n  \"role_type_label\": \"Representative\", \n  \"senator_class\": null,
+        \n  \"senator_rank\": null, \n  \"startdate\": \"2011-01-05\", \n  \"state\":
+        \"CA\", \n  \"title\": \"Rep.\", \n  \"title_long\": \"Representative\", \n
+        \ \"website\": \"http://www.house.gov/garymiller\"\n }, \n \"terms\": [\n
+        \ {\n   \"id\": 5979, \n   \"name\": \"Appropriations\", \n   \"term_type\":
+        \"new\", \n   \"term_type_label\": \"New\"\n  }, \n  {\n   \"id\": 6191, \n
+        \  \"name\": \"Housing and Community Development\", \n   \"term_type\": \"new\",
+        \n   \"term_type_label\": \"New\"\n  }, \n  {\n   \"id\": 6194, \n   \"name\":
+        \"Housing and community development funding\", \n   \"term_type\": \"new\",
+        \n   \"term_type_label\": \"New\"\n  }, \n  {\n   \"id\": 6195, \n   \"name\":
+        \"Housing finance and home ownership\", \n   \"term_type\": \"new\", \n   \"term_type_label\":
+        \"New\"\n  }, \n  {\n   \"id\": 6202, \n   \"name\": \"Residential rehabilitation
+        and home repair\", \n   \"term_type\": \"new\", \n   \"term_type_label\":
+        \"New\"\n  }\n ], \n \"thomas_link\": \"http://thomas.loc.gov/cgi-bin/bdquery/z?d112:hr861:\",
+        \n \"title\": \"H.R. 861 (112th): NSP Termination Act\", \n \"title_without_number\":
+        \"NSP Termination Act\", \n \"titles\": [\n  [\n   \"short\", \n   \"introduced\",
+        \n   \"NSP Termination Act\"\n  ], \n  [\n   \"short\", \n   \"reported to
+        house\", \n   \"NSP Termination Act\"\n  ], \n  [\n   \"short\", \n   \"passed
+        house\", \n   \"NSP Termination Act\"\n  ], \n  [\n   \"official\", \n   \"introduced\",
+        \n   \"To rescind the third round of funding for the Neighborhood Stabilization
+        Program and to terminate the program.\"\n  ]\n ]\n}"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:46:02 GMT
+- request:
+    method: get
+    uri: http://www.govtrack.us/api/v2/vote/?related_bill=75622
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:46:01 GMT
+      content-type:
+      - text/html
+      content-length:
+      - '193'
+      connection:
+      - close
+      location:
+      - https://www.govtrack.us/api/v2/vote/?related_bill=75622
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.4.6
+        (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:46:02 GMT
+- request:
+    method: get
+    uri: https://www.govtrack.us/api/v2/vote/?related_bill=75622
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:46:01 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      cache-control:
+      - public
+      access-control-allow-origin:
+      - "*"
+      generated-at:
+      - '2014-12-21T20:45:36.601650'
+      x-konklone-force-https:
+      - 'TRUE'
+      strict-transport-security:
+      - max-age=31536000
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: "{\n \"meta\": {\n  \"limit\": 100, \n  \"offset\": 0, \n  \"total_count\":
+        7\n }, \n \"objects\": [\n  {\n   \"category\": \"unknown\", \n   \"category_label\":
+        \"Unknown Category\", \n   \"chamber\": \"house\", \n   \"chamber_label\":
+        \"House\", \n   \"congress\": 112, \n   \"created\": \"2011-03-16T15:49:00\",
+        \n   \"id\": 1162, \n   \"link\": \"https://www.govtrack.us/congress/votes/112-2011/h182\",
+        \n   \"missing_data\": false, \n   \"number\": 182, \n   \"options\": [\n
+        \   {\n     \"id\": 123288, \n     \"key\": \"P\", \n     \"value\": \"Present\",
+        \n     \"vote\": 1162\n    }, \n    {\n     \"id\": 123287, \n     \"key\":
+        \"-\", \n     \"value\": \"No\", \n     \"vote\": 1162\n    }, \n    {\n     \"id\":
+        123286, \n     \"key\": \"+\", \n     \"value\": \"Aye\", \n     \"vote\":
+        1162\n    }, \n    {\n     \"id\": 123289, \n     \"key\": \"0\", \n     \"value\":
+        \"Not Voting\", \n     \"vote\": 1162\n    }\n   ], \n   \"question\": \"On
+        Motion to Rise and Recommend that the Enacting Clause Be Stricken: H R 861
+        NSP Termination Act\", \n   \"question_details\": null, \n   \"related_amendment\":
+        null, \n   \"related_bill\": {\n    \"bill_resolution_type\": \"bill\", \n
+        \   \"bill_type\": \"house_bill\", \n    \"bill_type_label\": \"H.R.\", \n
+        \   \"congress\": 112, \n    \"current_status\": \"pass_over_house\", \n    \"current_status_date\":
+        \"2011-03-16\", \n    \"current_status_description\": \"This bill was introduced
+        in a previous session of Congress and was passed by the House on March 16,
+        2011 but was never passed by the Senate.\", \n    \"current_status_label\":
+        \"Passed House\", \n    \"display_number\": \"H.R. 861\", \n    \"docs_house_gov_postdate\":
+        null, \n    \"id\": 75622, \n    \"introduced_date\": \"2011-03-01\", \n    \"is_alive\":
+        false, \n    \"is_current\": false, \n    \"link\": \"https://www.govtrack.us/congress/bills/112/hr861\",
+        \n    \"lock_title\": false, \n    \"major_actions\": [\n     [\n      \"datetime.datetime(2011,
+        3, 1, 0, 0)\", \n      2, \n      \"Referred to the House Committee on Financial
+        Services.\", \n      \"<action datetime=\\\"2011-03-01\\\" state=\\\"REFERRED\\\">\\n
+        \     <text>Referred to the House Committee on Financial Services.</text>\\n
+        \   </action>\\n    \"\n     ], \n     [\n      \"datetime.datetime(2011,
+        3, 9, 0, 0)\", \n      3, \n      \"Ordered to be Reported (Amended) by the
+        Yeas and Nays: 31 - 24.\", \n      \"<calendar datetime=\\\"2011-03-09\\\"
+        state=\\\"REPORTED\\\">\\n      <text>Ordered to be Reported (Amended) by
+        the Yeas and Nays: 31 - 24.</text>\\n    </calendar>\\n    \"\n     ], \n
+        \    [\n      \"datetime.datetime(2011, 3, 16, 18, 44)\", \n      4, \n      \"On
+        passage Passed by recorded vote: 242 - 182 (Roll no. 188).\", \n      \"<vote
+        how=\\\"roll\\\" type=\\\"vote\\\" roll=\\\"188\\\" datetime=\\\"2011-03-16T18:44:00-04:00\\\"
+        where=\\\"h\\\" result=\\\"pass\\\" state=\\\"PASS_OVER:HOUSE\\\">\\n      <text>On
+        passage Passed by recorded vote: 242 - 182 (Roll no. 188).</text>\\n    </vote>\\n
+        \   \"\n     ]\n    ], \n    \"noun\": \"bill\", \n    \"number\": 861, \n
+        \   \"senate_floor_schedule_postdate\": null, \n    \"sliplawnum\": null,
+        \n    \"sliplawpubpriv\": null, \n    \"source\": \"thomas-congproj\", \n
+        \   \"source_link\": null, \n    \"sponsor\": 400277, \n    \"sponsor_role\":
+        2285, \n    \"thomas_link\": \"http://thomas.loc.gov/cgi-bin/bdquery/z?d112:hr861:\",
+        \n    \"title\": \"H.R. 861 (112th): NSP Termination Act\", \n    \"title_without_number\":
+        \"NSP Termination Act\", \n    \"titles\": [\n     [\n      \"short\", \n
+        \     \"introduced\", \n      \"NSP Termination Act\"\n     ], \n     [\n
+        \     \"short\", \n      \"reported to house\", \n      \"NSP Termination
+        Act\"\n     ], \n     [\n      \"short\", \n      \"passed house\", \n      \"NSP
+        Termination Act\"\n     ], \n     [\n      \"official\", \n      \"introduced\",
+        \n      \"To rescind the third round of funding for the Neighborhood Stabilization
+        Program and to terminate the program.\"\n     ]\n    ]\n   }, \n   \"required\":
+        \"1/2\", \n   \"result\": \"Failed\", \n   \"session\": \"2011\", \n   \"source\":
+        \"house\", \n   \"source_label\": \"house.gov\", \n   \"total_minus\": 240,
+        \n   \"total_other\": 9, \n   \"total_plus\": 183, \n   \"vote_type\": \"On
+        Motion to Rise and Recommend that the Enacting Clause Be Stricken\"\n  },
+        \n  {\n   \"category\": \"amendment\", \n   \"category_label\": \"Amendment\",
+        \n   \"chamber\": \"house\", \n   \"chamber_label\": \"House\", \n   \"congress\":
+        112, \n   \"created\": \"2011-03-16T17:49:00\", \n   \"id\": 1, \n   \"link\":
+        \"https://www.govtrack.us/congress/votes/112-2011/h183\", \n   \"missing_data\":
+        false, \n   \"number\": 183, \n   \"options\": [\n    {\n     \"id\": 426367,
+        \n     \"key\": \"-\", \n     \"value\": \"No\", \n     \"vote\": 1\n    },
+        \n    {\n     \"id\": 426368, \n     \"key\": \"P\", \n     \"value\": \"Present\",
+        \n     \"vote\": 1\n    }, \n    {\n     \"id\": 426366, \n     \"key\": \"+\",
+        \n     \"value\": \"Aye\", \n     \"vote\": 1\n    }, \n    {\n     \"id\":
+        426369, \n     \"key\": \"0\", \n     \"value\": \"Not Voting\", \n     \"vote\":
+        1\n    }\n   ], \n   \"question\": \"On Agreeing to the Amendment: Amendment
+        3 to H R 861\", \n   \"question_details\": null, \n   \"related_amendment\":
+        null, \n   \"related_bill\": {\n    \"bill_resolution_type\": \"bill\", \n
+        \   \"bill_type\": \"house_bill\", \n    \"bill_type_label\": \"H.R.\", \n
+        \   \"congress\": 112, \n    \"current_status\": \"pass_over_house\", \n    \"current_status_date\":
+        \"2011-03-16\", \n    \"current_status_description\": \"This bill was introduced
+        in a previous session of Congress and was passed by the House on March 16,
+        2011 but was never passed by the Senate.\", \n    \"current_status_label\":
+        \"Passed House\", \n    \"display_number\": \"H.R. 861\", \n    \"docs_house_gov_postdate\":
+        null, \n    \"id\": 75622, \n    \"introduced_date\": \"2011-03-01\", \n    \"is_alive\":
+        false, \n    \"is_current\": false, \n    \"link\": \"https://www.govtrack.us/congress/bills/112/hr861\",
+        \n    \"lock_title\": false, \n    \"major_actions\": [\n     [\n      \"datetime.datetime(2011,
+        3, 1, 0, 0)\", \n      2, \n      \"Referred to the House Committee on Financial
+        Services.\", \n      \"<action datetime=\\\"2011-03-01\\\" state=\\\"REFERRED\\\">\\n
+        \     <text>Referred to the House Committee on Financial Services.</text>\\n
+        \   </action>\\n    \"\n     ], \n     [\n      \"datetime.datetime(2011,
+        3, 9, 0, 0)\", \n      3, \n      \"Ordered to be Reported (Amended) by the
+        Yeas and Nays: 31 - 24.\", \n      \"<calendar datetime=\\\"2011-03-09\\\"
+        state=\\\"REPORTED\\\">\\n      <text>Ordered to be Reported (Amended) by
+        the Yeas and Nays: 31 - 24.</text>\\n    </calendar>\\n    \"\n     ], \n
+        \    [\n      \"datetime.datetime(2011, 3, 16, 18, 44)\", \n      4, \n      \"On
+        passage Passed by recorded vote: 242 - 182 (Roll no. 188).\", \n      \"<vote
+        how=\\\"roll\\\" type=\\\"vote\\\" roll=\\\"188\\\" datetime=\\\"2011-03-16T18:44:00-04:00\\\"
+        where=\\\"h\\\" result=\\\"pass\\\" state=\\\"PASS_OVER:HOUSE\\\">\\n      <text>On
+        passage Passed by recorded vote: 242 - 182 (Roll no. 188).</text>\\n    </vote>\\n
+        \   \"\n     ]\n    ], \n    \"noun\": \"bill\", \n    \"number\": 861, \n
+        \   \"senate_floor_schedule_postdate\": null, \n    \"sliplawnum\": null,
+        \n    \"sliplawpubpriv\": null, \n    \"source\": \"thomas-congproj\", \n
+        \   \"source_link\": null, \n    \"sponsor\": 400277, \n    \"sponsor_role\":
+        2285, \n    \"thomas_link\": \"http://thomas.loc.gov/cgi-bin/bdquery/z?d112:hr861:\",
+        \n    \"title\": \"H.R. 861 (112th): NSP Termination Act\", \n    \"title_without_number\":
+        \"NSP Termination Act\", \n    \"titles\": [\n     [\n      \"short\", \n
+        \     \"introduced\", \n      \"NSP Termination Act\"\n     ], \n     [\n
+        \     \"short\", \n      \"reported to house\", \n      \"NSP Termination
+        Act\"\n     ], \n     [\n      \"short\", \n      \"passed house\", \n      \"NSP
+        Termination Act\"\n     ], \n     [\n      \"official\", \n      \"introduced\",
+        \n      \"To rescind the third round of funding for the Neighborhood Stabilization
+        Program and to terminate the program.\"\n     ]\n    ]\n   }, \n   \"required\":
+        \"1/2\", \n   \"result\": \"Failed\", \n   \"session\": \"2011\", \n   \"source\":
+        \"house\", \n   \"source_label\": \"house.gov\", \n   \"total_minus\": 244,
+        \n   \"total_other\": 5, \n   \"total_plus\": 183, \n   \"vote_type\": \"On
+        the Amendment\"\n  }, \n  {\n   \"category\": \"amendment\", \n   \"category_label\":
+        \"Amendment\", \n   \"chamber\": \"house\", \n   \"chamber_label\": \"House\",
+        \n   \"congress\": 112, \n   \"created\": \"2011-03-16T17:57:00\", \n   \"id\":
+        1152, \n   \"link\": \"https://www.govtrack.us/congress/votes/112-2011/h184\",
+        \n   \"missing_data\": false, \n   \"number\": 184, \n   \"options\": [\n
+        \   {\n     \"id\": 123248, \n     \"key\": \"P\", \n     \"value\": \"Present\",
+        \n     \"vote\": 1152\n    }, \n    {\n     \"id\": 123247, \n     \"key\":
+        \"-\", \n     \"value\": \"No\", \n     \"vote\": 1152\n    }, \n    {\n     \"id\":
+        123246, \n     \"key\": \"+\", \n     \"value\": \"Aye\", \n     \"vote\":
+        1152\n    }, \n    {\n     \"id\": 123249, \n     \"key\": \"0\", \n     \"value\":
+        \"Not Voting\", \n     \"vote\": 1152\n    }\n   ], \n   \"question\": \"On
+        Agreeing to the Amendment: Amendment 6 to H R 861\", \n   \"question_details\":
+        null, \n   \"related_amendment\": null, \n   \"related_bill\": {\n    \"bill_resolution_type\":
+        \"bill\", \n    \"bill_type\": \"house_bill\", \n    \"bill_type_label\":
+        \"H.R.\", \n    \"congress\": 112, \n    \"current_status\": \"pass_over_house\",
+        \n    \"current_status_date\": \"2011-03-16\", \n    \"current_status_description\":
+        \"This bill was introduced in a previous session of Congress and was passed
+        by the House on March 16, 2011 but was never passed by the Senate.\", \n    \"current_status_label\":
+        \"Passed House\", \n    \"display_number\": \"H.R. 861\", \n    \"docs_house_gov_postdate\":
+        null, \n    \"id\": 75622, \n    \"introduced_date\": \"2011-03-01\", \n    \"is_alive\":
+        false, \n    \"is_current\": false, \n    \"link\": \"https://www.govtrack.us/congress/bills/112/hr861\",
+        \n    \"lock_title\": false, \n    \"major_actions\": [\n     [\n      \"datetime.datetime(2011,
+        3, 1, 0, 0)\", \n      2, \n      \"Referred to the House Committee on Financial
+        Services.\", \n      \"<action datetime=\\\"2011-03-01\\\" state=\\\"REFERRED\\\">\\n
+        \     <text>Referred to the House Committee on Financial Services.</text>\\n
+        \   </action>\\n    \"\n     ], \n     [\n      \"datetime.datetime(2011,
+        3, 9, 0, 0)\", \n      3, \n      \"Ordered to be Reported (Amended) by the
+        Yeas and Nays: 31 - 24.\", \n      \"<calendar datetime=\\\"2011-03-09\\\"
+        state=\\\"REPORTED\\\">\\n      <text>Ordered to be Reported (Amended) by
+        the Yeas and Nays: 31 - 24.</text>\\n    </calendar>\\n    \"\n     ], \n
+        \    [\n      \"datetime.datetime(2011, 3, 16, 18, 44)\", \n      4, \n      \"On
+        passage Passed by recorded vote: 242 - 182 (Roll no. 188).\", \n      \"<vote
+        how=\\\"roll\\\" type=\\\"vote\\\" roll=\\\"188\\\" datetime=\\\"2011-03-16T18:44:00-04:00\\\"
+        where=\\\"h\\\" result=\\\"pass\\\" state=\\\"PASS_OVER:HOUSE\\\">\\n      <text>On
+        passage Passed by recorded vote: 242 - 182 (Roll no. 188).</text>\\n    </vote>\\n
+        \   \"\n     ]\n    ], \n    \"noun\": \"bill\", \n    \"number\": 861, \n
+        \   \"senate_floor_schedule_postdate\": null, \n    \"sliplawnum\": null,
+        \n    \"sliplawpubpriv\": null, \n    \"source\": \"thomas-congproj\", \n
+        \   \"source_link\": null, \n    \"sponsor\": 400277, \n    \"sponsor_role\":
+        2285, \n    \"thomas_link\": \"http://thomas.loc.gov/cgi-bin/bdquery/z?d112:hr861:\",
+        \n    \"title\": \"H.R. 861 (112th): NSP Termination Act\", \n    \"title_without_number\":
+        \"NSP Termination Act\", \n    \"titles\": [\n     [\n      \"short\", \n
+        \     \"introduced\", \n      \"NSP Termination Act\"\n     ], \n     [\n
+        \     \"short\", \n      \"reported to house\", \n      \"NSP Termination
+        Act\"\n     ], \n     [\n      \"short\", \n      \"passed house\", \n      \"NSP
+        Termination Act\"\n     ], \n     [\n      \"official\", \n      \"introduced\",
+        \n      \"To rescind the third round of funding for the Neighborhood Stabilization
+        Program and to terminate the program.\"\n     ]\n    ]\n   }, \n   \"required\":
+        \"1/2\", \n   \"result\": \"Failed\", \n   \"session\": \"2011\", \n   \"source\":
+        \"house\", \n   \"source_label\": \"house.gov\", \n   \"total_minus\": 248,
+        \n   \"total_other\": 10, \n   \"total_plus\": 174, \n   \"vote_type\": \"On
+        the Amendment\"\n  }, \n  {\n   \"category\": \"amendment\", \n   \"category_label\":
+        \"Amendment\", \n   \"chamber\": \"house\", \n   \"chamber_label\": \"House\",
+        \n   \"congress\": 112, \n   \"created\": \"2011-03-16T18:03:00\", \n   \"id\":
+        461, \n   \"link\": \"https://www.govtrack.us/congress/votes/112-2011/h185\",
+        \n   \"missing_data\": false, \n   \"number\": 185, \n   \"options\": [\n
+        \   {\n     \"id\": 429274, \n     \"key\": \"-\", \n     \"value\": \"No\",
+        \n     \"vote\": 461\n    }, \n    {\n     \"id\": 429275, \n     \"key\":
+        \"P\", \n     \"value\": \"Present\", \n     \"vote\": 461\n    }, \n    {\n
+        \    \"id\": 429273, \n     \"key\": \"+\", \n     \"value\": \"Aye\", \n
+        \    \"vote\": 461\n    }, \n    {\n     \"id\": 429276, \n     \"key\": \"0\",
+        \n     \"value\": \"Not Voting\", \n     \"vote\": 461\n    }\n   ], \n   \"question\":
+        \"On Agreeing to the Amendment: Amendment 7 to H R 861\", \n   \"question_details\":
+        null, \n   \"related_amendment\": null, \n   \"related_bill\": {\n    \"bill_resolution_type\":
+        \"bill\", \n    \"bill_type\": \"house_bill\", \n    \"bill_type_label\":
+        \"H.R.\", \n    \"congress\": 112, \n    \"current_status\": \"pass_over_house\",
+        \n    \"current_status_date\": \"2011-03-16\", \n    \"current_status_description\":
+        \"This bill was introduced in a previous session of Congress and was passed
+        by the House on March 16, 2011 but was never passed by the Senate.\", \n    \"current_status_label\":
+        \"Passed House\", \n    \"display_number\": \"H.R. 861\", \n    \"docs_house_gov_postdate\":
+        null, \n    \"id\": 75622, \n    \"introduced_date\": \"2011-03-01\", \n    \"is_alive\":
+        false, \n    \"is_current\": false, \n    \"link\": \"https://www.govtrack.us/congress/bills/112/hr861\",
+        \n    \"lock_title\": false, \n    \"major_actions\": [\n     [\n      \"datetime.datetime(2011,
+        3, 1, 0, 0)\", \n      2, \n      \"Referred to the House Committee on Financial
+        Services.\", \n      \"<action datetime=\\\"2011-03-01\\\" state=\\\"REFERRED\\\">\\n
+        \     <text>Referred to the House Committee on Financial Services.</text>\\n
+        \   </action>\\n    \"\n     ], \n     [\n      \"datetime.datetime(2011,
+        3, 9, 0, 0)\", \n      3, \n      \"Ordered to be Reported (Amended) by the
+        Yeas and Nays: 31 - 24.\", \n      \"<calendar datetime=\\\"2011-03-09\\\"
+        state=\\\"REPORTED\\\">\\n      <text>Ordered to be Reported (Amended) by
+        the Yeas and Nays: 31 - 24.</text>\\n    </calendar>\\n    \"\n     ], \n
+        \    [\n      \"datetime.datetime(2011, 3, 16, 18, 44)\", \n      4, \n      \"On
+        passage Passed by recorded vote: 242 - 182 (Roll no. 188).\", \n      \"<vote
+        how=\\\"roll\\\" type=\\\"vote\\\" roll=\\\"188\\\" datetime=\\\"2011-03-16T18:44:00-04:00\\\"
+        where=\\\"h\\\" result=\\\"pass\\\" state=\\\"PASS_OVER:HOUSE\\\">\\n      <text>On
+        passage Passed by recorded vote: 242 - 182 (Roll no. 188).</text>\\n    </vote>\\n
+        \   \"\n     ]\n    ], \n    \"noun\": \"bill\", \n    \"number\": 861, \n
+        \   \"senate_floor_schedule_postdate\": null, \n    \"sliplawnum\": null,
+        \n    \"sliplawpubpriv\": null, \n    \"source\": \"thomas-congproj\", \n
+        \   \"source_link\": null, \n    \"sponsor\": 400277, \n    \"sponsor_role\":
+        2285, \n    \"thomas_link\": \"http://thomas.loc.gov/cgi-bin/bdquery/z?d112:hr861:\",
+        \n    \"title\": \"H.R. 861 (112th): NSP Termination Act\", \n    \"title_without_number\":
+        \"NSP Termination Act\", \n    \"titles\": [\n     [\n      \"short\", \n
+        \     \"introduced\", \n      \"NSP Termination Act\"\n     ], \n     [\n
+        \     \"short\", \n      \"reported to house\", \n      \"NSP Termination
+        Act\"\n     ], \n     [\n      \"short\", \n      \"passed house\", \n      \"NSP
+        Termination Act\"\n     ], \n     [\n      \"official\", \n      \"introduced\",
+        \n      \"To rescind the third round of funding for the Neighborhood Stabilization
+        Program and to terminate the program.\"\n     ]\n    ]\n   }, \n   \"required\":
+        \"1/2\", \n   \"result\": \"Failed\", \n   \"session\": \"2011\", \n   \"source\":
+        \"house\", \n   \"source_label\": \"house.gov\", \n   \"total_minus\": 249,
+        \n   \"total_other\": 5, \n   \"total_plus\": 178, \n   \"vote_type\": \"On
+        the Amendment\"\n  }, \n  {\n   \"category\": \"amendment\", \n   \"category_label\":
+        \"Amendment\", \n   \"chamber\": \"house\", \n   \"chamber_label\": \"House\",
+        \n   \"congress\": 112, \n   \"created\": \"2011-03-16T18:09:00\", \n   \"id\":
+        23, \n   \"link\": \"https://www.govtrack.us/congress/votes/112-2011/h186\",
+        \n   \"missing_data\": false, \n   \"number\": 186, \n   \"options\": [\n
+        \   {\n     \"id\": 426491, \n     \"key\": \"-\", \n     \"value\": \"No\",
+        \n     \"vote\": 23\n    }, \n    {\n     \"id\": 426492, \n     \"key\":
+        \"P\", \n     \"value\": \"Present\", \n     \"vote\": 23\n    }, \n    {\n
+        \    \"id\": 426490, \n     \"key\": \"+\", \n     \"value\": \"Aye\", \n
+        \    \"vote\": 23\n    }, \n    {\n     \"id\": 426493, \n     \"key\": \"0\",
+        \n     \"value\": \"Not Voting\", \n     \"vote\": 23\n    }\n   ], \n   \"question\":
+        \"On Agreeing to the Amendment: Amendment 8 to H R 861\", \n   \"question_details\":
+        null, \n   \"related_amendment\": null, \n   \"related_bill\": {\n    \"bill_resolution_type\":
+        \"bill\", \n    \"bill_type\": \"house_bill\", \n    \"bill_type_label\":
+        \"H.R.\", \n    \"congress\": 112, \n    \"current_status\": \"pass_over_house\",
+        \n    \"current_status_date\": \"2011-03-16\", \n    \"current_status_description\":
+        \"This bill was introduced in a previous session of Congress and was passed
+        by the House on March 16, 2011 but was never passed by the Senate.\", \n    \"current_status_label\":
+        \"Passed House\", \n    \"display_number\": \"H.R. 861\", \n    \"docs_house_gov_postdate\":
+        null, \n    \"id\": 75622, \n    \"introduced_date\": \"2011-03-01\", \n    \"is_alive\":
+        false, \n    \"is_current\": false, \n    \"link\": \"https://www.govtrack.us/congress/bills/112/hr861\",
+        \n    \"lock_title\": false, \n    \"major_actions\": [\n     [\n      \"datetime.datetime(2011,
+        3, 1, 0, 0)\", \n      2, \n      \"Referred to the House Committee on Financial
+        Services.\", \n      \"<action datetime=\\\"2011-03-01\\\" state=\\\"REFERRED\\\">\\n
+        \     <text>Referred to the House Committee on Financial Services.</text>\\n
+        \   </action>\\n    \"\n     ], \n     [\n      \"datetime.datetime(2011,
+        3, 9, 0, 0)\", \n      3, \n      \"Ordered to be Reported (Amended) by the
+        Yeas and Nays: 31 - 24.\", \n      \"<calendar datetime=\\\"2011-03-09\\\"
+        state=\\\"REPORTED\\\">\\n      <text>Ordered to be Reported (Amended) by
+        the Yeas and Nays: 31 - 24.</text>\\n    </calendar>\\n    \"\n     ], \n
+        \    [\n      \"datetime.datetime(2011, 3, 16, 18, 44)\", \n      4, \n      \"On
+        passage Passed by recorded vote: 242 - 182 (Roll no. 188).\", \n      \"<vote
+        how=\\\"roll\\\" type=\\\"vote\\\" roll=\\\"188\\\" datetime=\\\"2011-03-16T18:44:00-04:00\\\"
+        where=\\\"h\\\" result=\\\"pass\\\" state=\\\"PASS_OVER:HOUSE\\\">\\n      <text>On
+        passage Passed by recorded vote: 242 - 182 (Roll no. 188).</text>\\n    </vote>\\n
+        \   \"\n     ]\n    ], \n    \"noun\": \"bill\", \n    \"number\": 861, \n
+        \   \"senate_floor_schedule_postdate\": null, \n    \"sliplawnum\": null,
+        \n    \"sliplawpubpriv\": null, \n    \"source\": \"thomas-congproj\", \n
+        \   \"source_link\": null, \n    \"sponsor\": 400277, \n    \"sponsor_role\":
+        2285, \n    \"thomas_link\": \"http://thomas.loc.gov/cgi-bin/bdquery/z?d112:hr861:\",
+        \n    \"title\": \"H.R. 861 (112th): NSP Termination Act\", \n    \"title_without_number\":
+        \"NSP Termination Act\", \n    \"titles\": [\n     [\n      \"short\", \n
+        \     \"introduced\", \n      \"NSP Termination Act\"\n     ], \n     [\n
+        \     \"short\", \n      \"reported to house\", \n      \"NSP Termination
+        Act\"\n     ], \n     [\n      \"short\", \n      \"passed house\", \n      \"NSP
+        Termination Act\"\n     ], \n     [\n      \"official\", \n      \"introduced\",
+        \n      \"To rescind the third round of funding for the Neighborhood Stabilization
+        Program and to terminate the program.\"\n     ]\n    ]\n   }, \n   \"required\":
+        \"1/2\", \n   \"result\": \"Failed\", \n   \"session\": \"2011\", \n   \"source\":
+        \"house\", \n   \"source_label\": \"house.gov\", \n   \"total_minus\": 246,
+        \n   \"total_other\": 7, \n   \"total_plus\": 179, \n   \"vote_type\": \"On
+        the Amendment\"\n  }, \n  {\n   \"category\": \"procedural\", \n   \"category_label\":
+        \"Procedural\", \n   \"chamber\": \"house\", \n   \"chamber_label\": \"House\",
+        \n   \"congress\": 112, \n   \"created\": \"2011-03-16T18:38:00\", \n   \"id\":
+        996, \n   \"link\": \"https://www.govtrack.us/congress/votes/112-2011/h187\",
+        \n   \"missing_data\": false, \n   \"number\": 187, \n   \"options\": [\n
+        \   {\n     \"id\": 122564, \n     \"key\": \"P\", \n     \"value\": \"Present\",
+        \n     \"vote\": 996\n    }, \n    {\n     \"id\": 122563, \n     \"key\":
+        \"-\", \n     \"value\": \"No\", \n     \"vote\": 996\n    }, \n    {\n     \"id\":
+        122562, \n     \"key\": \"+\", \n     \"value\": \"Aye\", \n     \"vote\":
+        996\n    }, \n    {\n     \"id\": 122565, \n     \"key\": \"0\", \n     \"value\":
+        \"Not Voting\", \n     \"vote\": 996\n    }\n   ], \n   \"question\": \"On
+        Motion to Recommit with Instructions: H R 861 NSP Termination Act\", \n   \"question_details\":
+        null, \n   \"related_amendment\": null, \n   \"related_bill\": {\n    \"bill_resolution_type\":
+        \"bill\", \n    \"bill_type\": \"house_bill\", \n    \"bill_type_label\":
+        \"H.R.\", \n    \"congress\": 112, \n    \"current_status\": \"pass_over_house\",
+        \n    \"current_status_date\": \"2011-03-16\", \n    \"current_status_description\":
+        \"This bill was introduced in a previous session of Congress and was passed
+        by the House on March 16, 2011 but was never passed by the Senate.\", \n    \"current_status_label\":
+        \"Passed House\", \n    \"display_number\": \"H.R. 861\", \n    \"docs_house_gov_postdate\":
+        null, \n    \"id\": 75622, \n    \"introduced_date\": \"2011-03-01\", \n    \"is_alive\":
+        false, \n    \"is_current\": false, \n    \"link\": \"https://www.govtrack.us/congress/bills/112/hr861\",
+        \n    \"lock_title\": false, \n    \"major_actions\": [\n     [\n      \"datetime.datetime(2011,
+        3, 1, 0, 0)\", \n      2, \n      \"Referred to the House Committee on Financial
+        Services.\", \n      \"<action datetime=\\\"2011-03-01\\\" state=\\\"REFERRED\\\">\\n
+        \     <text>Referred to the House Committee on Financial Services.</text>\\n
+        \   </action>\\n    \"\n     ], \n     [\n      \"datetime.datetime(2011,
+        3, 9, 0, 0)\", \n      3, \n      \"Ordered to be Reported (Amended) by the
+        Yeas and Nays: 31 - 24.\", \n      \"<calendar datetime=\\\"2011-03-09\\\"
+        state=\\\"REPORTED\\\">\\n      <text>Ordered to be Reported (Amended) by
+        the Yeas and Nays: 31 - 24.</text>\\n    </calendar>\\n    \"\n     ], \n
+        \    [\n      \"datetime.datetime(2011, 3, 16, 18, 44)\", \n      4, \n      \"On
+        passage Passed by recorded vote: 242 - 182 (Roll no. 188).\", \n      \"<vote
+        how=\\\"roll\\\" type=\\\"vote\\\" roll=\\\"188\\\" datetime=\\\"2011-03-16T18:44:00-04:00\\\"
+        where=\\\"h\\\" result=\\\"pass\\\" state=\\\"PASS_OVER:HOUSE\\\">\\n      <text>On
+        passage Passed by recorded vote: 242 - 182 (Roll no. 188).</text>\\n    </vote>\\n
+        \   \"\n     ]\n    ], \n    \"noun\": \"bill\", \n    \"number\": 861, \n
+        \   \"senate_floor_schedule_postdate\": null, \n    \"sliplawnum\": null,
+        \n    \"sliplawpubpriv\": null, \n    \"source\": \"thomas-congproj\", \n
+        \   \"source_link\": null, \n    \"sponsor\": 400277, \n    \"sponsor_role\":
+        2285, \n    \"thomas_link\": \"http://thomas.loc.gov/cgi-bin/bdquery/z?d112:hr861:\",
+        \n    \"title\": \"H.R. 861 (112th): NSP Termination Act\", \n    \"title_without_number\":
+        \"NSP Termination Act\", \n    \"titles\": [\n     [\n      \"short\", \n
+        \     \"introduced\", \n      \"NSP Termination Act\"\n     ], \n     [\n
+        \     \"short\", \n      \"reported to house\", \n      \"NSP Termination
+        Act\"\n     ], \n     [\n      \"short\", \n      \"passed house\", \n      \"NSP
+        Termination Act\"\n     ], \n     [\n      \"official\", \n      \"introduced\",
+        \n      \"To rescind the third round of funding for the Neighborhood Stabilization
+        Program and to terminate the program.\"\n     ]\n    ]\n   }, \n   \"required\":
+        \"1/2\", \n   \"result\": \"Failed\", \n   \"session\": \"2011\", \n   \"source\":
+        \"house\", \n   \"source_label\": \"house.gov\", \n   \"total_minus\": 272,
+        \n   \"total_other\": 7, \n   \"total_plus\": 153, \n   \"vote_type\": \"On
+        the Motion to Recommit\"\n  }, \n  {\n   \"category\": \"passage\", \n   \"category_label\":
+        \"Passage\", \n   \"chamber\": \"house\", \n   \"chamber_label\": \"House\",
+        \n   \"congress\": 112, \n   \"created\": \"2011-03-16T18:45:00\", \n   \"id\":
+        591, \n   \"link\": \"https://www.govtrack.us/congress/votes/112-2011/h188\",
+        \n   \"missing_data\": false, \n   \"number\": 188, \n   \"options\": [\n
+        \   {\n     \"id\": 430094, \n     \"key\": \"-\", \n     \"value\": \"No\",
+        \n     \"vote\": 591\n    }, \n    {\n     \"id\": 430095, \n     \"key\":
+        \"P\", \n     \"value\": \"Present\", \n     \"vote\": 591\n    }, \n    {\n
+        \    \"id\": 430093, \n     \"key\": \"+\", \n     \"value\": \"Aye\", \n
+        \    \"vote\": 591\n    }, \n    {\n     \"id\": 430096, \n     \"key\": \"0\",
+        \n     \"value\": \"Not Voting\", \n     \"vote\": 591\n    }\n   ], \n   \"question\":
+        \"H.R. 861 (112th): NSP Termination Act\", \n   \"question_details\": \"On
+        Passage of the Bill in the House\", \n   \"related_amendment\": null, \n   \"related_bill\":
+        {\n    \"bill_resolution_type\": \"bill\", \n    \"bill_type\": \"house_bill\",
+        \n    \"bill_type_label\": \"H.R.\", \n    \"congress\": 112, \n    \"current_status\":
+        \"pass_over_house\", \n    \"current_status_date\": \"2011-03-16\", \n    \"current_status_description\":
+        \"This bill was introduced in a previous session of Congress and was passed
+        by the House on March 16, 2011 but was never passed by the Senate.\", \n    \"current_status_label\":
+        \"Passed House\", \n    \"display_number\": \"H.R. 861\", \n    \"docs_house_gov_postdate\":
+        null, \n    \"id\": 75622, \n    \"introduced_date\": \"2011-03-01\", \n    \"is_alive\":
+        false, \n    \"is_current\": false, \n    \"link\": \"https://www.govtrack.us/congress/bills/112/hr861\",
+        \n    \"lock_title\": false, \n    \"major_actions\": [\n     [\n      \"datetime.datetime(2011,
+        3, 1, 0, 0)\", \n      2, \n      \"Referred to the House Committee on Financial
+        Services.\", \n      \"<action datetime=\\\"2011-03-01\\\" state=\\\"REFERRED\\\">\\n
+        \     <text>Referred to the House Committee on Financial Services.</text>\\n
+        \   </action>\\n    \"\n     ], \n     [\n      \"datetime.datetime(2011,
+        3, 9, 0, 0)\", \n      3, \n      \"Ordered to be Reported (Amended) by the
+        Yeas and Nays: 31 - 24.\", \n      \"<calendar datetime=\\\"2011-03-09\\\"
+        state=\\\"REPORTED\\\">\\n      <text>Ordered to be Reported (Amended) by
+        the Yeas and Nays: 31 - 24.</text>\\n    </calendar>\\n    \"\n     ], \n
+        \    [\n      \"datetime.datetime(2011, 3, 16, 18, 44)\", \n      4, \n      \"On
+        passage Passed by recorded vote: 242 - 182 (Roll no. 188).\", \n      \"<vote
+        how=\\\"roll\\\" type=\\\"vote\\\" roll=\\\"188\\\" datetime=\\\"2011-03-16T18:44:00-04:00\\\"
+        where=\\\"h\\\" result=\\\"pass\\\" state=\\\"PASS_OVER:HOUSE\\\">\\n      <text>On
+        passage Passed by recorded vote: 242 - 182 (Roll no. 188).</text>\\n    </vote>\\n
+        \   \"\n     ]\n    ], \n    \"noun\": \"bill\", \n    \"number\": 861, \n
+        \   \"senate_floor_schedule_postdate\": null, \n    \"sliplawnum\": null,
+        \n    \"sliplawpubpriv\": null, \n    \"source\": \"thomas-congproj\", \n
+        \   \"source_link\": null, \n    \"sponsor\": 400277, \n    \"sponsor_role\":
+        2285, \n    \"thomas_link\": \"http://thomas.loc.gov/cgi-bin/bdquery/z?d112:hr861:\",
+        \n    \"title\": \"H.R. 861 (112th): NSP Termination Act\", \n    \"title_without_number\":
+        \"NSP Termination Act\", \n    \"titles\": [\n     [\n      \"short\", \n
+        \     \"introduced\", \n      \"NSP Termination Act\"\n     ], \n     [\n
+        \     \"short\", \n      \"reported to house\", \n      \"NSP Termination
+        Act\"\n     ], \n     [\n      \"short\", \n      \"passed house\", \n      \"NSP
+        Termination Act\"\n     ], \n     [\n      \"official\", \n      \"introduced\",
+        \n      \"To rescind the third round of funding for the Neighborhood Stabilization
+        Program and to terminate the program.\"\n     ]\n    ]\n   }, \n   \"required\":
+        \"1/2\", \n   \"result\": \"Passed\", \n   \"session\": \"2011\", \n   \"source\":
+        \"house\", \n   \"source_label\": \"house.gov\", \n   \"total_minus\": 182,
+        \n   \"total_other\": 8, \n   \"total_plus\": 242, \n   \"vote_type\": \"On
+        Passage of the Bill\"\n  }\n ]\n}"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:46:02 GMT
+- request:
+    method: get
+    uri: http://www.govtrack.us/api/v2/bill/75622
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:46:01 GMT
+      content-type:
+      - text/html
+      content-length:
+      - '193'
+      connection:
+      - close
+      location:
+      - https://www.govtrack.us/api/v2/bill/75622
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.4.6
+        (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:46:02 GMT
+- request:
+    method: get
+    uri: https://www.govtrack.us/api/v2/bill/75622
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:46:02 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      cache-control:
+      - public
+      access-control-allow-origin:
+      - "*"
+      generated-at:
+      - '2014-12-21T20:45:35.822225'
+      x-konklone-force-https:
+      - 'TRUE'
+      strict-transport-security:
+      - max-age=31536000
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: "{\n \"bill_resolution_type\": \"bill\", \n \"bill_type\": \"house_bill\",
+        \n \"bill_type_label\": \"H.R.\", \n \"committees\": [\n  {\n   \"abbrev\":
+        \"FinServs\", \n   \"code\": \"HSBA\", \n   \"committee\": null, \n   \"committee_type\":
+        \"house\", \n   \"committee_type_label\": \"House\", \n   \"id\": 2709, \n
+        \  \"jurisdiction\": \"The House Financial Services Committee has jurisdiction
+        over issues pertaining to the economy, the banking system, housing, insurance,
+        and securities and exchanges. Additionally, the Committee also has jurisdiction
+        over monetary policy, international finance, international monetary organizations,
+        and efforts to combat terrorist financing.\", \n   \"jurisdiction_link\":
+        \"http://financialservices.house.gov/about/\", \n   \"name\": \"House Committee
+        on Financial Services\", \n   \"obsolete\": false, \n   \"url\": \"http://financialservices.house.gov/\"\n
+        \ }, \n  {\n   \"abbrev\": \"Banking\", \n   \"code\": \"SSBK\", \n   \"committee\":
+        null, \n   \"committee_type\": \"senate\", \n   \"committee_type_label\":
+        \"Senate\", \n   \"id\": 2601, \n   \"jurisdiction\": null, \n   \"jurisdiction_link\":
+        null, \n   \"name\": \"Senate Committee on Banking, Housing, and Urban Affairs\",
+        \n   \"obsolete\": false, \n   \"url\": \"http://banking.senate.gov/\"\n  }\n
+        ], \n \"congress\": 112, \n \"cosponsors\": [\n  {\n   \"bioguideid\": \"B000013\",
+        \n   \"birthday\": \"1947-12-28\", \n   \"cspanid\": 26397, \n   \"firstname\":
+        \"Spencer\", \n   \"gender\": \"male\", \n   \"gender_label\": \"Male\", \n
+        \  \"id\": 400010, \n   \"lastname\": \"Bachus\", \n   \"link\": \"https://www.govtrack.us/congress/members/spencer_bachus/400010\",
+        \n   \"middlename\": \"Thomas\", \n   \"name\": \"Rep. Spencer Bachus [R-AL6]\",
+        \n   \"namemod\": \"III\", \n   \"nickname\": \"\", \n   \"osid\": \"N00008091\",
+        \n   \"pvsid\": \"26715\", \n   \"sortname\": \"Bachus, Spencer (Rep.) [R-AL6]\",
+        \n   \"twitterid\": \"BachusAL06\", \n   \"youtubeid\": \"congressmanbachus\"\n
+        \ }, \n  {\n   \"bioguideid\": \"B001232\", \n   \"birthday\": \"1937-08-15\",
+        \n   \"cspanid\": 57890, \n   \"firstname\": \"Judy\", \n   \"gender\": \"female\",
+        \n   \"gender_label\": \"Female\", \n   \"id\": 400027, \n   \"lastname\":
+        \"Biggert\", \n   \"link\": \"https://www.govtrack.us/congress/members/judy_biggert/400027\",
+        \n   \"middlename\": \"\", \n   \"name\": \"Rep. Judy Biggert [R-IL13, 1999-2012]\",
+        \n   \"namemod\": \"\", \n   \"nickname\": \"\", \n   \"osid\": \"N00004762\",
+        \n   \"pvsid\": \"6298\", \n   \"sortname\": \"Biggert, Judy (Rep.) [R-IL13,
+        1999-2012]\", \n   \"twitterid\": null, \n   \"youtubeid\": null\n  }, \n
+        \ {\n   \"bioguideid\": \"G000548\", \n   \"birthday\": \"1959-07-09\", \n
+        \  \"cspanid\": 1003601, \n   \"firstname\": \"Scott\", \n   \"gender\": \"male\",
+        \n   \"gender_label\": \"Male\", \n   \"id\": 400145, \n   \"lastname\": \"Garrett\",
+        \n   \"link\": \"https://www.govtrack.us/congress/members/scott_garrett/400145\",
+        \n   \"middlename\": \"\", \n   \"name\": \"Rep. Scott Garrett [R-NJ5]\",
+        \n   \"namemod\": \"\", \n   \"nickname\": \"\", \n   \"osid\": \"N00000743\",
+        \n   \"pvsid\": \"4430\", \n   \"sortname\": \"Garrett, Scott (Rep.) [R-NJ5]\",
+        \n   \"twitterid\": \"RepGarrett\", \n   \"youtubeid\": \"repscottgarrett\"\n
+        \ }, \n  {\n   \"bioguideid\": \"C001077\", \n   \"birthday\": \"1955-03-19\",
+        \n   \"cspanid\": 1031340, \n   \"firstname\": \"Mike\", \n   \"gender\":
+        \"male\", \n   \"gender_label\": \"Male\", \n   \"id\": 412271, \n   \"lastname\":
+        \"Coffman\", \n   \"link\": \"https://www.govtrack.us/congress/members/mike_coffman/412271\",
+        \n   \"middlename\": \"\", \n   \"name\": \"Rep. Mike Coffman [R-CO6]\", \n
+        \  \"namemod\": \"\", \n   \"nickname\": \"\", \n   \"osid\": \"N00024753\",
+        \n   \"pvsid\": \"1535\", \n   \"sortname\": \"Coffman, Mike (Rep.) [R-CO6]\",
+        \n   \"twitterid\": \"RepMikeCoffman\", \n   \"youtubeid\": \"CongressmanCoffman\"\n
+        \ }\n ], \n \"current_status\": \"pass_over_house\", \n \"current_status_date\":
+        \"2011-03-16\", \n \"current_status_description\": \"This bill was introduced
+        in a previous session of Congress and was passed by the House on March 16,
+        2011 but was never passed by the Senate.\", \n \"current_status_label\": \"Passed
+        House\", \n \"display_number\": \"H.R. 861\", \n \"docs_house_gov_postdate\":
+        null, \n \"id\": 75622, \n \"introduced_date\": \"2011-03-01\", \n \"is_alive\":
+        false, \n \"is_current\": false, \n \"link\": \"https://www.govtrack.us/congress/bills/112/hr861\",
+        \n \"lock_title\": false, \n \"major_actions\": [\n  [\n   \"datetime.datetime(2011,
+        3, 1, 0, 0)\", \n   2, \n   \"Referred to the House Committee on Financial
+        Services.\", \n   \"<action datetime=\\\"2011-03-01\\\" state=\\\"REFERRED\\\">\\n
+        \     <text>Referred to the House Committee on Financial Services.</text>\\n
+        \   </action>\\n    \"\n  ], \n  [\n   \"datetime.datetime(2011, 3, 9, 0,
+        0)\", \n   3, \n   \"Ordered to be Reported (Amended) by the Yeas and Nays:
+        31 - 24.\", \n   \"<calendar datetime=\\\"2011-03-09\\\" state=\\\"REPORTED\\\">\\n
+        \     <text>Ordered to be Reported (Amended) by the Yeas and Nays: 31 - 24.</text>\\n
+        \   </calendar>\\n    \"\n  ], \n  [\n   \"datetime.datetime(2011, 3, 16,
+        18, 44)\", \n   4, \n   \"On passage Passed by recorded vote: 242 - 182 (Roll
+        no. 188).\", \n   \"<vote how=\\\"roll\\\" type=\\\"vote\\\" roll=\\\"188\\\"
+        datetime=\\\"2011-03-16T18:44:00-04:00\\\" where=\\\"h\\\" result=\\\"pass\\\"
+        state=\\\"PASS_OVER:HOUSE\\\">\\n      <text>On passage Passed by recorded
+        vote: 242 - 182 (Roll no. 188).</text>\\n    </vote>\\n    \"\n  ]\n ], \n
+        \"noun\": \"bill\", \n \"number\": 861, \n \"senate_floor_schedule_postdate\":
+        null, \n \"sliplawnum\": null, \n \"sliplawpubpriv\": null, \n \"source\":
+        \"thomas-congproj\", \n \"source_link\": null, \n \"sponsor\": {\n  \"bioguideid\":
+        \"M001139\", \n  \"birthday\": \"1948-10-16\", \n  \"cspanid\": 57888, \n
+        \ \"firstname\": \"Gary\", \n  \"gender\": \"male\", \n  \"gender_label\":
+        \"Male\", \n  \"id\": 400277, \n  \"lastname\": \"Miller\", \n  \"link\":
+        \"https://www.govtrack.us/congress/members/gary_miller/400277\", \n  \"middlename\":
+        \"G.\", \n  \"name\": \"Rep. Gary Miller [R-CA31]\", \n  \"namemod\": \"\",
+        \n  \"nickname\": \"\", \n  \"osid\": \"N00006954\", \n  \"pvsid\": \"8346\",
+        \n  \"sortname\": \"Miller, Gary (Rep.) [R-CA31]\", \n  \"twitterid\": \"RepGaryMiller\",
+        \n  \"youtubeid\": \"GaryGMiller\"\n }, \n \"sponsor_role\": {\n  \"caucus\":
+        null, \n  \"congress_numbers\": [\n   112\n  ], \n  \"current\": false, \n
+        \ \"description\": \"Representative for California's 42nd congressional district\",
+        \n  \"district\": 42, \n  \"enddate\": \"2013-01-03\", \n  \"id\": 2285, \n
+        \ \"leadership_title\": null, \n  \"party\": \"Republican\", \n  \"person\":
+        400277, \n  \"phone\": \"202-225-3201\", \n  \"role_type\": \"representative\",
+        \n  \"role_type_label\": \"Representative\", \n  \"senator_class\": null,
+        \n  \"senator_rank\": null, \n  \"startdate\": \"2011-01-05\", \n  \"state\":
+        \"CA\", \n  \"title\": \"Rep.\", \n  \"title_long\": \"Representative\", \n
+        \ \"website\": \"http://www.house.gov/garymiller\"\n }, \n \"terms\": [\n
+        \ {\n   \"id\": 5979, \n   \"name\": \"Appropriations\", \n   \"term_type\":
+        \"new\", \n   \"term_type_label\": \"New\"\n  }, \n  {\n   \"id\": 6191, \n
+        \  \"name\": \"Housing and Community Development\", \n   \"term_type\": \"new\",
+        \n   \"term_type_label\": \"New\"\n  }, \n  {\n   \"id\": 6194, \n   \"name\":
+        \"Housing and community development funding\", \n   \"term_type\": \"new\",
+        \n   \"term_type_label\": \"New\"\n  }, \n  {\n   \"id\": 6195, \n   \"name\":
+        \"Housing finance and home ownership\", \n   \"term_type\": \"new\", \n   \"term_type_label\":
+        \"New\"\n  }, \n  {\n   \"id\": 6202, \n   \"name\": \"Residential rehabilitation
+        and home repair\", \n   \"term_type\": \"new\", \n   \"term_type_label\":
+        \"New\"\n  }\n ], \n \"thomas_link\": \"http://thomas.loc.gov/cgi-bin/bdquery/z?d112:hr861:\",
+        \n \"title\": \"H.R. 861 (112th): NSP Termination Act\", \n \"title_without_number\":
+        \"NSP Termination Act\", \n \"titles\": [\n  [\n   \"short\", \n   \"introduced\",
+        \n   \"NSP Termination Act\"\n  ], \n  [\n   \"short\", \n   \"reported to
+        house\", \n   \"NSP Termination Act\"\n  ], \n  [\n   \"short\", \n   \"passed
+        house\", \n   \"NSP Termination Act\"\n  ], \n  [\n   \"official\", \n   \"introduced\",
+        \n   \"To rescind the third round of funding for the Neighborhood Stabilization
+        Program and to terminate the program.\"\n  ]\n ]\n}"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:46:03 GMT
+recorded_with: VCR 2.9.3

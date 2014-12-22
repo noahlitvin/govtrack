@@ -1,0 +1,132 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.govtrack.us/api/v2/vote/34577
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:45:59 GMT
+      content-type:
+      - text/html
+      content-length:
+      - '193'
+      connection:
+      - close
+      location:
+      - https://www.govtrack.us/api/v2/vote/34577
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.4.6
+        (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:46:00 GMT
+- request:
+    method: get
+    uri: https://www.govtrack.us/api/v2/vote/34577
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:46:00 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      cache-control:
+      - public
+      access-control-allow-origin:
+      - "*"
+      generated-at:
+      - '2014-12-21T20:45:57.958069'
+      x-konklone-force-https:
+      - 'TRUE'
+      strict-transport-security:
+      - max-age=31536000
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: "{\n \"category\": \"amendment\", \n \"category_label\": \"Amendment\",
+        \n \"chamber\": \"house\", \n \"chamber_label\": \"House\", \n \"congress\":
+        102, \n \"created\": \"1992-08-04T16:49:00\", \n \"id\": 34577, \n \"link\":
+        \"https://www.govtrack.us/congress/votes/102-1992/h359\", \n \"missing_data\":
+        false, \n \"number\": 359, \n \"options\": [\n  {\n   \"id\": 115411, \n   \"key\":
+        \"+\", \n   \"value\": \"Aye\", \n   \"vote\": 34577\n  }, \n  {\n   \"id\":
+        115412, \n   \"key\": \"-\", \n   \"value\": \"No\", \n   \"vote\": 34577\n
+        \ }, \n  {\n   \"id\": 115413, \n   \"key\": \"P\", \n   \"value\": \"Present\",
+        \n   \"vote\": 34577\n  }, \n  {\n   \"id\": 115414, \n   \"key\": \"0\",
+        \n   \"value\": \"Not Voting\", \n   \"vote\": 34577\n  }\n ], \n \"question\":
+        \"On Agreeing to the Amendment: Amendment 2 to H R 2782\", \n \"question_details\":
+        null, \n \"related_amendment\": null, \n \"related_bill\": {\n  \"bill_resolution_type\":
+        \"bill\", \n  \"bill_type\": \"house_bill\", \n  \"bill_type_label\": \"H.R.\",
+        \n  \"congress\": 102, \n  \"current_status\": \"pass_over_house\", \n  \"current_status_date\":
+        \"1992-08-04\", \n  \"current_status_description\": \"This bill was introduced
+        in a previous session of Congress and was passed by the House on August 4,
+        1992 but was never passed by the Senate.\", \n  \"current_status_label\":
+        \"Passed House\", \n  \"display_number\": \"H.R. 2782\", \n  \"docs_house_gov_postdate\":
+        null, \n  \"id\": 57788, \n  \"introduced_date\": \"1991-06-26\", \n  \"is_alive\":
+        false, \n  \"is_current\": false, \n  \"link\": \"https://www.govtrack.us/congress/bills/102/hr2782\",
+        \n  \"lock_title\": false, \n  \"major_actions\": [\n   [\n    \"datetime.datetime(1991,
+        6, 26, 0, 0)\", \n    2, \n    \"Referred to the House Committee on Education
+        and Labor.\", \n    \"<action datetime=\\\"1991-06-26\\\" state=\\\"REFERRED\\\">\\n
+        \     <text>Referred to the House Committee on Education and Labor.</text>\\n
+        \   </action>\\n    \"\n   ], \n   [\n    \"datetime.datetime(1992, 6, 10,
+        0, 0)\", \n    3, \n    \"Ordered to be Reported.\", \n    \"<calendar datetime=\\\"1992-06-10\\\"
+        state=\\\"REPORTED\\\">\\n      <text>Ordered to be Reported.</text>\\n    </calendar>\\n
+        \   \"\n   ], \n   [\n    \"datetime.datetime(1992, 8, 4, 16, 54)\", \n    4,
+        \n    \"On passage Passed by voice vote.\", \n    \"<vote how=\\\"by voice
+        vote\\\" type=\\\"vote\\\" datetime=\\\"1992-08-04T16:54:00-04:00\\\" where=\\\"h\\\"
+        result=\\\"pass\\\" state=\\\"PASS_OVER:HOUSE\\\">\\n      <text>On passage
+        Passed by voice vote.</text>\\n    </vote>\\n    \"\n   ]\n  ], \n  \"noun\":
+        \"bill\", \n  \"number\": 2782, \n  \"senate_floor_schedule_postdate\": null,
+        \n  \"sliplawnum\": null, \n  \"sliplawpubpriv\": null, \n  \"source\": \"thomas-congproj\",
+        \n  \"source_link\": null, \n  \"sponsor\": 400025, \n  \"sponsor_role\":
+        190, \n  \"thomas_link\": \"http://thomas.loc.gov/cgi-bin/bdquery/z?d102:hr2782:\",
+        \n  \"title\": \"H.R. 2782 (102nd): To amend the Employee Retirement Income
+        Security Act of 1974 to provide that such Act does not preempt certain State
+        laws.\", \n  \"title_without_number\": \"To amend the Employee Retirement
+        Income Security Act of 1974 to provide that such Act does not preempt certain
+        State laws.\", \n  \"titles\": [\n   [\n    \"official\", \n    \"introduced\",
+        \n    \"To amend the Employee Retirement Income Security Act of 1974 to provide
+        that such Act does not preempt certain State laws.\"\n   ]\n  ]\n }, \n \"required\":
+        \"1/2\", \n \"result\": \"Failed\", \n \"session\": \"1992\", \n \"source\":
+        \"house\", \n \"source_label\": \"house.gov\", \n \"total_minus\": 266, \n
+        \"total_other\": 28, \n \"total_plus\": 140, \n \"vote_type\": \"On the Amendment\"\n}"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:46:01 GMT
+recorded_with: VCR 2.9.3
