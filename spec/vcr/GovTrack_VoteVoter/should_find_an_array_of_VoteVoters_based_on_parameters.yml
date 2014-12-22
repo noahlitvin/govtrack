@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.govtrack.us/api/v2/vote_voter/?vote=1&person=400639
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:46:02 GMT
+      content-type:
+      - text/html
+      content-length:
+      - '193'
+      connection:
+      - close
+      location:
+      - https://www.govtrack.us/api/v2/vote_voter/?vote=1&person=400639
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.4.6
+        (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:46:03 GMT
+- request:
+    method: get
+    uri: https://www.govtrack.us/api/v2/vote_voter/?vote=1&person=400639
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:46:02 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      cache-control:
+      - public
+      access-control-allow-origin:
+      - "*"
+      generated-at:
+      - '2014-12-21T20:46:02.667521'
+      x-konklone-force-https:
+      - 'TRUE'
+      strict-transport-security:
+      - max-age=31536000
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: "{\n \"meta\": {\n  \"limit\": 100, \n  \"offset\": 0, \n  \"total_count\":
+        1\n }, \n \"objects\": [\n  {\n   \"created\": \"2011-03-16T17:49:00\", \n
+        \  \"id\": 28927549, \n   \"option\": {\n    \"id\": 426366, \n    \"key\":
+        \"+\", \n    \"value\": \"Aye\", \n    \"vote\": 1\n   }, \n   \"person\":
+        {\n    \"bioguideid\": \"C001061\", \n    \"birthday\": \"1944-10-26\", \n
+        \   \"cspanid\": 10933, \n    \"firstname\": \"Emanuel\", \n    \"gender\":
+        \"male\", \n    \"gender_label\": \"Male\", \n    \"id\": 400639, \n    \"lastname\":
+        \"Cleaver\", \n    \"link\": \"https://www.govtrack.us/congress/members/emanuel_cleaver/400639\",
+        \n    \"middlename\": \"\", \n    \"name\": \"Rep. Emanuel Cleaver [D-MO5]\",
+        \n    \"namemod\": \"II\", \n    \"nickname\": \"\", \n    \"osid\": \"N00026790\",
+        \n    \"pvsid\": \"39507\", \n    \"sortname\": \"Cleaver, Emanuel (Rep.)
+        [D-MO5]\", \n    \"twitterid\": \"RepCleaver\", \n    \"youtubeid\": \"repcleaver\"\n
+        \  }, \n   \"person_role\": {\n    \"caucus\": null, \n    \"congress_numbers\":
+        [\n     112\n    ], \n    \"current\": false, \n    \"description\": \"Representative
+        for Missouri's 5th congressional district\", \n    \"district\": 5, \n    \"enddate\":
+        \"2013-01-03\", \n    \"id\": 5155, \n    \"leadership_title\": null, \n    \"party\":
+        \"Democrat\", \n    \"person\": 400639, \n    \"phone\": \"202-225-4535\",
+        \n    \"role_type\": \"representative\", \n    \"role_type_label\": \"Representative\",
+        \n    \"senator_class\": null, \n    \"senator_rank\": null, \n    \"startdate\":
+        \"2011-01-05\", \n    \"state\": \"MO\", \n    \"title\": \"Rep.\", \n    \"title_long\":
+        \"Representative\", \n    \"website\": \"http://www.house.gov/cleaver\"\n
+        \  }, \n   \"vote\": {\n    \"category\": \"amendment\", \n    \"category_label\":
+        \"Amendment\", \n    \"chamber\": \"house\", \n    \"chamber_label\": \"House\",
+        \n    \"congress\": 112, \n    \"created\": \"2011-03-16T17:49:00\", \n    \"id\":
+        1, \n    \"link\": \"https://www.govtrack.us/congress/votes/112-2011/h183\",
+        \n    \"missing_data\": false, \n    \"number\": 183, \n    \"question\":
+        \"On Agreeing to the Amendment: Amendment 3 to H R 861\", \n    \"question_details\":
+        null, \n    \"related_amendment\": null, \n    \"related_bill\": 75622, \n
+        \   \"required\": \"1/2\", \n    \"result\": \"Failed\", \n    \"session\":
+        \"2011\", \n    \"source\": \"house\", \n    \"source_label\": \"house.gov\",
+        \n    \"total_minus\": 244, \n    \"total_other\": 5, \n    \"total_plus\":
+        183, \n    \"vote_type\": \"On the Amendment\"\n   }, \n   \"voter_type\":
+        \"member\", \n   \"voter_type_label\": \"Member of Congress\"\n  }\n ]\n}"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:46:03 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.govtrack.us/api/v2/vote/?id=113728
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:45:54 GMT
+      content-type:
+      - text/html
+      content-length:
+      - '193'
+      connection:
+      - close
+      location:
+      - https://www.govtrack.us/api/v2/vote/?id=113728
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.4.6
+        (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:45:56 GMT
+- request:
+    method: get
+    uri: https://www.govtrack.us/api/v2/vote/?id=113728
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:45:55 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      cache-control:
+      - public
+      access-control-allow-origin:
+      - "*"
+      generated-at:
+      - '2014-12-21T20:45:55.411706'
+      x-konklone-force-https:
+      - 'TRUE'
+      strict-transport-security:
+      - max-age=31536000
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: "{\n \"meta\": {\n  \"limit\": 100, \n  \"offset\": 0, \n  \"total_count\":
+        1\n }, \n \"objects\": [\n  {\n   \"category\": \"cloture\", \n   \"category_label\":
+        \"Cloture\", \n   \"chamber\": \"senate\", \n   \"chamber_label\": \"Senate\",
+        \n   \"congress\": 113, \n   \"created\": \"2013-07-30T10:15:00\", \n   \"id\":
+        113728, \n   \"link\": \"https://www.govtrack.us/congress/votes/113-2013/s189\",
+        \n   \"missing_data\": false, \n   \"number\": 189, \n   \"options\": [\n
+        \   {\n     \"id\": 436469, \n     \"key\": \"+\", \n     \"value\": \"Yea\",
+        \n     \"vote\": 113728\n    }, \n    {\n     \"id\": 436470, \n     \"key\":
+        \"-\", \n     \"value\": \"Nay\", \n     \"vote\": 113728\n    }, \n    {\n
+        \    \"id\": 436471, \n     \"key\": \"P\", \n     \"value\": \"Present\",
+        \n     \"vote\": 113728\n    }, \n    {\n     \"id\": 436472, \n     \"key\":
+        \"0\", \n     \"value\": \"Not Voting\", \n     \"vote\": 113728\n    }\n
+        \  ], \n   \"question\": \"On the Cloture Motion PN679: Kent Yoshiho Hirozawa,
+        of New York, to be a Member of the National Labor Relations Board for the
+        term of five years expiring August 27, 2016\", \n   \"question_details\":
+        null, \n   \"related_amendment\": null, \n   \"related_bill\": null, \n   \"required\":
+        \"3/5\", \n   \"result\": \"Cloture Motion Agreed to\", \n   \"session\":
+        \"2013\", \n   \"source\": \"senate\", \n   \"source_label\": \"senate.gov\",
+        \n   \"total_minus\": 34, \n   \"total_other\": 2, \n   \"total_plus\": 64,
+        \n   \"vote_type\": \"On the Cloture Motion\"\n  }\n ]\n}"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:45:56 GMT
+recorded_with: VCR 2.9.3

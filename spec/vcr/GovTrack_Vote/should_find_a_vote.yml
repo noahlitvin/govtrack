@@ -1,0 +1,134 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.govtrack.us/api/v2/vote/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:45:56 GMT
+      content-type:
+      - text/html
+      content-length:
+      - '193'
+      connection:
+      - close
+      location:
+      - https://www.govtrack.us/api/v2/vote/1
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.4.6
+        (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:45:57 GMT
+- request:
+    method: get
+    uri: https://www.govtrack.us/api/v2/vote/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.4.6 (Ubuntu)
+      date:
+      - Mon, 22 Dec 2014 01:45:56 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      cache-control:
+      - public
+      access-control-allow-origin:
+      - "*"
+      generated-at:
+      - '2014-12-21T20:45:35.223506'
+      x-konklone-force-https:
+      - 'TRUE'
+      strict-transport-security:
+      - max-age=31536000
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: "{\n \"category\": \"amendment\", \n \"category_label\": \"Amendment\",
+        \n \"chamber\": \"house\", \n \"chamber_label\": \"House\", \n \"congress\":
+        112, \n \"created\": \"2011-03-16T17:49:00\", \n \"id\": 1, \n \"link\": \"https://www.govtrack.us/congress/votes/112-2011/h183\",
+        \n \"missing_data\": false, \n \"number\": 183, \n \"options\": [\n  {\n   \"id\":
+        426367, \n   \"key\": \"-\", \n   \"value\": \"No\", \n   \"vote\": 1\n  },
+        \n  {\n   \"id\": 426368, \n   \"key\": \"P\", \n   \"value\": \"Present\",
+        \n   \"vote\": 1\n  }, \n  {\n   \"id\": 426366, \n   \"key\": \"+\", \n   \"value\":
+        \"Aye\", \n   \"vote\": 1\n  }, \n  {\n   \"id\": 426369, \n   \"key\": \"0\",
+        \n   \"value\": \"Not Voting\", \n   \"vote\": 1\n  }\n ], \n \"question\":
+        \"On Agreeing to the Amendment: Amendment 3 to H R 861\", \n \"question_details\":
+        null, \n \"related_amendment\": null, \n \"related_bill\": {\n  \"bill_resolution_type\":
+        \"bill\", \n  \"bill_type\": \"house_bill\", \n  \"bill_type_label\": \"H.R.\",
+        \n  \"congress\": 112, \n  \"current_status\": \"pass_over_house\", \n  \"current_status_date\":
+        \"2011-03-16\", \n  \"current_status_description\": \"This bill was introduced
+        in a previous session of Congress and was passed by the House on March 16,
+        2011 but was never passed by the Senate.\", \n  \"current_status_label\":
+        \"Passed House\", \n  \"display_number\": \"H.R. 861\", \n  \"docs_house_gov_postdate\":
+        null, \n  \"id\": 75622, \n  \"introduced_date\": \"2011-03-01\", \n  \"is_alive\":
+        false, \n  \"is_current\": false, \n  \"link\": \"https://www.govtrack.us/congress/bills/112/hr861\",
+        \n  \"lock_title\": false, \n  \"major_actions\": [\n   [\n    \"datetime.datetime(2011,
+        3, 1, 0, 0)\", \n    2, \n    \"Referred to the House Committee on Financial
+        Services.\", \n    \"<action datetime=\\\"2011-03-01\\\" state=\\\"REFERRED\\\">\\n
+        \     <text>Referred to the House Committee on Financial Services.</text>\\n
+        \   </action>\\n    \"\n   ], \n   [\n    \"datetime.datetime(2011, 3, 9,
+        0, 0)\", \n    3, \n    \"Ordered to be Reported (Amended) by the Yeas and
+        Nays: 31 - 24.\", \n    \"<calendar datetime=\\\"2011-03-09\\\" state=\\\"REPORTED\\\">\\n
+        \     <text>Ordered to be Reported (Amended) by the Yeas and Nays: 31 - 24.</text>\\n
+        \   </calendar>\\n    \"\n   ], \n   [\n    \"datetime.datetime(2011, 3, 16,
+        18, 44)\", \n    4, \n    \"On passage Passed by recorded vote: 242 - 182
+        (Roll no. 188).\", \n    \"<vote how=\\\"roll\\\" type=\\\"vote\\\" roll=\\\"188\\\"
+        datetime=\\\"2011-03-16T18:44:00-04:00\\\" where=\\\"h\\\" result=\\\"pass\\\"
+        state=\\\"PASS_OVER:HOUSE\\\">\\n      <text>On passage Passed by recorded
+        vote: 242 - 182 (Roll no. 188).</text>\\n    </vote>\\n    \"\n   ]\n  ],
+        \n  \"noun\": \"bill\", \n  \"number\": 861, \n  \"senate_floor_schedule_postdate\":
+        null, \n  \"sliplawnum\": null, \n  \"sliplawpubpriv\": null, \n  \"source\":
+        \"thomas-congproj\", \n  \"source_link\": null, \n  \"sponsor\": 400277, \n
+        \ \"sponsor_role\": 2285, \n  \"thomas_link\": \"http://thomas.loc.gov/cgi-bin/bdquery/z?d112:hr861:\",
+        \n  \"title\": \"H.R. 861 (112th): NSP Termination Act\", \n  \"title_without_number\":
+        \"NSP Termination Act\", \n  \"titles\": [\n   [\n    \"short\", \n    \"introduced\",
+        \n    \"NSP Termination Act\"\n   ], \n   [\n    \"short\", \n    \"reported
+        to house\", \n    \"NSP Termination Act\"\n   ], \n   [\n    \"short\", \n
+        \   \"passed house\", \n    \"NSP Termination Act\"\n   ], \n   [\n    \"official\",
+        \n    \"introduced\", \n    \"To rescind the third round of funding for the
+        Neighborhood Stabilization Program and to terminate the program.\"\n   ]\n
+        \ ]\n }, \n \"required\": \"1/2\", \n \"result\": \"Failed\", \n \"session\":
+        \"2011\", \n \"source\": \"house\", \n \"source_label\": \"house.gov\", \n
+        \"total_minus\": 244, \n \"total_other\": 5, \n \"total_plus\": 183, \n \"vote_type\":
+        \"On the Amendment\"\n}"
+    http_version: '1.1'
+  recorded_at: Mon, 22 Dec 2014 01:45:57 GMT
+recorded_with: VCR 2.9.3
