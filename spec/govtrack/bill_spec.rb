@@ -64,5 +64,11 @@ describe GovTrack::Bill do
     vote =  GovTrack::Vote.find_by_id(1)
     GovTrack::Vote.find(related_bill: vote.related_bill.id).map(&:id).should include(vote.id)
   end
+
+  it "should have a committee associated with the bill" do
+    bill = GovTrack::Bill.find_by_id(2343)
+    expect(bill.committees.first.class).to eq GovTrack::Committee
+    expect(bill.committees.first.name).to eq "Senate Committee on the Judiciary"
+  end
     
 end
