@@ -22,7 +22,7 @@ module GovTrack
     def cosponsors
       instantiate_attrs(:@cosponsors, GovTrack::Person)
     end
-
+    
     def committees
       instantiate_attrs(:@committees, GovTrack::Committee)
     end
