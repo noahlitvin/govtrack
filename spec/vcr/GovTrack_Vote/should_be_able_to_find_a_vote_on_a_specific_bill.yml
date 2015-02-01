@@ -7,36 +7,36 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
+      Accept:
       - "*/*"
-      user-agent:
+      User-Agent:
       - Ruby
   response:
     status:
       code: 301
       message: Moved Permanently
     headers:
-      server:
+      Server:
       - nginx/1.4.6 (Ubuntu)
-      date:
-      - Mon, 22 Dec 2014 01:46:00 GMT
-      content-type:
+      Date:
+      - Tue, 30 Dec 2014 15:52:53 GMT
+      Content-Type:
       - text/html
-      content-length:
+      Content-Length:
       - '193'
-      connection:
-      - close
-      location:
+      Connection:
+      - keep-alive
+      Location:
       - https://www.govtrack.us/api/v2/bill/75622
     body:
       encoding: UTF-8
       string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
         bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.4.6
         (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
-    http_version: '1.1'
-  recorded_at: Mon, 22 Dec 2014 01:46:01 GMT
+    http_version: 
+  recorded_at: Tue, 30 Dec 2014 15:52:53 GMT
 - request:
     method: get
     uri: https://www.govtrack.us/api/v2/bill/75622
@@ -44,41 +44,39 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
+      Accept:
       - "*/*"
-      user-agent:
+      User-Agent:
       - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      server:
+      Server:
       - nginx/1.4.6 (Ubuntu)
-      date:
-      - Mon, 22 Dec 2014 01:46:00 GMT
-      content-type:
+      Date:
+      - Tue, 30 Dec 2014 15:52:53 GMT
+      Content-Type:
       - application/json; charset=utf-8
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      connection:
-      - close
-      vary:
+      Connection:
+      - keep-alive
+      Vary:
       - Accept-Encoding
-      cache-control:
+      Cache-Control:
       - public
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - "*"
-      generated-at:
-      - '2014-12-21T20:45:35.822225'
-      x-konklone-force-https:
+      Generated-At:
+      - '2014-12-30T10:23:22.172537'
+      X-Konklone-Force-Https:
       - 'TRUE'
-      strict-transport-security:
+      Strict-Transport-Security:
       - max-age=31536000
-      content-encoding:
-      - gzip
     body:
       encoding: UTF-8
       string: "{\n \"bill_resolution_type\": \"bill\", \n \"bill_type\": \"house_bill\",
@@ -187,8 +185,8 @@ http_interactions:
         house\", \n   \"NSP Termination Act\"\n  ], \n  [\n   \"official\", \n   \"introduced\",
         \n   \"To rescind the third round of funding for the Neighborhood Stabilization
         Program and to terminate the program.\"\n  ]\n ]\n}"
-    http_version: '1.1'
-  recorded_at: Mon, 22 Dec 2014 01:46:02 GMT
+    http_version: 
+  recorded_at: Tue, 30 Dec 2014 15:52:53 GMT
 - request:
     method: get
     uri: http://www.govtrack.us/api/v2/vote/?related_bill=75622
@@ -196,36 +194,36 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
+      Accept:
       - "*/*"
-      user-agent:
+      User-Agent:
       - Ruby
   response:
     status:
       code: 301
       message: Moved Permanently
     headers:
-      server:
+      Server:
       - nginx/1.4.6 (Ubuntu)
-      date:
-      - Mon, 22 Dec 2014 01:46:01 GMT
-      content-type:
+      Date:
+      - Tue, 30 Dec 2014 15:52:53 GMT
+      Content-Type:
       - text/html
-      content-length:
+      Content-Length:
       - '193'
-      connection:
-      - close
-      location:
+      Connection:
+      - keep-alive
+      Location:
       - https://www.govtrack.us/api/v2/vote/?related_bill=75622
     body:
       encoding: UTF-8
       string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
         bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.4.6
         (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
-    http_version: '1.1'
-  recorded_at: Mon, 22 Dec 2014 01:46:02 GMT
+    http_version: 
+  recorded_at: Tue, 30 Dec 2014 15:52:53 GMT
 - request:
     method: get
     uri: https://www.govtrack.us/api/v2/vote/?related_bill=75622
@@ -233,41 +231,39 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
+      Accept:
       - "*/*"
-      user-agent:
+      User-Agent:
       - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      server:
+      Server:
       - nginx/1.4.6 (Ubuntu)
-      date:
-      - Mon, 22 Dec 2014 01:46:01 GMT
-      content-type:
+      Date:
+      - Tue, 30 Dec 2014 15:52:54 GMT
+      Content-Type:
       - application/json; charset=utf-8
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      connection:
-      - close
-      vary:
+      Connection:
+      - keep-alive
+      Vary:
       - Accept-Encoding
-      cache-control:
+      Cache-Control:
       - public
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - "*"
-      generated-at:
-      - '2014-12-21T20:45:36.601650'
-      x-konklone-force-https:
+      Generated-At:
+      - '2014-12-30T10:23:26.247087'
+      X-Konklone-Force-Https:
       - 'TRUE'
-      strict-transport-security:
+      Strict-Transport-Security:
       - max-age=31536000
-      content-encoding:
-      - gzip
     body:
       encoding: UTF-8
       string: "{\n \"meta\": {\n  \"limit\": 100, \n  \"offset\": 0, \n  \"total_count\":
@@ -631,8 +627,8 @@ http_interactions:
         \"house\", \n   \"source_label\": \"house.gov\", \n   \"total_minus\": 182,
         \n   \"total_other\": 8, \n   \"total_plus\": 242, \n   \"vote_type\": \"On
         Passage of the Bill\"\n  }\n ]\n}"
-    http_version: '1.1'
-  recorded_at: Mon, 22 Dec 2014 01:46:02 GMT
+    http_version: 
+  recorded_at: Tue, 30 Dec 2014 15:52:54 GMT
 - request:
     method: get
     uri: http://www.govtrack.us/api/v2/bill/75622
@@ -640,36 +636,36 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
+      Accept:
       - "*/*"
-      user-agent:
+      User-Agent:
       - Ruby
   response:
     status:
       code: 301
       message: Moved Permanently
     headers:
-      server:
+      Server:
       - nginx/1.4.6 (Ubuntu)
-      date:
-      - Mon, 22 Dec 2014 01:46:01 GMT
-      content-type:
+      Date:
+      - Tue, 30 Dec 2014 15:52:54 GMT
+      Content-Type:
       - text/html
-      content-length:
+      Content-Length:
       - '193'
-      connection:
-      - close
-      location:
+      Connection:
+      - keep-alive
+      Location:
       - https://www.govtrack.us/api/v2/bill/75622
     body:
       encoding: UTF-8
       string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
         bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.4.6
         (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
-    http_version: '1.1'
-  recorded_at: Mon, 22 Dec 2014 01:46:02 GMT
+    http_version: 
+  recorded_at: Tue, 30 Dec 2014 15:52:54 GMT
 - request:
     method: get
     uri: https://www.govtrack.us/api/v2/bill/75622
@@ -677,41 +673,39 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
+      Accept:
       - "*/*"
-      user-agent:
+      User-Agent:
       - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      server:
+      Server:
       - nginx/1.4.6 (Ubuntu)
-      date:
-      - Mon, 22 Dec 2014 01:46:02 GMT
-      content-type:
+      Date:
+      - Tue, 30 Dec 2014 15:52:54 GMT
+      Content-Type:
       - application/json; charset=utf-8
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      connection:
-      - close
-      vary:
+      Connection:
+      - keep-alive
+      Vary:
       - Accept-Encoding
-      cache-control:
+      Cache-Control:
       - public
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - "*"
-      generated-at:
-      - '2014-12-21T20:45:35.822225'
-      x-konklone-force-https:
+      Generated-At:
+      - '2014-12-30T10:23:22.172537'
+      X-Konklone-Force-Https:
       - 'TRUE'
-      strict-transport-security:
+      Strict-Transport-Security:
       - max-age=31536000
-      content-encoding:
-      - gzip
     body:
       encoding: UTF-8
       string: "{\n \"bill_resolution_type\": \"bill\", \n \"bill_type\": \"house_bill\",
@@ -820,6 +814,6 @@ http_interactions:
         house\", \n   \"NSP Termination Act\"\n  ], \n  [\n   \"official\", \n   \"introduced\",
         \n   \"To rescind the third round of funding for the Neighborhood Stabilization
         Program and to terminate the program.\"\n  ]\n ]\n}"
-    http_version: '1.1'
-  recorded_at: Mon, 22 Dec 2014 01:46:03 GMT
+    http_version: 
+  recorded_at: Tue, 30 Dec 2014 15:52:54 GMT
 recorded_with: VCR 2.9.3

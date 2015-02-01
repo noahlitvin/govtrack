@@ -7,36 +7,36 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
+      Accept:
       - "*/*"
-      user-agent:
+      User-Agent:
       - Ruby
   response:
     status:
       code: 301
       message: Moved Permanently
     headers:
-      server:
+      Server:
       - nginx/1.4.6 (Ubuntu)
-      date:
-      - Mon, 22 Dec 2014 01:46:03 GMT
-      content-type:
+      Date:
+      - Tue, 30 Dec 2014 15:51:54 GMT
+      Content-Type:
       - text/html
-      content-length:
+      Content-Length:
       - '193'
-      connection:
-      - close
-      location:
+      Connection:
+      - keep-alive
+      Location:
       - https://www.govtrack.us/api/v2/person/?lastname=Cleaver
     body:
       encoding: UTF-8
       string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
         bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.4.6
         (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
-    http_version: '1.1'
-  recorded_at: Mon, 22 Dec 2014 01:46:04 GMT
+    http_version: 
+  recorded_at: Tue, 30 Dec 2014 15:51:54 GMT
 - request:
     method: get
     uri: https://www.govtrack.us/api/v2/person/?lastname=Cleaver
@@ -44,36 +44,36 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
+      Accept:
       - "*/*"
-      user-agent:
+      User-Agent:
       - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      server:
+      Server:
       - nginx/1.4.6 (Ubuntu)
-      date:
-      - Mon, 22 Dec 2014 01:46:03 GMT
-      content-type:
+      Date:
+      - Tue, 30 Dec 2014 15:51:54 GMT
+      Content-Type:
       - application/json; charset=utf-8
-      content-length:
+      Content-Length:
       - '644'
-      connection:
-      - close
-      cache-control:
+      Connection:
+      - keep-alive
+      Cache-Control:
       - public
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - "*"
-      generated-at:
-      - '2014-12-21T20:46:03.868088'
-      x-konklone-force-https:
+      Generated-At:
+      - '2014-12-30T10:51:54.789146'
+      X-Konklone-Force-Https:
       - 'TRUE'
-      strict-transport-security:
+      Strict-Transport-Security:
       - max-age=31536000
     body:
       encoding: UTF-8
@@ -87,87 +87,85 @@ http_interactions:
         \n   \"pvsid\": \"39507\", \n   \"sortname\": \"Cleaver, Emanuel (Rep.) [D-MO5]\",
         \n   \"twitterid\": \"RepCleaver\", \n   \"youtubeid\": \"repcleaver\"\n  }\n
         ]\n}"
-    http_version: '1.1'
-  recorded_at: Mon, 22 Dec 2014 01:46:05 GMT
+    http_version: 
+  recorded_at: Tue, 30 Dec 2014 15:51:54 GMT
 - request:
     method: get
-    uri: http://www.govtrack.us/api/v2/vote/?number=183&congress=112&chamber=house&session=2012
+    uri: http://www.govtrack.us/api/v2/vote/?chamber=house&congress=112&number=183&session=2012
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
+      Accept:
       - "*/*"
-      user-agent:
+      User-Agent:
       - Ruby
   response:
     status:
       code: 301
       message: Moved Permanently
     headers:
-      server:
+      Server:
       - nginx/1.4.6 (Ubuntu)
-      date:
-      - Mon, 22 Dec 2014 01:46:04 GMT
-      content-type:
+      Date:
+      - Tue, 30 Dec 2014 15:51:54 GMT
+      Content-Type:
       - text/html
-      content-length:
+      Content-Length:
       - '193'
-      connection:
-      - close
-      location:
+      Connection:
+      - keep-alive
+      Location:
       - https://www.govtrack.us/api/v2/vote/?number=183&congress=112&chamber=house&session=2012
     body:
       encoding: UTF-8
       string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
         bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.4.6
         (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
-    http_version: '1.1'
-  recorded_at: Mon, 22 Dec 2014 01:46:05 GMT
+    http_version: 
+  recorded_at: Tue, 30 Dec 2014 15:51:54 GMT
 - request:
     method: get
-    uri: https://www.govtrack.us/api/v2/vote/?number=183&congress=112&chamber=house&session=2012
+    uri: https://www.govtrack.us/api/v2/vote/?chamber=house&congress=112&number=183&session=2012
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
+      Accept:
       - "*/*"
-      user-agent:
+      User-Agent:
       - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      server:
+      Server:
       - nginx/1.4.6 (Ubuntu)
-      date:
-      - Mon, 22 Dec 2014 01:46:04 GMT
-      content-type:
+      Date:
+      - Tue, 30 Dec 2014 15:51:55 GMT
+      Content-Type:
       - application/json; charset=utf-8
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      connection:
-      - close
-      vary:
+      Connection:
+      - keep-alive
+      Vary:
       - Accept-Encoding
-      cache-control:
+      Cache-Control:
       - public
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - "*"
-      generated-at:
-      - '2014-12-21T20:45:56.243756'
-      x-konklone-force-https:
+      Generated-At:
+      - '2014-12-30T10:25:54.829031'
+      X-Konklone-Force-Https:
       - 'TRUE'
-      strict-transport-security:
+      Strict-Transport-Security:
       - max-age=31536000
-      content-encoding:
-      - gzip
     body:
       encoding: UTF-8
       string: "{\n \"meta\": {\n  \"limit\": 100, \n  \"offset\": 0, \n  \"total_count\":
@@ -233,8 +231,8 @@ http_interactions:
         \n   \"session\": \"2012\", \n   \"source\": \"house\", \n   \"source_label\":
         \"house.gov\", \n   \"total_minus\": 185, \n   \"total_other\": 10, \n   \"total_plus\":
         236, \n   \"vote_type\": \"On the Resolution\"\n  }\n ]\n}"
-    http_version: '1.1'
-  recorded_at: Mon, 22 Dec 2014 01:46:05 GMT
+    http_version: 
+  recorded_at: Tue, 30 Dec 2014 15:51:55 GMT
 - request:
     method: get
     uri: http://www.govtrack.us/api/v2/vote_voter/?person=400639&vote=111677
@@ -242,36 +240,36 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
+      Accept:
       - "*/*"
-      user-agent:
+      User-Agent:
       - Ruby
   response:
     status:
       code: 301
       message: Moved Permanently
     headers:
-      server:
+      Server:
       - nginx/1.4.6 (Ubuntu)
-      date:
-      - Mon, 22 Dec 2014 01:46:04 GMT
-      content-type:
+      Date:
+      - Tue, 30 Dec 2014 15:51:55 GMT
+      Content-Type:
       - text/html
-      content-length:
+      Content-Length:
       - '193'
-      connection:
-      - close
-      location:
+      Connection:
+      - keep-alive
+      Location:
       - https://www.govtrack.us/api/v2/vote_voter/?person=400639&vote=111677
     body:
       encoding: UTF-8
       string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
         bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.4.6
         (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
-    http_version: '1.1'
-  recorded_at: Mon, 22 Dec 2014 01:46:05 GMT
+    http_version: 
+  recorded_at: Tue, 30 Dec 2014 15:51:55 GMT
 - request:
     method: get
     uri: https://www.govtrack.us/api/v2/vote_voter/?person=400639&vote=111677
@@ -279,41 +277,39 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
+      Accept:
       - "*/*"
-      user-agent:
+      User-Agent:
       - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      server:
+      Server:
       - nginx/1.4.6 (Ubuntu)
-      date:
-      - Mon, 22 Dec 2014 01:46:05 GMT
-      content-type:
+      Date:
+      - Tue, 30 Dec 2014 15:51:55 GMT
+      Content-Type:
       - application/json; charset=utf-8
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      connection:
-      - close
-      vary:
+      Connection:
+      - keep-alive
+      Vary:
       - Accept-Encoding
-      cache-control:
+      Cache-Control:
       - public
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - "*"
-      generated-at:
-      - '2014-12-21T20:46:05.081195'
-      x-konklone-force-https:
+      Generated-At:
+      - '2014-12-30T10:51:55.898197'
+      X-Konklone-Force-Https:
       - 'TRUE'
-      strict-transport-security:
+      Strict-Transport-Security:
       - max-age=31536000
-      content-encoding:
-      - gzip
     body:
       encoding: UTF-8
       string: "{\n \"meta\": {\n  \"limit\": 100, \n  \"offset\": 0, \n  \"total_count\":
@@ -350,6 +346,6 @@ http_interactions:
         \"house.gov\", \n    \"total_minus\": 185, \n    \"total_other\": 10, \n    \"total_plus\":
         236, \n    \"vote_type\": \"On the Resolution\"\n   }, \n   \"voter_type\":
         \"member\", \n   \"voter_type_label\": \"Member of Congress\"\n  }\n ]\n}"
-    http_version: '1.1'
-  recorded_at: Mon, 22 Dec 2014 01:46:06 GMT
+    http_version: 
+  recorded_at: Tue, 30 Dec 2014 15:51:55 GMT
 recorded_with: VCR 2.9.3

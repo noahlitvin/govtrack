@@ -2,83 +2,81 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.govtrack.us/api/v2/vote_voter/?vote=1&person=400639
+    uri: http://www.govtrack.us/api/v2/vote_voter/?person=400639&vote=1
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
+      Accept:
       - "*/*"
-      user-agent:
+      User-Agent:
       - Ruby
   response:
     status:
       code: 301
       message: Moved Permanently
     headers:
-      server:
+      Server:
       - nginx/1.4.6 (Ubuntu)
-      date:
-      - Mon, 22 Dec 2014 01:46:02 GMT
-      content-type:
+      Date:
+      - Tue, 30 Dec 2014 15:51:53 GMT
+      Content-Type:
       - text/html
-      content-length:
+      Content-Length:
       - '193'
-      connection:
-      - close
-      location:
+      Connection:
+      - keep-alive
+      Location:
       - https://www.govtrack.us/api/v2/vote_voter/?vote=1&person=400639
     body:
       encoding: UTF-8
       string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
         bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.4.6
         (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
-    http_version: '1.1'
-  recorded_at: Mon, 22 Dec 2014 01:46:03 GMT
+    http_version: 
+  recorded_at: Tue, 30 Dec 2014 15:51:53 GMT
 - request:
     method: get
-    uri: https://www.govtrack.us/api/v2/vote_voter/?vote=1&person=400639
+    uri: https://www.govtrack.us/api/v2/vote_voter/?person=400639&vote=1
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      accept:
+      Accept:
       - "*/*"
-      user-agent:
+      User-Agent:
       - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      server:
+      Server:
       - nginx/1.4.6 (Ubuntu)
-      date:
-      - Mon, 22 Dec 2014 01:46:02 GMT
-      content-type:
+      Date:
+      - Tue, 30 Dec 2014 15:51:53 GMT
+      Content-Type:
       - application/json; charset=utf-8
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      connection:
-      - close
-      vary:
+      Connection:
+      - keep-alive
+      Vary:
       - Accept-Encoding
-      cache-control:
+      Cache-Control:
       - public
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - "*"
-      generated-at:
-      - '2014-12-21T20:46:02.667521'
-      x-konklone-force-https:
+      Generated-At:
+      - '2014-12-30T10:25:58.621746'
+      X-Konklone-Force-Https:
       - 'TRUE'
-      strict-transport-security:
+      Strict-Transport-Security:
       - max-age=31536000
-      content-encoding:
-      - gzip
     body:
       encoding: UTF-8
       string: "{\n \"meta\": {\n  \"limit\": 100, \n  \"offset\": 0, \n  \"total_count\":
@@ -114,6 +112,6 @@ http_interactions:
         \n    \"total_minus\": 244, \n    \"total_other\": 5, \n    \"total_plus\":
         183, \n    \"vote_type\": \"On the Amendment\"\n   }, \n   \"voter_type\":
         \"member\", \n   \"voter_type_label\": \"Member of Congress\"\n  }\n ]\n}"
-    http_version: '1.1'
-  recorded_at: Mon, 22 Dec 2014 01:46:03 GMT
+    http_version: 
+  recorded_at: Tue, 30 Dec 2014 15:51:53 GMT
 recorded_with: VCR 2.9.3

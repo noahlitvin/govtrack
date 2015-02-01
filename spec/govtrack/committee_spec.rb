@@ -23,7 +23,7 @@ describe GovTrack::Committee do
     end
 
     it "should be able to find a not obsolete committee" do
-      c = GovTrack::Committee.find_by_obsolete(0).first
+      c = GovTrack::Committee.find_by_obsolete(false).first
       expect(c.obsolete).to eql(false)
     end
 
