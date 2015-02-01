@@ -24,7 +24,7 @@ module GovTrack
       args[:limit] ||= 500 if block_given? #default to queries of 500 when a block is given
       
       response = get("/#{self.demodulized_name}/?#{URI.escape(URI.encode_www_form(args))}")
-      puts "requesting: #{base_uri}/#{self.demodulized_name}/?#{URI.escape(URI.encode_www_form(args))}"
+      puts "requesting: #{base_uri}/#{self.demodulized_name}/#{URI.escape(URI.encode_www_form(args))}"
       paginated_list = GovTrack::PaginatedList.new(self,response["meta"],response["objects"])
       
       if block_given?
