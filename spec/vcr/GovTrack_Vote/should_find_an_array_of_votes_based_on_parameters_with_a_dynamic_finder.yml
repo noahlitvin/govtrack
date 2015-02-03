@@ -1,0 +1,147 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.govtrack.us/api/v2/vote/?chamber=house&congress=112&number=183&session=2012
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Server:
+      - nginx/1.4.6 (Ubuntu)
+      Date:
+      - Tue, 30 Dec 2014 15:52:50 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '193'
+      Connection:
+      - keep-alive
+      Location:
+      - https://www.govtrack.us/api/v2/vote/?number=183&congress=112&chamber=house&session=2012
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.4.6
+        (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Tue, 30 Dec 2014 15:52:50 GMT
+- request:
+    method: get
+    uri: https://www.govtrack.us/api/v2/vote/?chamber=house&congress=112&number=183&session=2012
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.6 (Ubuntu)
+      Date:
+      - Tue, 30 Dec 2014 15:52:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public
+      Access-Control-Allow-Origin:
+      - "*"
+      Generated-At:
+      - '2014-12-30T10:25:54.829031'
+      X-Konklone-Force-Https:
+      - 'TRUE'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "{\n \"meta\": {\n  \"limit\": 100, \n  \"offset\": 0, \n  \"total_count\":
+        1\n }, \n \"objects\": [\n  {\n   \"category\": \"passage\", \n   \"category_label\":
+        \"Passage\", \n   \"chamber\": \"house\", \n   \"chamber_label\": \"House\",
+        \n   \"congress\": 112, \n   \"created\": \"2012-04-26T14:14:00\", \n   \"id\":
+        111677, \n   \"link\": \"https://www.govtrack.us/congress/votes/112-2012/h183\",
+        \n   \"missing_data\": false, \n   \"number\": 183, \n   \"options\": [\n
+        \   {\n     \"id\": 433314, \n     \"key\": \"-\", \n     \"value\": \"Nay\",
+        \n     \"vote\": 111677\n    }, \n    {\n     \"id\": 433315, \n     \"key\":
+        \"P\", \n     \"value\": \"Present\", \n     \"vote\": 111677\n    }, \n    {\n
+        \    \"id\": 433313, \n     \"key\": \"+\", \n     \"value\": \"Yea\", \n
+        \    \"vote\": 111677\n    }, \n    {\n     \"id\": 433316, \n     \"key\":
+        \"0\", \n     \"value\": \"Not Voting\", \n     \"vote\": 111677\n    }\n
+        \  ], \n   \"question\": \"H.Res. 631 (112th): Providing for consideration
+        of the bill (H.R. 3523) to provide for the sharing of certain cyber threat
+        ...\", \n   \"question_details\": \"On the Resolution in the House\", \n   \"related_amendment\":
+        null, \n   \"related_bill\": {\n    \"bill_resolution_type\": \"resolution\",
+        \n    \"bill_type\": \"house_resolution\", \n    \"bill_type_label\": \"H.Res.\",
+        \n    \"congress\": 112, \n    \"current_status\": \"passed_simpleres\", \n
+        \   \"current_status_date\": \"2012-04-26\", \n    \"current_status_description\":
+        \"This simple resolution was agreed to on April 26, 2012. That is the end
+        of the legislative process for a simple resolution.\", \n    \"current_status_label\":
+        \"Agreed To (Simple Resolution)\", \n    \"display_number\": \"H.Res. 631\",
+        \n    \"docs_house_gov_postdate\": null, \n    \"id\": 252262, \n    \"introduced_date\":
+        \"2012-04-25\", \n    \"is_alive\": false, \n    \"is_current\": false, \n
+        \   \"link\": \"https://www.govtrack.us/congress/bills/112/hres631\", \n    \"lock_title\":
+        false, \n    \"major_actions\": [\n     [\n      \"datetime.datetime(2012,
+        4, 25, 19, 46)\", \n      3, \n      \"Placed on the House Calendar, Calendar
+        No. 127.\", \n      \"<calendar datetime=\\\"2012-04-25T19:46:00-04:00\\\"
+        state=\\\"REPORTED\\\" calendar=\\\"House\\\" number=\\\"127\\\">\\n      <text>Placed
+        on the House Calendar, Calendar No. 127.</text>\\n    </calendar>\\n    \"\n
+        \    ], \n     [\n      \"datetime.datetime(2012, 4, 26, 14, 15)\", \n      6,
+        \n      \"On agreeing to the resolution Agreed to by the Yeas and Nays: 236
+        - 185 (Roll no. 183).\", \n      \"<vote how=\\\"roll\\\" type=\\\"vote\\\"
+        roll=\\\"183\\\" datetime=\\\"2012-04-26T14:15:00-04:00\\\" where=\\\"h\\\"
+        result=\\\"pass\\\" state=\\\"PASSED:SIMPLERES\\\">\\n      <text>On agreeing
+        to the resolution Agreed to by the Yeas and Nays: 236 - 185 (Roll no. 183).</text>\\n
+        \     <reference ref=\\\"CR H2147\\\" label=\\\"text\\\"/>\\n    </vote>\\n
+        \   \"\n     ]\n    ], \n    \"noun\": \"resolution\", \n    \"number\": 631,
+        \n    \"senate_floor_schedule_postdate\": null, \n    \"sliplawnum\": null,
+        \n    \"sliplawpubpriv\": null, \n    \"source\": \"thomas-congproj\", \n
+        \   \"source_link\": null, \n    \"sponsor\": 412409, \n    \"sponsor_role\":
+        41970, \n    \"thomas_link\": \"http://thomas.loc.gov/cgi-bin/bdquery/z?d112:hres631:\",
+        \n    \"title\": \"H.Res. 631 (112th): Providing for consideration of the
+        bill (H.R. 3523) to provide for the sharing of certain cyber threat intelligence
+        and cyber threat information between the intelligence community and cyber
+        security entities, and for other purposes; pr\", \n    \"title_without_number\":
+        \"Providing for consideration of the bill (H.R. 3523) to provide for the sharing
+        of certain cyber threat intelligence and cyber threat information between
+        the intelligence community and cyber security entities, and for other purposes;
+        providing for consideration of motions to suspend the rules; providing for
+        consideration of the bill (H.R. 4628) to extend student loan interest rates
+        for undergraduate Federal Direct Stafford Loans; and for other purposes.\",
+        \n    \"titles\": [\n     [\n      \"official\", \n      \"introduced\", \n
+        \     \"Providing for consideration of the bill (H.R. 3523) to provide for
+        the sharing of certain cyber threat intelligence and cyber threat information
+        between the intelligence community and cyber security entities, and for other
+        purposes; providing for consideration of motions to suspend the rules; providing
+        for consideration of the bill (H.R. 4628) to extend student loan interest
+        rates for undergraduate Federal Direct Stafford Loans; and for other purposes.\"\n
+        \    ]\n    ]\n   }, \n   \"required\": \"1/2\", \n   \"result\": \"Passed\",
+        \n   \"session\": \"2012\", \n   \"source\": \"house\", \n   \"source_label\":
+        \"house.gov\", \n   \"total_minus\": 185, \n   \"total_other\": 10, \n   \"total_plus\":
+        236, \n   \"vote_type\": \"On the Resolution\"\n  }\n ]\n}"
+    http_version: 
+  recorded_at: Tue, 30 Dec 2014 15:52:50 GMT
+recorded_with: VCR 2.9.3
