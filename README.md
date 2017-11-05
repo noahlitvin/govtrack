@@ -1,3 +1,5 @@
+![Maintainers Wanted](https://img.shields.io/maintenance/no/2013.svg)
+
 # GovTrack Gem
 An unofficial Ruby wrapper for the [GovTrack API](http://www.govtrack.us/developers/api). You must agree to the surprisingly brief and readable [license terms](http://www.govtrack.us/developers/license) before using.
 
