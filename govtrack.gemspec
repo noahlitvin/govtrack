@@ -9,6 +9,7 @@ Gem::Specification.new do |gem|
   gem.homepage    = "https://github.com/noahlitvin/govtrack"
   gem.summary     = %q{A Ruby wrapper for the GovTrack API.}
   gem.description = %q{A Ruby wrapper for the GovTrack API.}
+  gem.license     = 'MIT'
 
   gem.files = %w(CHANGELOG.md LICENSE.md README.md TODO.md govtrack.gemspec)
   gem.files += Dir.glob("lib/**/*.rb")

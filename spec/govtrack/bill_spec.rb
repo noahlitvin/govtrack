@@ -3,26 +3,26 @@ require 'helper'
 describe GovTrack::Bill do
 
   it "should find an array of bills based on parameters" do
-    bills = GovTrack::Bill.find(congress:112, is_current: "true")
+    bills = GovTrack::Bill.find(congress:112, current_status: 'passed_bill')
     bills.should be_an Array
     bills[0].should be_a GovTrack::Bill
   end
 
   it "should iterate through an array of bills based on parameters when supplied with a block" do
     count = 0
-    GovTrack::Bill.find(congress:95, bill_type: 'house_concurrent_resolution', limit: 70) { |bill| count += 1 }
-    count.should eq GovTrack::Bill.find(congress:95, bill_type: 'house_concurrent_resolution').total
+    GovTrack::Bill.find(congress:95, current_status: 'passed_bill', limit: 70) { |bill| count += 1 }
+    count.should eq GovTrack::Bill.find(congress:95, current_status: 'passed_bill').total
   end
 
   it "should find an array of bills based on parameters with a dynamic finder" do
-    bills = GovTrack::Bill.find_by_congress_and_is_current(112, "true")
+    bills = GovTrack::Bill.find_by_congress_and_current_status(112, "passed_bill")
     bills.should be_an Array
     bills[0].should be_a GovTrack::Bill
   end
 
   it "should find a bill by id" do
     bill = GovTrack::Bill.find_by_id(74369)
-    bill.id.should eq "74369"
+    bill.id.should eq 74369
   end
 
   it "should retreive sponsor as a Person and cache it" do

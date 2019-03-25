@@ -2,11 +2,12 @@ module GovTrack
   class Base
     include HTTParty
 
-    base_uri 'http://www.govtrack.us/api/v1'
+    base_uri 'http://www.govtrack.us/api/v2'
     
     def initialize(attributes=nil)
       attributes ||= {}
       attributes.each do |(attr, val)|
+        attr = attr.gsub('-', '_') # dashes not allowed in instance variable names
         instance_variable_set("@#{attr}", val)
         instance_eval "def #{attr}() @#{attr} end" unless self.respond_to?(attr)
       end
